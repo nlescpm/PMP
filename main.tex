@@ -2,6 +2,7 @@
 \usepackage[a4paper,margin=1in,showframe,marginparsep=0pt,marginparwidth=0pt]{geometry}
 \usepackage[xetex]{graphicx} % Required for inserting images
 \usepackage{eso-pic}
+\usepackage{url}
 \usepackage[dutch,english]{babel}
 \usepackage{xcolor}
 \definecolor{nlesc-blue}{RGB}{0, 157, 221}
@@ -59,7 +60,7 @@
 
 \clearpage
 
-\AddToShipoutPictureBG*{%
+\AddToShipoutPictureBG{%
   \AtPageLowerLeft{\makebox[1.3\textwidth][r]{%
     \includegraphics[scale=1]{img/a0000-img003.jpg}}}}
 \section{Scope and definitions}
@@ -97,8 +98,8 @@ stakeholders who each have their own roles and responsibilities during specific 
 
 
 \begin{table}[h!]
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{lllll}
+%\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
 Stakeholder                                        & Abbreviation          & Assignment                                                                                                        & Role                                                                                                                                                                                                                                   & More info                                                                                                                            \\
 Lead Applicant                                     & LA                    & main applicant and recipient of the grant                                                                         & primary contact for the eScience Center project, accountable for the (quality of the) scientific contribution to the project                                                                                                           & responsibilities defined in the call text, the Terms and Conditions document, and potentially a Consortium/Collaboration agreement.  \\
 Programme Manager                                  & PM                    & assigned by the PM team2                                                                                          & accountable for the eScience contribution to a project, responsible for realization of project results given predetermined resources and timelines, project budget holder                                                              & Full text of responsibilities available in the PM job profile document (see Section 5 for the reference) and PM mandate (Appendix~\ref{app:sec:pm-mandate}) \\
@@ -120,14 +121,14 @@ eScience Center project team                       & eScience project team & com
 Project team                                       &                       & comprises the eScience project team, LA and their team (including team members indicated in the project proposal) & responsible for the timely completion of the project                                                                                                                                                                                   &                                                                                                                                      \\
 Editorial Team                                     &                       &                                                                                                                   & provides support with outreach                                                                                                                                                                                                         & The eScience Center maintains a blog, and has presence in major social networks                                                     
 \end{tabular}%
-}
+%}
 \end{table}
 
 \subsection{Project life cycle overview}
 \label{sec:lifecycle}
 
 
-\bibliographystyle{ACM-Reference-Format}
+\bibliographystyle{abbrv}
 \bibliography{references}
 
 \end{document}
