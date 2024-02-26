@@ -9,6 +9,7 @@
 \definecolor{nlesc-purple}{RGB}{53, 6, 57}
 \definecolor{nlesc-yellow}{RGB}{255, 178, 19}
 
+\usepackage{ltablex}
 
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
@@ -99,8 +100,22 @@ stakeholders who each have their own roles and responsibilities during specific 
 
 \begin{table}[h!]
 %\resizebox{\textwidth}{!}{%
-\begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
-Stakeholder                                        & Abbreviation          & Assignment                                                                                                        & Role                                                                                                                                                                                                                                   & More info                                                                                                                            \\
+%\begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\caption{My caption} \\
+\toprule
+\textbf{Stakeholder} & \textbf{Abbreviation} & \textbf{Assignment}& \textbf{Role}& \textbf{More info}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Stakeholder} & \textbf{Abbreviation} & \textbf{Assignment}& \textbf{Role}& \textbf{More info}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{}
+\endfoot
+\bottomrule
+\endlastfoot  
 Lead Applicant                                     & LA                    & main applicant and recipient of the grant                                                                         & primary contact for the eScience Center project, accountable for the (quality of the) scientific contribution to the project                                                                                                           & responsibilities defined in the call text, the Terms and Conditions document, and potentially a Consortium/Collaboration agreement.  \\
 Programme Manager                                  & PM                    & assigned by the PM team2                                                                                          & accountable for the eScience contribution to a project, responsible for realization of project results given predetermined resources and timelines, project budget holder                                                              & Full text of responsibilities available in the PM job profile document (see Section 5 for the reference) and PM mandate (Appendix~\ref{app:sec:pm-mandate}) \\
 Lead Research Software Engineer                    & Lead RSE              & appointed by accountable PM                                                                                       & responsible for the timely execution of the project, main contact person for the project with other stakeholders                                                                                                                       & More details on responsibilities, see the formal role description of Lead RSE (Appendix~\ref{app:sec:leadRSE}).                                          \\
@@ -120,8 +135,9 @@ GDPR contact person                                &                       & app
 eScience Center project team                       & eScience project team & comprises RSEs, PM and TL working on the project                                                                  & responsible for the timely completion of the project                                                                                                                                                                                   &                                                                                                                                      \\
 Project team                                       &                       & comprises the eScience project team, LA and their team (including team members indicated in the project proposal) & responsible for the timely completion of the project                                                                                                                                                                                   &                                                                                                                                      \\
 Editorial Team                                     &                       &                                                                                                                   & provides support with outreach                                                                                                                                                                                                         & The eScience Center maintains a blog, and has presence in major social networks                                                     
-\end{tabular}%
+%\end{tabular}%
 %}
+\end{tabularx}
 \end{table}
 
 \subsection{Project life cycle overview}
