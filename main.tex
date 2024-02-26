@@ -1,55 +1,52 @@
 \documentclass{article}
+\usepackage[a4paper,margin=1in,showframe,marginparsep=0pt,marginparwidth=0pt]{geometry}
 \usepackage[xetex]{graphicx} % Required for inserting images
-
-
-
+\usepackage{eso-pic}
 
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
 \setmainfont{Nunito}
 
-\title{{\Huge Project Management Protocol of the Netherlands eScience Center}}
+\title{{\Huge\textbf{Project Management Protocol of the Netherlands eScience Center}}}
 \author{Authors: Netherlands eScience Center Programme Managers}
 \date{Date: September 2023\\Version: 2.0}
 
 \begin{document}
 
 \begin{titlepage}
-    \begin{center}
-        \vspace*{1cm}
-            
+
+\AddToShipoutPictureBG*{%
+  \AtTextLowerLeft{\makebox[\textwidth][r]{%
+    \includegraphics[scale=1]{img/a0000-img001.png}}}}
+
 
         \maketitle
 
 
-            
-        \vfill
+  
             
 \begin{table}[!h]
-\resizebox{1.8\textwidth}{!}{%
+\resizebox{1.1\textwidth}{!}{%
 \begin{tabular}{llc}
 \multicolumn{1}{c}{Date} & \multicolumn{1}{c}{version} & Changes   \\
-1 October 2023           & 2.0 updates                 & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}DT and PM mandates, Roles of Directors, PMs role in Ambition 2,\\ SS, KD and external projects, Communications role, Editorial team, breakdown of hours,\\ opportunities beyond project, Technology Status Report, End report)\end{tabular}} \\
+1 October 2023           & 2.0 updates                 & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}DT and PM mandates, Roles of Directors, PMs role in Ambition 2,\\ SS, KD and external projects, Communications role, Editorial team, \\ breakdown of hours, opportunities beyond project, \\ Technology Status Report, End report\end{tabular}} \\
 23 September 2022        & 1.0 initial version         &                                                                                                                                                                                                                                                                                           
 \end{tabular}%
 }
 \end{table}
             
-        \vspace{0.8cm}
+  %      \vspace{0.8cm}
 
-\includegraphics[scale=0.6]{img/a0000-img001.png}
 
-            
-        \Large
-        Department Name\\
-        University Name\\
-        Country\\
-        Date
-            
-    \end{center}
+
+
 \end{titlepage}
 
+\clearpage
+\setcounter{tocdepth}{2}
+\tableofcontents
 
+\clearpage
 
 \section{Introduction}
 
