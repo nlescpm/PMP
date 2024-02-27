@@ -79,6 +79,7 @@
 \placelogo{}
     
 \section{Scope and definitions}
+\label{sec:scope}
 
 \subsection{Scope}
 
@@ -92,8 +93,7 @@ steps, both necessary and optional, that must or may be taken in the execution o
 (RSEs) and other eScience Center employees (e.g. Programme Managers, Finances, Directors Team) involved in the
 process.
 
-
-Call procedures follow a separate protocol\cite{call-protocol-2015} and are
+Call procedures follow a separate protocol~\cite{call-protocol-2015} and are
 not covered by this document. The call procedure protocol ends with the formal awarding of projects by the eScience
 Center Governing Board or the Directors Team (DT), the notification of Lead Applicants and the formalization of the
 awarding by means of a \textit{toekenningsbrief} ('Awarding letter’). The
@@ -104,7 +104,7 @@ version of this document in the future.
 
 This document has been approved by the DT and will be subject to evaluation and possible adaptation annually.
 
-The structure of this document largely follows the project life cycle (see Section~\ref{sec:lifecycle}); the
+The structure of this document largely follows the project life cycle (see Section~\ref{sec:scope:lifecycle}); the
 protocol describes activities in chronological order.
 
 \subsection{Stakeholders}
@@ -153,8 +153,113 @@ Editorial Team                                     &                       &    
 \end{tabularx}
 
 
+\subsection{Types of projects}
+The eScience Center receives an annual budget from NWO and SURF, the larger part of which is allocated to projects
+submitted by researchers working at eligible research performing organizations in the Netherlands in the form of the
+in-kind provision of RSEs. Projects may also be funded from external sources (henceforth referred to as \textit{an
+external project) }or funded from the annual budget but carried out internally.
+
+By awarding subsidy to a project or by pledging a contribution to an external project, the eScience Center takes on the
+obligation to deliver high-quality work in a timely manner.
+
+\subsubsection{Call projects}
+
+The eScience Center publishes a range of calls. Each project is a part of a specific call (regular calls such as
+OEC/ASDI, CIT/DTEC/eTEC/JEDS, SSI, or calls in collaboration with other funders such as ADAH, Big Data \& Health, GO,
+JCER, eTEC-BIG, ESI-FAR). Projects from the regular calls before 2021 are partly in-cash, while projects awarded later
+are fully in-kind (plus a reserved budget for workshops).
+
+Calls can reserve part of the project or the call budget to serve the eScience Center agenda to increase the impact of
+software beyond the project itself. Henceforth this will be referred to as the software sustainability budget, formerly
+known as generalization budget). The budget is intended for software generalization, reuse and sustainability, and
+community building. The DoT is the holder of this budget. Details concerning this budget are included in the Awarding
+letter. See Section~\ref{sec:opportunities:softsust} for more information.
+
+Project teams (mainly Lead RSE, PM and TL) are expected to consult the specific call text, Awarding letter
+(‘Toekenningsbrief’), Terms and Conditions document (‘Bijzondere voorwaarden’, ‘Subsidieregeling’, etc.), Consortium/Collaboration Agreement (CA), and/or
+contracts for grant terms and conditions. The LA is responsible for adhering to the conditions of the project, while
+the PM, with the help of the Lead RSE, monitors this.
+
+In our call projects, most of the total requested budget is dedicated to project work and project-related activities.
+The remaining part (referred to as “general activities”) covers activities that benefit our ability to contribute to
+high-quality research, such as the professional development of RSEs through training, work meetings, conferences, etc,
+as well as the administrative coordination and project management within the eScience Center. It is up to the PMs and
+RSEs in consultation with the SHs to fairly distribute hours for general activities across all the projects they
+contribute to (cf. Section~\ref{sec:budget}). The exact percentage set aside for general activities is defined in
+the call within which a project has been awarded.
+
+\subsubsection{External projects}
+
+Projects funded externally by e.g. NWO or the EU, or via private-public partnerships, are governed by external funding
+conditions specified in a contract or agreement that may supersede our own rules. The budgets of these projects need to
+be approved by F\&C and the DoO. Again, the project team (mostly, Lead RSE, PM, TL) must consult the specific call
+text, Awarding letter, Terms and Conditions document, Consortium/Collaboration Agreements, contracts for the conditions
+and rules. The LA is responsible for adherence to the rules and conditions, while the PM with the help of the Lead RSE
+monitors this. Projects under external funding are covered partially by this protocol.\footnote{A budget for writing
+grant proposals for external funding, use of it follows the process described in “External funding” (see Section
+\ref{sec:opportunities:external-funding} for more information).}
+
+\subsubsection{Other projects}
+
+This document only briefly covers other types of projects such as those funded through Ambition 2, namely Dissemination
+\& Community (D\&C), Knowledge \& Development (KD)\footnote{cf. Netherlands eScience Center strategy~\cite{nlesc-strategy} to get familiar with the term.} and Fellowship projects in 
+Section~\ref{sec:opportunities:fellowship} and Appendix~\ref{app:pm-role}.
+
 \subsection{Project life cycle overview}
-\label{sec:lifecycle}
+\label{sec:scope:lifecycle}
+
+\lfbox[margin-right=0.1256in,margin-left=0.1256in,margin-top=0mm,margin-bottom=0mm,border-style=none,padding=0mm,vertical-align=top]{\includegraphics[width=4.9898in,height=5in]{img/a0000-img001.png}}
+
+At the eScience Center, a standard project life cycle is a three-phase process. First, project stakeholders initiate the
+project. Next, the project team executes the project and monitors its progress. Finally, once the project reaches its
+end, it is formally closed.
+
+These three phases are covered in detail in the next sections.
+
+\section{Project Initiation}
+\label{sec:init}
+The project initiation phase starts immediately after the project has been granted. Its goal is to set up the project
+within the eScience Center, including a planning in terms of staffing and a work plan.
+
+For \textbf{external projects} and projects from specific calls (e.g., collaborative calls), F\&C ensures that all
+paperwork is in place (e.g., contracts, Consortium/Collaborative Agreements, Memorandum of Understanding) before making
+a project active in Exact, allowing RSEs to write hours spent on the project. The PD regularly keeps PMs up to date on
+outstanding applications for external funding, signals to PMs and F\&C whenever a project has been granted, and hands
+over relevant documents (such as proposal, agreements made, preliminary budget, etc) to PMs. 
+
+PMs are accountable for call projects. For the\textbf{external projects}, PMs assign a PM and Lead RSE to the project
+(i.e., the RSE involved in the submission procedure). Together with the Lead RSE the PM works with the project partners
+to get all paperwork in order (such as a subcontract), cf. Section~\ref{sec:init:legal}. 
+
+\subsection{PM assignment}
+Each project has one accountable PM. The PM team assigns PMs to new projects at the first PM meeting following the
+granting decision, records the assignation and asks F\&C to update Exact with new budget holder information (the newly
+assigned PM). If agreement over an assignment is not reached, the PD makes the final decision in their capacity as PM
+team chair.
+
+Should the accountable PM become unavailable for an extended period, the PM team can decide to put another PM in charge
+of the project.
+
+\textbf{Responsible: PM team.}
+
+\subsection{Administrative Setup}
+The table offers an overview of the responsibilities of the different stakeholders in setting up a project:
+TODO
+
+
+\textbf{General status and progress are monitored by the accountable PM.}
+
+\subsection{TL assignment}
+The PM asks the TL team to assign a TL to the project, providing all project information. The TL team does so at the TL
+meeting and informs the PM of their decision (by assigning TL to the project in Ganttic as well as a confirmation by
+email). Should the assigned TL become unavailable for an extended period, the TL team assigns another (temporary) TL to
+the project.
+
+\textbf{Responsible: TL team (at request of the PM).}
+
+\subsection{Preparation by PM}
+PM provides an overview of project requirements based on the project proposal, covering the following topics:
+
 
 
 \bibliographystyle{abbrv}
