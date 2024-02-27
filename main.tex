@@ -6,6 +6,7 @@
 \usepackage[dutch,english]{babel}
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{xcolor}
+\usepackage{tikz}
 \definecolor{nlesc-blue}{RGB}{0, 157, 221}
 \definecolor{nlesc-purple}{RGB}{53, 6, 57}
 \definecolor{nlesc-yellow}{RGB}{255, 178, 19}
@@ -13,6 +14,25 @@
 \usepackage{caption, booktabs}
 \usepackage{multirow}
 \usepackage{ltablex}
+
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+\newcommand{\testtable}[0]{
+\begin{booktabs}{colspec={rccc},row{odd}={blue9}}
+    \toprule
+    Thing & Value & Value & Value\\
+    \midrule
+    A & 1 & 2 & 3\\
+    B & 1 & 2 & 3\\
+    C & 1 & 2 & 3\\
+    \specialrule{2.5pt,teal5}{1pt}{1pt}
+    D & 1 & 2 & 3\\
+    E & 1 & 2 & 3\\
+    \bottomrule
+\end{booktabs}
+}
+
+%\newcommand{\mythinline}{\noalign{\hrule height 0.8pt}}
 
 \newcommand{\placelogo}[0]{
 \AddToShipoutPictureBG{%
@@ -252,19 +272,46 @@ of the project.
 \subsection{Administrative Setup}
 The table offers an overview of the responsibilities of the different stakeholders in setting up a project:
 
-%\begin{table}[]
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{lll}
-\textbf{What}                                                                       & \textbf{By}    & \textbf{Responsible for}                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\
-Exact                                                                               & F\&C           & \begin{tabular}[c]{@{}l@{}}Creating project code \\ Entering and uploading attachments \\ Making PM budget holder\end{tabular}                                                                                                                                                                                                                                                                                                                                                                        \\
-Project portfolio on SharePoint8                                                    & F\&C           & \begin{tabular}[c]{@{}l@{}}Creating folder in project portfolio (with template subfolder \& documents) \\ Uploading granting package documents (incl. Awarding letter), signed start form, CA if applicable\end{tabular}                                                                                                                                                                                                                                                                              \\
+\begin{table}[!h]
+\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.15\textwidth}|p{0.65\textwidth}|},row{even}={nlesc-yellow}}
+\toprule
+\textbf{What} & \textbf{By} & \textbf{Responsible for}  \\[2ex]
+Exact  & F\&C  &
+    \begin{minipage}[t]{0.65\textwidth}
+    \begin{itemize}\itemsep0em
+        \item Creating project code
+        \item Entering and uploading attachments
+        \item Making PM budget holder 
+    \end{itemize} 
+    \end{minipage}  \\[2ex]
+Project portfolio on SharePoint~\cite{proj-portfolio}  & F\&C  & 
+    \begin{minipage}[t]{0.65\textwidth}
+    \begin{itemize}\itemsep0em
+        \item Creating folder in project portfolio (with template subfolder \& documents)
+        \item Uploading granting package documents (incl. Awarding letter), signed start form, CA if applicable
+    \end{itemize} 
+    \end{minipage}  \\[2ex]
 \multirow{2}{*}{Research Software Directory (RSD), project page and software pages} & PM             & \begin{tabular}[c]{@{}l@{}}Creating an RSD project page9, putting placeholder image with the eScience logo10 \\ Signalling requirements for corporate website to Communications \\ Copying website summary from the proposal (if applicable) or writing a summary and obtaining approval from LA for edited versions  \\ Finding appropriate image (e.g., royalty-free images offered by shutterstock.com and unsplash.com) \\ Ensuring Lead RSE has a maintainer access to the RSD page\end{tabular} \\
                                                                                     & Communications & Advising and reviewing content for the pages, including editing summaries, supporting with images                                                                                                                                                                                                                                                                                                                                                                                                     \\
-Corporate website                                                                   & Communications & \begin{tabular}[c]{@{}l@{}}Ensuring content is displayed on the corporate web page with information supplied by PM \\ Promoting projects to target stakeholders, when relevant. Promotion may include but is not limited to news items, inclusion in newsletters and social media\end{tabular}                                                                                                                                                                                                        \\
-\textbf{Ganttic}                                                                    & PM             & \begin{tabular}[c]{@{}l@{}}Checking if import project information from Exact is correct  \\ Adding labels \\ Adding respective project portfolio URLs \\ Planning RSEs, if applicable (e.g., for external projects)\end{tabular}                                                                                                                                                                                                                                                                     
-\end{tabular}%
-}
-%\end{table}
+Corporate website  & Communications &  
+\begin{minipage}[t]{0.65\textwidth}
+    \begin{itemize}\itemsep0em
+        \item Ensuring content is displayed on the corporate web page with information supplied by PM
+        \item Promoting projects to target stakeholders, when relevant. Promotion may include but is not limited to news items, inclusion in newsletters and social media
+    \end{itemize} 
+    \end{minipage}  \\
+Ganttic  & PM             & 
+\begin{minipage}[t]{0.65\textwidth}
+    \begin{itemize}\itemsep0em
+        \item Checking if import project information from Exact is correct 
+        \item Adding labels
+        \item Adding respective project portfolio URLs
+        \item Planning RSEs, if applicable (e.g., for external projects)
+    \end{itemize} 
+    \end{minipage}  \\                    
+    \bottomrule
+\end{booktabs}
+\end{table}
 
 
 \textbf{General status and progress are monitored by the accountable PM.}
@@ -408,16 +455,17 @@ the responsibility of the Lead RSE to keep the PM in the loop.
 
 \subsubsection{Administrative start meeting}
 
-
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{ll}
-\textbf{Scheduled:}    & Soon after awarding, but not before the Awarding letters have been sent and F\&C has collected all the paperwork and put it in Exact and Project Portfolio)                                                                                                             \\
-\textbf{Stakeholders:} & PM (chair), LA, Lead RSE (optional). The PM can involve others at their discretion.                                                                                                                                                                                     \\
-\textbf{Purpose:}      & A procedural meeting to discuss how the cooperation on this project will be organized, administrative questions the LA may have, current availability of software and data, staffing, etc, so that problems can be caught early (e.g., licensing issues, no data, etc.) \\
-\textbf{Duration:}     & 1.5 hours                                                                                                                                                                                                                                                               \\
-\textbf{Location:}     & At the eScience Center (preferably), but can be also online   
-\end{tabular}%
-}
+\begin{table}[!h]
+\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.85\textwidth}|},row{even}={nlesc-yellow}}
+    \toprule
+    Scheduled: &  Soon after awarding, but not before the Awarding letters have been sent and F\&C has collected all the paperwork and put it in Exact and Project Portfolio) \\[1.5ex]
+    Stakeholders: & PM (chair), LA, Lead RSE (optional). The PM can involve others at their discretion. \\[1.5ex]
+    Purpose: &  A procedural meeting to discuss how the cooperation on this project will be organized, administrative questions the LA may have, current availability of software and data, staffing, etc, so that problems can be caught early (e.g., licensing issues, no data, etc.)\\[1.5ex]
+    Duration: & 1.5 hours \\[1.5ex]
+    Location: & At the eScience Center (preferably), but can be also online \\[1.5ex]
+    \bottomrule
+\end{booktabs}
+\end{table}
 
 For this meeting, the PM uses the administrative (PowerPoint) presentation, ensuring that information is in the line
 with the call text, and current Terms, IP policies etc.
@@ -435,7 +483,7 @@ The agenda for this meeting covers:
 \begin{itemize}
 \item calls, collaboration, software and software quality, RSD
 \item what are the roles of PM, Lead RSE, RSEs, teams and TL
-\item suitable and welcoming work environment\footnote{\url{https://www.arboportaal.nl/onderwerpen/themas/inrichting-werkvloer}} for RSEs at the project location, including
+\item suitable and welcoming work environment~\cite{arbo} for RSEs at the project location, including
 working-on-location permit ('gastovereenkomst')
 \item additional collaboration options: workshops, trainings, other calls.
 \end{itemize}
@@ -471,7 +519,17 @@ each other and the PM stores both slide decks (from PM and LA) and agreements in
 
 \subsubsection{Project Kick-off}
 
-TODO
+\begin{table}[!h]
+\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={nlesc-yellow}}
+    \toprule
+    Scheduled: &  Around the date indicated by LA in the start form, after the administrative start meeting. \\[1.5ex]
+    Stakeholders: & PM (chair), the entire project team, TL, and other relevant stakeholders (e.g., SH)  \\[1.5ex]
+    Purpose: &  The project kick-off focuses on the execution of the project, on the technological requirements, scientific challenges, relevant communities, project goals and outputs . \\[1.5ex]
+    Duration: & Max. 1.5 hours \\[1.5ex]
+    Location: & At the eScience Center office or at the institute of the LA\footnote{Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.} \\[1.5ex]
+    \bottomrule
+\end{booktabs}
+\end{table}
 
 For this meeting the standard agenda is:
 
@@ -512,7 +570,24 @@ as an evolving record of the considerations and choices regarding the technology
 good use of the expertise present in the Center and that optimal choices are made throughout the project. An example of
 project technology plan is included in the Appendix~\ref{app:exampleplan}.
 
-TODO
+\begin{table}[!h]
+\begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{0.8\textwidth}|},row{even}={nlesc-yellow}}
+    \toprule
+    Written by: &  Lead RSE, in collaboration with project team (including LA, TL), CMs, and others RSEs or colleagues (e.g. with relevant expertise on the subject), or relevant SIG. \\[1.5ex]
+    Target audience: & project team, TLs, PMs  \\[1.5ex]
+    Schedule: &  %
+    \begin{minipage}[t]{0.8\textwidth}
+    \begin{itemize}\itemsep0em
+        \item written at the start of the project work, before any software development starts,
+        \item submitted to PM/TL by email before the deadline agreed during the project kick-off, 
+        \item as a part of the project log (either full document in the log or a URL to it). 
+    \end{itemize} 
+      \end{minipage}
+    \\[1.5ex]
+    Approved by: & PM after due consultation of TL \\[1.5ex]
+    \bottomrule
+\end{booktabs}
+\end{table}
 
 The Lead RSE is encouraged to reach out to RSEs or other colleagues who have the relevant expertise in the process of
 developing the technology plan. CMs can advise on engaging the target audience with regard to software reusability and
