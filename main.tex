@@ -205,17 +205,24 @@ This document only briefly covers other types of projects such as those funded t
 \& Community (D\&C), Knowledge \& Development (KD)\footnote{cf. Netherlands eScience Center strategy~\cite{nlesc-strategy} to get familiar with the term.} and Fellowship projects in 
 Section~\ref{sec:opportunities:fellowship} and Appendix~\ref{app:pm-role}.
 
+\clearpage
 \subsection{Project life cycle overview}
 \label{sec:scope:lifecycle}
 
-\lfbox[margin-right=0.1256in,margin-left=0.1256in,margin-top=0mm,margin-bottom=0mm,border-style=none,padding=0mm,vertical-align=top]{\includegraphics[width=4.9898in,height=5in]{img/a0000-img001.png}}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.5]{img/lifecycle-stages.png}
+    \caption{Project lifecycle stages}
+    \label{fig:project-lifecycle}
+\end{figure}
 
-At the eScience Center, a standard project life cycle is a three-phase process. First, project stakeholders initiate the
+At the eScience Center, a standard project life cycle is a three-phase process (see Figure~\ref{fig:project-lifecycle}). First, project stakeholders initiate the
 project. Next, the project team executes the project and monitors its progress. Finally, once the project reaches its
 end, it is formally closed.
 
 These three phases are covered in detail in the next sections.
 
+\clearpage
 \section{Project Initiation}
 \label{sec:init}
 The project initiation phase starts immediately after the project has been granted. Its goal is to set up the project
@@ -227,7 +234,7 @@ a project active in Exact, allowing RSEs to write hours spent on the project. Th
 outstanding applications for external funding, signals to PMs and F\&C whenever a project has been granted, and hands
 over relevant documents (such as proposal, agreements made, preliminary budget, etc) to PMs. 
 
-PMs are accountable for call projects. For the\textbf{external projects}, PMs assign a PM and Lead RSE to the project
+PMs are accountable for call projects. For the \textbf{external projects}, PMs assign a PM and Lead RSE to the project
 (i.e., the RSE involved in the submission procedure). Together with the Lead RSE the PM works with the project partners
 to get all paperwork in order (such as a subcontract), cf. Section~\ref{sec:init:legal}. 
 
@@ -244,7 +251,23 @@ of the project.
 
 \subsection{Administrative Setup}
 The table offers an overview of the responsibilities of the different stakeholders in setting up a project:
-TODO
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lll}
+\textbf{What}                                                                       & \textbf{By}    & \textbf{Responsible for}                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\
+Exact                                                                               & F\&C           & \begin{tabular}[c]{@{}l@{}}Creating project code \\ Entering and uploading attachments \\ Making PM budget holder\end{tabular}                                                                                                                                                                                                                                                                                                                                                                        \\
+Project portfolio on SharePoint8                                                    & F\&C           & \begin{tabular}[c]{@{}l@{}}Creating folder in project portfolio (with template subfolder \& documents) \\ Uploading granting package documents (incl. Awarding letter), signed start form, CA if applicable\end{tabular}                                                                                                                                                                                                                                                                              \\
+\multirow{2}{*}{Research Software Directory (RSD), project page and software pages} & PM             & \begin{tabular}[c]{@{}l@{}}Creating an RSD project page9, putting placeholder image with the eScience logo10 \\ Signalling requirements for corporate website to Communications \\ Copying website summary from the proposal (if applicable) or writing a summary and obtaining approval from LA for edited versions  \\ Finding appropriate image (e.g., royalty-free images offered by shutterstock.com and unsplash.com) \\ Ensuring Lead RSE has a maintainer access to the RSD page\end{tabular} \\
+                                                                                    & Communications & Advising and reviewing content for the pages, including editing summaries, supporting with images                                                                                                                                                                                                                                                                                                                                                                                                     \\
+Corporate website                                                                   & Communications & \begin{tabular}[c]{@{}l@{}}Ensuring content is displayed on the corporate web page with information supplied by PM \\ Promoting projects to target stakeholders, when relevant. Promotion may include but is not limited to news items, inclusion in newsletters and social media\end{tabular}                                                                                                                                                                                                        \\
+\textbf{Ganttic}                                                                    & PM             & \begin{tabular}[c]{@{}l@{}}Checking if import project information from Exact is correct  \\ Adding labels \\ Adding respective project portfolio URLs \\ Planning RSEs, if applicable (e.g., for external projects)\end{tabular}                                                                                                                                                                                                                                                                     
+\end{tabular}%
+}
+\end{table}
 
 
 \textbf{General status and progress are monitored by the accountable PM.}
