@@ -11,6 +11,8 @@
 \definecolor{nlesc-purple}{RGB}{53, 6, 57}
 \definecolor{nlesc-yellow}{RGB}{255, 178, 19}
 
+\usepackage[title]{appendix}
+
 \usepackage{caption, booktabs}
 \usepackage{multirow}
 \usepackage{ltablex}
@@ -98,15 +100,22 @@
 
 \placelogo{}
     
-\input{intro}
+%\input{intro}
 \clearpage
-\input{initiation}
+%\input{initiation}
 \clearpage
-\input{execution}
+%\input{execution}
 \clearpage
 \input{closing}
 
 \bibliographystyle{abbrv}
 \bibliography{references}
+
+\clearpage
+\appendix
+\section{Lead RSE role description}
+\label{app:leadRSE}
+\textit{This role description includes guidelines that need to be followed by RSEs fulfilling the role; they will be
+complemented by protocols. }
 
 \end{document}
