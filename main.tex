@@ -273,7 +273,7 @@ of the project.
 The table offers an overview of the responsibilities of the different stakeholders in setting up a project:
 
 \begin{table}[!h]
-\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.15\textwidth}|p{0.65\textwidth}|},row{even}={nlesc-yellow}}
+\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.15\textwidth}|p{0.65\textwidth}|},row{even}={gray!20}}
 \toprule
 \textbf{What} & \textbf{By} & \textbf{Responsible for}  \\[2ex]
 Exact  & F\&C  &
@@ -456,7 +456,7 @@ the responsibility of the Lead RSE to keep the PM in the loop.
 \subsubsection{Administrative start meeting}
 
 \begin{table}[!h]
-\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.85\textwidth}|},row{even}={nlesc-yellow}}
+\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.85\textwidth}|},row{even}={gray!20}}
     \toprule
     Scheduled: &  Soon after awarding, but not before the Awarding letters have been sent and F\&C has collected all the paperwork and put it in Exact and Project Portfolio). \\[1.5ex]
     Stakeholders: & PM (chair), LA, Lead RSE (optional). The PM can involve others at their discretion. \\[1.5ex]
@@ -520,7 +520,7 @@ each other and the PM stores both slide decks (from PM and LA) and agreements in
 \subsubsection{Project Kick-off}
 
 \begin{table}[h!]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={nlesc-yellow}}
+\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={gray!20}}
     \toprule
     Scheduled: &  Around the date indicated by LA in the start form, after the administrative start meeting. \\[1.5ex]
     Stakeholders: & PM (chair), the entire project team, TL, and other relevant stakeholders (e.g., SH)  \\[1.5ex]
@@ -571,7 +571,7 @@ good use of the expertise present in the Center and that optimal choices are mad
 project technology plan is included in the Appendix~\ref{app:exampleplan}.
 
 \begin{table}[!h]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{0.8\textwidth}|},row{even}={nlesc-yellow}}
+\begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
     \toprule
     Written by: &  Lead RSE, in collaboration with project team (including LA, TL), CMs, and others RSEs or colleagues (e.g. with relevant expertise on the subject), or relevant SIG. \\[1.5ex]
     Target audience: & Project team, TLs, PMs  \\[1.5ex]
@@ -665,7 +665,7 @@ the project log to improve readability of the log and avoid duplicate informatio
 The PM stays informed about the status of the project and communicates with the Lead RSE on a regular basis.
 
 \begin{table}[h!]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={nlesc-yellow}}
+\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={gray!20}}
     \toprule
     Scheduled: &  Once every 4-6 weeks \\[1.5ex]
     Stakeholders: & PM (organizer), Lead RSE, optionally: TL\footnote{The TL participation is mandatory for the techology-oriented projects.}, other RSEs. \\[1.5ex]
@@ -702,7 +702,7 @@ To keep the entire project team informed on project progress, the Lead RSE toget
 project meeting. The frequency and format depend on the complexity of the project and size of the project team.
 
 \begin{table}[h!]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={nlesc-yellow}}
+\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={gray!20}}
     \toprule
     Scheduled: &  Once every 2-6 weeks \\[1.5ex]
     Stakeholders: & Lead RSE or LA (organizer), LA (chair), RSEs and other project team members from the LA side. \\[1.5ex]
@@ -746,26 +746,44 @@ happens within a month of the project being granted. The PM writes management ho
 Project hours are managed by different parties with different responsibilities:
 
 \begin{table}[!h]
-\begin{booktabs}{colspec={|m{0.2\textwidth}|m{0.4\textwidth}|m{0.4\textwidth}|},row{even}={nlesc-yellow}}
+\renewcommand{\arraystretch}{1.5}
+\begin{booktabs}{colspec={|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|},row{even}={gray!20}}
     \toprule
-    \rowfont{\bfseries}
-    Stakeholder &  Responsibilities & More info \\[1.5ex]
+    \textbf{Stakeholder} &  \textbf{Responsibilities} & \textbf{More info} \\\toprule
     PM & 
     \begin{minipage}[t]{0.4\textwidth}
     \begin{itemize}\itemsep0em
         \item checks and approves the hours submitted in Exact for the projects for which they are accountable before the 5th workday of the next month
         \item provide monthly hour status to the Lead RSE 
-        \item checks and signals to F&C if there is an issue (for example, if project budget is incorrect)
-        \item informs F&C about project budget changes made by PM or DT
+        \item checks and signals to F\&C if there is an issue (for example, if project budget is incorrect)
+        \item informs F\&C about project budget changes made by PM or DT
     \end{itemize} 
       \end{minipage}
-    & \\[1.5ex]
-    Lead RSE &     \begin{minipage}[t]{0.4\textwidth}
+    & \\\midrule
+    Lead RSE &     
+    \begin{minipage}[t]{0.4\textwidth}
     \begin{itemize}\itemsep0em
         \item monitors project hour expenditure and signals deviation from the workplan to the PM
     \end{itemize} 
       \end{minipage}
-    &  Asks PM for hours status in Exact, or checks monthly budget status via Ganttic  \\[1.5ex]
+    &  Asks PM for hours status in Exact, or checks monthly budget status via Ganttic  \\\midrule
+    F\&C &
+    \begin{minipage}[t]{0.4\textwidth}
+    \begin{itemize}\itemsep0em
+        \item maintains accurate budget information 
+        \item monitors and processes approved project hours
+        \item makes financial information available to the budget holders (including PMs) each month 
+        \item automatically puts read-only status on the project when project hours are depleted/exceeded early
+    \end{itemize} 
+      \end{minipage}  
+    & All budget changes require a PM and DT decision. \\\midrule
+    DoT & 
+    \begin{minipage}[t]{0.4\textwidth}
+    \begin{itemize}\itemsep0em
+        \item monitors and approves software sustainability hours 
+    \end{itemize} 
+      \end{minipage}
+    & There is a separate protocol on handling software sustainability. \\
     \bottomrule
 \end{booktabs}
 \end{table}
