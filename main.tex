@@ -746,20 +746,26 @@ happens within a month of the project being granted. The PM writes management ho
 Project hours are managed by different parties with different responsibilities:
 
 \begin{table}[!h]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{0.8\textwidth}|},row{even}={nlesc-yellow}}
+\begin{booktabs}{colspec={|m{0.2\textwidth}|m{0.4\textwidth}|m{0.4\textwidth}|},row{even}={nlesc-yellow}}
     \toprule
-    Written by: &  Lead RSE, in collaboration with project team (including LA, TL), CMs, and others RSEs or colleagues (e.g. with relevant expertise on the subject), or relevant SIG. \\[1.5ex]
-    Target audience: & Project team, TLs, PMs  \\[1.5ex]
-    Schedule: &  %
-    \begin{minipage}[t]{0.8\textwidth}
+    \rowfont{\bfseries}
+    Stakeholder &  Responsibilities & More info \\[1.5ex]
+    PM & 
+    \begin{minipage}[t]{0.4\textwidth}
     \begin{itemize}\itemsep0em
-        \item written at the start of the project work, before any software development starts,
-        \item submitted to PM/TL by email before the deadline agreed during the project kick-off, 
-        \item as a part of the project log (either full document in the log or a URL to it). 
+        \item checks and approves the hours submitted in Exact for the projects for which they are accountable before the 5th workday of the next month
+        \item provide monthly hour status to the Lead RSE 
+        \item checks and signals to F&C if there is an issue (for example, if project budget is incorrect)
+        \item informs F&C about project budget changes made by PM or DT
     \end{itemize} 
       \end{minipage}
-    \\[1.5ex]
-    Approved by: & PM after due consultation of TL. \\[1.5ex]
+    & \\[1.5ex]
+    Lead RSE &     \begin{minipage}[t]{0.4\textwidth}
+    \begin{itemize}\itemsep0em
+        \item monitors project hour expenditure and signals deviation from the workplan to the PM
+    \end{itemize} 
+      \end{minipage}
+    &  Asks PM for hours status in Exact, or checks monthly budget status via Ganttic  \\[1.5ex]
     \bottomrule
 \end{booktabs}
 \end{table}
