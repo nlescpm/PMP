@@ -46,6 +46,15 @@
 }%
 }
 
+\setmainfont[Path = ./font,  %% Optional; but UPDATE this if 
+                         %% your font files are in a folder
+ Extension = .otf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Italic,
+% SmallCapsFont = *-SmallCaps]
+{Assistant}
+
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
 \setmainfont{Assistant}
