@@ -363,13 +363,16 @@ A standard part of every review is a discussion and list of actions on how the r
 reusable and sustainable (as described in the DMP and SMP), how the collaboration is going and possibilities for
 follow-ups to projects.
 
+\newlength{\myhcolw}
+\setlength{\myhcolw}{0.75\textwidth}
+
 \begin{table}[!h]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
+\begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{\myhcolw}|},row{even}={gray!20}}
     \toprule
     Scheduled: &  Yearly \\[1.5ex]
     Stakeholders: & PM (chair), Lead RSE, LA, TL, optional: other project team members, SH \\[1.5ex]
     Purpose: &  %
-    \begin{minipage}[t]{0.8\textwidth}
+    \begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item to ensure that the project is still on track
         \item to discuss any persistent issues to ensure optimal collaboration between project team
@@ -386,8 +389,9 @@ follow-ups to projects.
 \footnotetext{Mandatory participants of a meeting be present in-person at the office, while all optional participants
 can also participate via video conferencing if they prefer.}
 
-The agenda of this meeting is:
+\let\myhcolw\relax % let \myhcolw to \relax to be reused later
 
+The agenda of this meeting is:
 \begin{itemize}
 \item Introduction by eScience Center (round of introductions and purpose of meeting)
 \item project overview and deliverables so far
@@ -424,10 +428,10 @@ with the Lead RSE.
   \renewcommand{\arraystretch}{1.5}
 \begin{booktabs}{colspec={|>{\bfseries}m{0.3\textwidth}|m{0.7\textwidth}|},row{even}={gray!20}}
     \toprule
-     &  \textbf{Stakeholder} \\
-    Prepared by: & LA and Lead RSE of the project. Other stakeholders of the project can contribute. \\
-    Reviewed by: &  PM accountable for project, TL accountable for technology. \\
-    Target audience: & PMs, TLs, SHs and RSEs. \\
+     &  \textbf{Stakeholder} \\[1.5ex]\toprule
+    Prepared by: & LA and Lead RSE of the project. Other stakeholders of the project can contribute. \\[1.5ex]
+    Reviewed by: &  PM accountable for project, TL accountable for technology. \\[1.5ex]
+    Target audience: & PMs, TLs, SHs and RSEs. \\[1.5ex]
     \bottomrule
 \end{booktabs}
 \end{table}
