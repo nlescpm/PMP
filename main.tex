@@ -46,19 +46,25 @@
 }%
 }
 
-\setmainfont[Path = ./font,  %% Optional; but UPDATE this if 
-                         %% your font files are in a folder
- Extension = .otf,
- UprightFont = *-Regular,
- BoldFont = *-Bold,
- ItalicFont = *-Italic,
+%\setmainfont[Path = ./font,  %% Optional; but UPDATE this if 
+%                         %% your font files are in a folder
+% Extension = .otf,
+% UprightFont = *-Regular,
+% BoldFont = *-Bold,
+% ItalicFont = *-Italic,
 % SmallCapsFont = *-SmallCaps]
-{Assistant}
+%{Assistant}
 
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
 \setmainfont{Assistant}
 %\setmainfont{Nunito}
+
+%\parskip=5pt plus 5pt
+%\parindent=0pt
+
+\usepackage{enumitem}
+\setitemize{itemsep=0pt}
 
 \usepackage{titlesec}
 \titleformat{\section}{\color{nlesc-blue}\fontsize{18}{20}\bfseries}{\color{nlesc-blue}\thesection}{1.5em}{}
@@ -117,8 +123,9 @@
 \clearpage
 %\input{execution}
 \clearpage
-\input{closing}
+%\input{closing}
 
+\renewcommand{\bibname}{Related links and references}
 \bibliographystyle{abbrv}
 \bibliography{references}
 
@@ -128,5 +135,16 @@
 \label{app:leadRSE}
 \textit{This role description includes guidelines that need to be followed by RSEs fulfilling the role; they will be
 complemented by protocols. }
+
+\begin{table}[h!]
+\begin{booktabs}{colspec={|m{0.35\textwidth}|m{0.65\textwidth}|},row{even}={gray!20}}
+    \toprule
+     1. Role &  Lead RSE \\[1.5ex]
+     2. Place in the organization & Project \\[1.5ex]
+    All requests regarding budget changes outside the PM mandate &  DT (via PD) \\[1.5ex]
+    Early termination & DT (and DT informs the Board) \\[1.5ex]
+    \bottomrule
+\end{booktabs}
+\end{table}
 
 \end{document}
