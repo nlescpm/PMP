@@ -1,5 +1,7 @@
 \documentclass[11pt]{article}
-\usepackage[a4paper,margin=1in,marginparsep=0pt,marginparwidth=0pt]{geometry} %showframe
+
+\input{packages}
+\input{macros}
 
 %\setmainfont[Path = ./font,  %% Optional; but UPDATE this if 
 %                         %% your font files are in a folder
@@ -10,23 +12,7 @@
 % SmallCapsFont = *-SmallCaps]
 %{Assistant}
 
-\usepackage[xetex]{graphicx} % Required for inserting images
-\usepackage{eso-pic}
-%\usepackage{nunito}
-\usepackage{url}
-\usepackage[dutch,english]{babel}
-\usepackage[colorlinks=true]{hyperref}
-\usepackage{xcolor}
-\usepackage{tikz}
-\definecolor{nlesc-blue}{RGB}{0, 157, 221}
-\definecolor{nlesc-purple}{RGB}{53, 6, 57}
-\definecolor{nlesc-yellow}{RGB}{255, 178, 19}
 
-\usepackage[title]{appendix}
-
-\usepackage{caption, booktabs}
-\usepackage{multirow}
-\usepackage{ltablex}
 
 \usepackage{tabularray}
 \UseTblrLibrary{booktabs}
@@ -45,42 +31,12 @@
 \end{booktabs}
 }
 
-%\newcommand{\mythinline}{\noalign{\hrule height 0.8pt}}
-
-\newcommand{\placelogo}[0]{
-\AddToShipoutPictureBG{%
-%  \AtPageLowerRight{\makebox[1.3\textwidth][r]{%
-%    \includegraphics[scale=1]{img/a0000-img003.jpg}}}}
-\AtPageUpperLeft{\raisebox{-8\baselineskip}{\makebox[\paperwidth]{\hspace{16cm}\includegraphics[scale=1]{img/a0000-img002.png}}}}
-  \AtPageLowerLeft{\raisebox{2\baselineskip}{\makebox[\paperwidth]{\hspace{16cm}\includegraphics[scale=1]{img/a0000-img003.jpg}}}} 
-}%
-}
-
-
-\usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-\setmainfont{Assistant}
-%\setmainfont{Nunito}
-
-%\parskip=5pt plus 5pt
-%\parindent=0pt
-
-\usepackage{enumitem}
-\setitemize{itemsep=0pt}
-
-\usepackage{titlesec}
-\titleformat{\section}{\color{nlesc-blue}\fontsize{18}{20}\bfseries}{\color{nlesc-blue}\thesection}{1.5em}{}
-\titleformat{\subsection}{\fontsize{16}{18}\bfseries}{\thesubsection}{1.5em}{}
-
-%\titleformat{\section}{\fontsize{11}{15}\bfseries}{\Roman{section}}{1.5em}{USI }
 
 \title{{\fontsize{36}{38}\selectfont \textbf{\color{nlesc-purple}Project Management Protocol of the Netherlands eScience Center}}}
 \author{Authors: Netherlands eScience Center Programme Managers}
 \date{Date: September 2023\\Version: 2.0}
 
 \begin{document}
-
-\hypersetup{,urlcolor=blue,citecolor=blue,linkcolor=blue}
 
 \begin{titlepage}
 
@@ -116,9 +72,7 @@
 \tableofcontents
 
 \clearpage
-
 \placelogo{}
-    
 %\input{intro}
 \clearpage
 %\input{initiation}

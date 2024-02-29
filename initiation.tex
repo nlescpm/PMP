@@ -11,7 +11,7 @@ over relevant documents (such as proposal, agreements made, preliminary budget, 
 
 PMs are accountable for call projects. For the \textbf{external projects}, PMs assign a PM and Lead RSE to the project
 (i.e., the RSE involved in the submission procedure). Together with the Lead RSE the PM works with the project partners
-to get all paperwork in order (such as a subcontract), cf. Section~\ref{sec:init:legal}. 
+to get all paperwork in order (such as a subcontract), see Section~\ref{sec:init:legal}. 
 
 \subsection{PM assignment}
 Each project has one accountable PM. The PM team assigns PMs to new projects at the first PM meeting following the
@@ -26,13 +26,14 @@ of the project.
 
 \subsection{Administrative Setup}
 The table offers an overview of the responsibilities of the different stakeholders in setting up a project:
-
+\newlength{\myhcolw}
+\setlength{\myhcolw}{0.6\textwidth}
 \begin{table}[!h]
-\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.15\textwidth}|p{0.65\textwidth}|},row{even}={gray!20}}
+\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.15\textwidth}|p{\myhcolw}|},row{even}={gray!20}}
 \toprule
 \textbf{What} & \textbf{By} & \textbf{Responsible for}  \\[2ex]
 Exact  & F\&C  &
-    \begin{minipage}[t]{0.65\textwidth}
+    \begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item Creating project code
         \item Entering and uploading attachments
@@ -40,7 +41,7 @@ Exact  & F\&C  &
     \end{itemize} 
     \end{minipage}  \\[2ex]
 Project portfolio on SharePoint~\cite{proj-portfolio}  & F\&C  & 
-    \begin{minipage}[t]{0.65\textwidth}
+    \begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item Creating folder in project portfolio (with template subfolder \& documents)
         \item Uploading granting package documents (incl. Awarding letter), signed start form, CA if applicable
@@ -49,14 +50,14 @@ Project portfolio on SharePoint~\cite{proj-portfolio}  & F\&C  &
 %\multirow{2}{*}{Research Software Directory (RSD), project page and software pages} & PM             & \begin{tabular}[c]{@{}l@{}}Creating an RSD project page9, putting placeholder image with the eScience logo10 \\ Signalling requirements for corporate website to Communications \\ Copying website summary from the proposal (if applicable) or writing a summary and obtaining approval from LA for edited versions  \\ Finding appropriate image (e.g., royalty-free images offered by shutterstock.com and unsplash.com) \\ Ensuring Lead RSE has a maintainer access to the RSD page\end{tabular} \\
 %                                                                                    & Communications & Advising and reviewing content for the pages, including editing summaries, supporting with images                                    %                                                                                                                                                                                                                                                                                                                                                                 \\
 Corporate website  & Communications &  
-\begin{minipage}[t]{0.65\textwidth}
+\begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item Ensuring content is displayed on the corporate web page with information supplied by PM
         \item Promoting projects to target stakeholders, when relevant. Promotion may include but is not limited to news items, inclusion in newsletters and social media
     \end{itemize} 
     \end{minipage}  \\
 Ganttic  & PM             & 
-\begin{minipage}[t]{0.65\textwidth}
+\begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item Checking if import project information from Exact is correct 
         \item Adding labels
@@ -67,7 +68,7 @@ Ganttic  & PM             &
     \bottomrule
 \end{booktabs}
 \end{table}
-
+\let\myhcolw\relax 
 
 \textbf{General status and progress are monitored by the accountable PM.}
 
