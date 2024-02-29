@@ -1,0 +1,636 @@
+
+\begin{enumerate}[resume*=listWWNuml,start=1]
+\item \clearpage\bfseries\color[HTML]{00ADDC}
+\label{bkm:Ref146050618}Examples of Technology Plan }
+\end{enumerate}
+
+\textbf{1. Technology plan for “Personalized cancer vaccine design through 3D modelling boosted geometric learning
+(3D-Vac)”}}
+
+
+\bigskip
+
+\begin{itemize}[series=listWWNumxxxi,label=[F0B7?]]
+\item 
+\href{https://nlesc.sharepoint.com/:b:/s/all/EbVlWkJEcrJEvbH5_bTM7pwBKcLmKLtYHGOBXRkD8eqHvQ?e=mYCtx7}{\textstyleInternetlink{3D-Vac
+}}\href{https://nlesc.sharepoint.com/:b:/s/all/EbVlWkJEcrJEvbH5_bTM7pwBKcLmKLtYHGOBXRkD8eqHvQ?e=mYCtx7}{\textstyleInternetlink{proposal}}}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[series=listWWNumxxx,label=[F076?]]
+\item 
+\textbf{Task 0: Refactorization of deeprankcore}}
+
+\begin{itemize}[series=listWWNumxxx,label=[F0D8?]]
+\item 
+\textbf{DONE (March-May 2022)}}
+\item 
+Such repository was initially a cloned version of
+\href{https://github.com/DeepRank/Deeprank-GNN}{\textstyleInternetlink{Deeprank-GNN}}, called deeprank-gnn-2.}
+\item 
+Partially rewrite Deeprank-GNN, making it:}
+
+\begin{itemize}[series=listWWNumxxx,label=[F0A7?]]
+\item 
+A more object-oriented package.}
+\item 
+Usable for unifying it with the original \href{https://github.com/DeepRank/deeprank}{\textstyleInternetlink{deeprank.}}}
+\item 
+\href{https://drive.google.com/file/d/17Nw5mOpYzyp3uL225OTZNCHz8QVMY2aF/view?usp=share_link}{\textstyleInternetlink{Class
+diagram}} they used to implement such edits.}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item 
+\textbf{Task 1: Construction of databases for protein complexes and features on HDFS}}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textit{One eScience Research Engineer (0.2 FTE) with expertise in big data, HDFS and database (e.g., MySQL) will be
+responsible building a database hosting these data. LA and the PhD students at RU will be responsible generating 3D
+pMHC models and calculating various interface features. We together apply for the national computation resources at
+SURFSara. We will build on and extend DeepRank(-GNN)'s data generation module. There- fore, a small FTE from EG is
+likely needed. }}
+\item 
+(EG): Evaluate and implement the use of the best HDFS filesystem to host our heterogenous data (making use of the
+national infrastructure at SURFSara). }
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: Q1 2022}}
+\item 
+\textbf{DONE (March 2022)}}
+\item 
+We decided to save the generated grids/graphs data (inputs for the neural networks) in hdf5 files, being HDF
+Hierarchical Data Format. This was already implemented in the original code-base.}
+
+\begin{itemize}[series=listWWNumxxx,label=[F0B7?]]
+\item 
+Main pros}
+
+
+Designed to store large amounts of data in an organized manner (folder-like architechture)}
+
+Consist of \textit{Datasets }that can store arrays of data, \textit{Groups }which can store datasets or other groups,
+and \textit{metadata }consisting of mapped key-value pairs for attributes of the data}
+
+Fastness: writing to HDF5 is 16 times faster than to a simple CSV file}
+
+Open-source}
+
+Pythonic interface: \href{https://docs.h5py.org/en/latest/index.html}{\textstyleInternetlink{h5py}}}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item 
+\textbf{Task 2: Training, tuning and testing GNN on GPUs.}}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textit{One eScience Research Engineer (1.0 FTE) with expertise in deep learning will implement efficient scheme for
+generating graph and training of our designed graph network for 3D atom clouds. EG and RU together define UML (object
+relationship diagram) and determine the optimal graph aggregation steps for proteins. LA, the PhD students and postdocs
+will define optimal graphs, mapping the interface features to graphs, working with EG on deep learning implementation.
+RU team will conduct cross-validation over MHC allele types and benchmark 3D-Vac against state-of-the-arts.}}
+\item 
+(EG \& RU): Build DB4 - Generate interface graphs for DB2, map features in DB3 to graph nodes and edges.}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: Q2-Q3 2022}}
+\item 
+\textbf{ONGOING (July 2022 - ongoing)}}
+\item 
+pMHCI}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+We generated DB4 (in the form of hdf5 files) for a small subset of data, the only one available at the time of writing
+(\~{}7000 data points). We$\text{\textgreek{’}}$re waiting for the new data from RU side.}
+
+
+\textcolor{black}{Giulia is testing the data that the master student put on Snellius (\~{}140000 data points).}}
+\end{itemize}
+\end{itemize}
+\item 
+(EG \& RU): Implement, train and optimize GNN for MHC epitope predictions.}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: Q3-Q4 2022, Q1 2023}}
+\item 
+\textbf{ONGOING (August 2022 - ongoing)}}
+\item 
+pMHCI}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+We$\text{\textgreek{’}}$re waiting for the new data to be generated, but the scripts for training and saving/plotting
+results are ready and working
+(\href{https://github.com/DeepRank/3D-Vac/tree/gcroci2_105_regenerate_hdf5_new_data/src/4_train_models/GNN/I/classification/struct}{\textstyleInternetlink{link}}).
+We already trained a small subset of the data, mentioned in the bullet point above.}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item 
+\textbf{Task 3: Implementation and dissemination.}}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textit{One eScience Research Engineer (0.8 FTE) with expertise in software development will integrate the resulting GNN
+into DeepRank. Our IT engineer (RU) will work together with EG to implement the web server and publish neoantigen
+database as part of the web service. The PhD students at RU will use 3D-Vac to scan human cancer proteomes and create
+neoantigen database. All members will work together in organizing workshops and write publications.}}
+\item 
+(EG): Integrate resulting GNNs into DeepRank.}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: Q2-Q3 2023}}
+\item 
+\textbf{TODO}}
+\end{itemize}
+\item 
+(EG \& RU): Develop the web server for epitope predictions.}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: Q3-Q4 2023}}
+\item 
+\textbf{TODO}}
+\item 
+\textbf{Unrealistic, I would cut this out}}
+\end{itemize}
+\item 
+(EG \& RU): Use 3D-Vac to scan human cancer proteomes and build predicted neo-antigens into a database (DB6).}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: Q3-Q4 2023, Q1 2024}}
+\item 
+\textbf{TODO}}
+\end{itemize}
+\item 
+(EG \& RU): Organize workshops and work on publications.}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: Q3-Q4 2023, Q1-Q2-Q3-Q4 2024}}
+\item 
+\textbf{TODO}}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item 
+\textbf{Deliverables}}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item \begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+D1. Publications}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: 2023, 2024}}
+\item 
+\textbf{TODO}}
+\item 
+Publish our technology advances and discoveries in open-access journals and conference proceedings.}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+Two publications focusing on the science part led by our research group and targeting the user community}
+\item 
+Two focusing on the eScience technology part led by the e-science engineers and targeting the eScience communities.}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item \begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+D2. Software and web server}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+Software for GNN-based data mining on 3D atom clouds with GPUs and MPI supports}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: 2023}}
+\item 
+\textbf{TODO}}
+\end{itemize}
+\item 
+DeepRank v2, a general GDL framework for data mining protein interfaces}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: 2024}}
+\item 
+\textbf{TODO}}
+\end{itemize}
+\item 
+3D-Vac software for MHC epitope predictions (GitHub)}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: 2024}}
+\item 
+\textbf{TODO}}
+\end{itemize}
+\item 
+A web server for MHC epitope predictions (hosted at CMBI)}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: 2024}}
+\item 
+\textbf{TODO}}
+\item 
+\textbf{Unrealistic, I would cut this out}}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item \begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+D3. Databases}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: 2024}}
+\item 
+\textbf{TODO}}
+\item 
+Neoantigen database (DB5)}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item \begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+D4. Tutorials and documentation}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: 2024}}
+\item 
+\textbf{TODO}}
+\item 
+Online tutorial describing the use of 3D-Vac to epitope predictions on the web server}
+\item 
+Online documentation for DeepRank v2 (GitHub)}
+\item 
+Online tutorial blogs on Towards Data Science (\url{https://towardsdatascience.com/})}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxx]
+\item \begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+D5. Workshops and conferences}
+
+\begin{itemize}[resume*=listWWNumxxx,start=1]
+\item 
+\textbf{Expected: 2023, 2024}}
+\item 
+\textbf{TODO}}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\begin{enumerate}[series=listWWNumxxix,label=\arabic*.,ref=\arabic*]
+\item \begin{enumerate}[series=listWWNumxxix,label=\alph*.,ref=\alph*]
+\item \begin{enumerate}[series=listWWNumxxix,label=\arabic*.,ref=\arabic*]
+\item 
+\ Geometric deep learning for protein structures workshop}
+\item 
+\ DeepRank v2 tutorial workshop (co-organize with the human genetics department at Radboudumc)}
+\item 
+\ 3D-Vac tutorial workshop (co-organize with the cancer immunotherapy group at Radboudumc and Immuno company)}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+
+\textbf{Generalization budget}}
+
+\begin{itemize}[series=listWWNumxxviii,label=[F0B7?]]
+\item 
+\href{https://nlesc.sharepoint.com/:w:/s/all/ERrdfYPm_2ZOgUUXyXRxx7wBuZIZJNIKS9pSH20kdDMdig?e=VS0mTQ}{\textstyleInternetlink{Generalization
+plan}}}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxviii]
+\item 
+\textbf{\textcolor{black}{Task 1: }}\textcolor{black}{make the interface more flexible to attract new users (240
+hours).}}
+
+\begin{itemize}[series=listWWNumxxviii,label=o]
+\item 
+\textcolor{black}{The code was not suitable for users, the API functionality was limited and the documentation was
+extremely lacking.}}
+\item 
+\textbf{\textcolor{black}{ONGOING (November 2022 – ongoing)}}}
+\item 
+\href{https://github.com/DeepRank/deeprank-core/projects/6}{\textstyleInternetlink{Generalization}}\textcolor{black}{
+kanban board}}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxviii]
+\item 
+\foreignlanguage{english}{\textbf{\textcolor{black}{Task 2: Integrate
+DeepRank}}}\foreignlanguage{english}{\textcolor{black}{ classes and functions into
+}}\href{https://github.com/DeepRank/deeprank-core/blob/class_diagram/deeprankcore/uml/classes_npl.svg}{\textstyleInternetlink{\foreignlanguage{english}{DeepRank-core}}}\foreignlanguage{english}{\textcolor{black}{
+(160 h).}}}
+
+\begin{itemize}[resume*=listWWNumxxviii,start=1]
+\item 
+\foreignlanguage{english}{\textcolor{black}{Their API should be very similar and coherent and should give the user the
+possibility to choose among CNNs and GNNs with no difficulty, only changing the classes called.}}}
+\end{itemize}
+\end{itemize}
+\begin{enumerate}[series=listWWNumxxvii,label=\arabic*.,ref=\arabic*]
+\item \begin{enumerate}[series=listWWNumxxvii,label=\alph*.,ref=\alph*]
+\item \begin{enumerate}[series=listWWNumxxvii,label=\roman*.,ref=\roman*]
+\item 
+\foreignlanguage{english}{\textcolor{black}{Uniform DeepRank and DeepRank-core APIs, according to the modifications done
+in DeepRank-core during task 1. (100 h)}}}
+\item 
+\foreignlanguage{english}{\textcolor{black}{Integrate DeepRank functions and classes in DeepRank-core. (60 h)}}}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\begin{itemize}[series=listWWNumxxvi,label=[F0B7?]]
+\item 
+\foreignlanguage{english}{\textbf{\textcolor{black}{Task 3: Update
+documentation}}}\foreignlanguage{english}{\textcolor{black}{ accordingly. (100 h)}}}
+
+\begin{itemize}[series=listWWNumxxvi,label=o]
+\item 
+\foreignlanguage{english}{\textcolor{black}{Release to Read the Docs including automatic API reference. (20 h)}}}
+\item 
+\foreignlanguage{english}{\textcolor{black}{Outward-facing classes and functions documentation in the codebase. (80
+h)}}}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxvi]
+\item 
+\foreignlanguage{english}{\textbf{\textcolor{black}{Task 4: DeepRank-core package
+deployment}}}\foreignlanguage{english}{\textcolor{black}{. (20 h)}}}
+
+\begin{itemize}[resume*=listWWNumxxvi,start=1]
+\item 
+\foreignlanguage{english}{\textcolor{black}{PyPI. (10 h)}}}
+\item 
+\foreignlanguage{english}{\textcolor{black}{Anaconda. (10 h)}}}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxvi]
+\item 
+\foreignlanguage{english}{\textbf{\textcolor{black}{Task 5: Publish material for dissemination and
+outreach.}}}\foreignlanguage{english}{\textcolor{black}{ (140 h)}}}
+
+\begin{itemize}[resume*=listWWNumxxvi,start=1]
+\item 
+\foreignlanguage{english}{\textcolor{black}{A software paper (either SoftwareX or JOSS) on DeepRank-core. (80 h)}}}
+\item 
+\foreignlanguage{english}{\textcolor{black}{Basic and advanced tutorials. (60 h)}}}
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+\clearpage
+\textbf{2. Technology plan for “Exchange of CO2 in tropical ecosystems unravelled (EXCITED)”}}
+
+
+\bigskip
+
+\begin{itemize}[resume*=listWWNumxxxi,start=1]
+\item 
+\href{https://nlesc.sharepoint.com/:b:/s/all/EZ6Iu_0k89tLkdZALfb7QagBD6t2hy4UkI8jYjyMHoVFnw?e=5BldjB}{\textstyleInternetlink{EXCITED
+proposal}}}
+\end{itemize}
+
+\bigskip
+
+
+The goal of the EXCITED project is to create a dataset of temporally and spatially consistent CO2 emissions by natural
+ecosystems (i.e., the Net Ecosystem Exchange). }
+
+
+\bigskip
+
+
+This dataset will be created from site-scale measurement data (Fluxnet), inverse model results (CarbonTracker), and the
+$\text{\textgreek{‘}}$ERA5$\text{\textgreek{’}}$ global weather reanalysis product. }
+
+
+\bigskip
+
+
+Besides the resulting dataset(s), we will also provide the trained model(s) and code. }
+
+
+\bigskip
+
+\begin{enumerate}[series=listWWNumxiv,label=\arabic*.,ref=\arabic*]
+\item 
+\textbf{Used technologies }}
+\end{enumerate}
+
+\bigskip
+
+
+The project will make extensive use of Python, due to its broad ecosystem of (netCDF) data processing and machine
+learning packages. }
+
+
+\bigskip
+
+
+More specifically, we will make use of the following packages: }
+
+
+\bigskip
+
+
+\textit{Data intake/processing: }}
+
+\begin{itemize}[series=listWWNumxiii,label=[F0B7?]]
+\item 
+\ \ \ \ xarray }
+\item 
+\ \ \ \ dask }
+\item 
+\ \ \ \ flox (xarray+dask extension for fast groupby operations). \ }
+\end{itemize}
+
+\bigskip
+
+
+See \textcolor[HTML]{00B0F0}{https://flox.readthedocs.io/en/latest/ }}
+
+
+\bigskip
+
+
+With these packages, we will be able to efficiently load and process the data and use all computing cores, both on a
+local PC and HPC. }
+
+
+\bigskip
+
+
+\bigskip
+
+
+\textit{Machine learning: }}
+
+
+\bigskip
+
+\begin{itemize}[series=listWWNumxii,label=[F0B7?]]
+\item 
+\ \ \ \ sklearn }
+\item 
+\ \ \ \ pycaret (for comparing performance of different ML models) }
+\item 
+\ \ \ \ Possibly LightGBM (“Light Gradient Boosting Machine” a decision tree model like XGBoost, but much faster).
+Mostly for performance reasons. }
+\end{itemize}
+
+\bigskip
+
+
+Additionally, we will make use of ONNX to be able to save and share the trained models in \ \ an open format. }
+
+
+\bigskip
+
+
+Analysis and cooperation with the LA will be through Surf Research Cloud. }
+
+
+\bigskip
+
+\begin{enumerate}[resume*=listWWNumxiv,start=1]
+\item 
+\textbf{Technological outcomes }}
+\end{enumerate}
+
+\bigskip
+
+
+In the project we will develop an efficient and reproducible workflow to generate the following outcomes: }
+
+
+\bigskip
+
+\begin{itemize}[series=listWWNumxi,label=[F0B7?]]
+\item 
+\ \ \ A python workflow }
+\end{itemize}
+\begin{itemize}[series=listWWNumx,label=[F0B7?]]
+\item 
+\ which preprocesses input data, trains the ML model, as well as provide some useful plotting utilities to analyze the
+trained model \ }
+\item 
+hosted on Github, Zenodo, and the RSD. If the workflow proves to be sufficiently reusable and generic, we can publish it
+as a package on pypi. }
+\item 
+To ensure code quality, we will make use of testing, (static) code analysis and typing (i.e., pytest, black, ruff,
+mypy). Workflows will be added to Github Actions. We will guide the LA on these aspects as well, so they can maintain
+the code once the project is finished. }
+\end{itemize}
+\begin{itemize}[series=listWWNumix,label=[F0B7?]]
+\item 
+\ \ \ \ The trained models in ONNX format, on Zenodo. }
+\end{itemize}
+\begin{itemize}[series=listWWNumviii,label=[F0B7?]]
+\item 
+\ \ \ \ The output datasets, where the model is applied on (global) ERA5 data. To be hosted on Zenodo. }
+\end{itemize}
+
+\bigskip
+
+\begin{enumerate}[resume*=listWWNumxiv,start=1]
+\item 
+\textbf{\ Reusability and adoptability }}
+\end{enumerate}
+
+\bigskip
+
+
+To allow others to (re)use the results, access to the datasets and models will be provided, and documentation will be
+created to guide the users. }
+
+
+\bigskip
+
+
+If others want to reproduce the results, or train similar models, the methods will be available and documented as well.
+}
+
+
+\bigskip
+
+
+The software and resulting models will be used by the Lead Applicant as a focus of their research in the coming years
+and will be used by their (MSc) students as well. To create a larger community of users a Lorenz workshop will be held,
+which will focus mostly on (potential) users of the resulting models/dataset.}
+
+
+\bigskip

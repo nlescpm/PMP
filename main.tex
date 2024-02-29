@@ -1,20 +1,15 @@
+% !TEX program = xelatex
 \documentclass[11pt]{article}
 
 \input{packages}
 \input{macros}
 
-%\setmainfont[Path = ./font,  %% Optional; but UPDATE this if 
-%                         %% your font files are in a folder
-% Extension = .otf,
-% UprightFont = *-Regular,
-% BoldFont = *-Bold,
-% ItalicFont = *-Italic,
-% SmallCapsFont = *-SmallCaps]
-%{Assistant}
+\setmainfont[Path = ./font, 
+Extension = .ttf,UprightFont = *-Regular, BoldFont = *-Bold, ItalicFont = Nunito-Italic]
+{Assistant}
 
 
 
-\usepackage{tabularray}
 \UseTblrLibrary{booktabs}
 \newcommand{\testtable}[0]{
 \begin{booktabs}{colspec={rccc},row{odd}={blue9}}
@@ -46,6 +41,7 @@
 
 
         \maketitle
+        \vspace{8cm}
 
 
   
@@ -73,22 +69,45 @@
 
 \clearpage
 \placelogo{}
+
 %\input{intro}
+
 \clearpage
+
 %\input{initiation}
+
 \clearpage
+
 %\input{execution}
+
 \clearpage
+
 %\input{closing}
 
 \renewcommand{\bibname}{Related links and references}
+%\setlocalecaption{english}{refname}{Table of Contents}%because babel package is used
 \bibliographystyle{abbrv}
 \bibliography{references}
 
 
 \clearpage
+
 \appendix
-\appendixname
-\input{app-leadrse}
+{\color{nlesc-blue}\appendixpage}
+\addappheadtotoc
+
+%\input{app-leadrse}
+
+\clearpage
+
+\input{app-mandate}
+
+\clearpage
+
+%\input{app-role}
+
+\clearpage
+
+\input{app-structure}
 
 \end{document}
