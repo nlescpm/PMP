@@ -1,100 +1,57 @@
+\section{Examples of Technology Plan }
+\label{app:exampleplan}
 
-\begin{enumerate}[resume*=listWWNuml,start=1]
-\item \clearpage\bfseries\color[HTML]{00ADDC}
-\label{bkm:Ref146050618}Examples of Technology Plan }
-\end{enumerate}
-
-\textbf{1. Technology plan for “Personalized cancer vaccine design through 3D modelling boosted geometric learning
-(3D-Vac)”}}
+\subsection{Technology plan for "Personalized cancer vaccine design through 3D modelling boosted geometric learning (3D-Vac)"}
 
 
-\bigskip
-
-\begin{itemize}[series=listWWNumxxxi,label=[F0B7?]]
-\item 
-\href{https://nlesc.sharepoint.com/:b:/s/all/EbVlWkJEcrJEvbH5_bTM7pwBKcLmKLtYHGOBXRkD8eqHvQ?e=mYCtx7}{\textstyleInternetlink{3D-Vac
-}}\href{https://nlesc.sharepoint.com/:b:/s/all/EbVlWkJEcrJEvbH5_bTM7pwBKcLmKLtYHGOBXRkD8eqHvQ?e=mYCtx7}{\textstyleInternetlink{proposal}}}
+\begin{itemize}
+\item \href{https://nlesc.sharepoint.com/:b:/s/all/EbVlWkJEcrJEvbH5_bTM7pwBKcLmKLtYHGOBXRkD8eqHvQ?e=mYCtx7}{3D-Vac proposal}
 \end{itemize}
 
 \bigskip
 
-\begin{itemize}[series=listWWNumxxx,label=[F076?]]
-\item 
-\textbf{Task 0: Refactorization of deeprankcore}}
-
-\begin{itemize}[series=listWWNumxxx,label=[F0D8?]]
-\item 
-\textbf{DONE (March-May 2022)}}
-\item 
-Such repository was initially a cloned version of
-\href{https://github.com/DeepRank/Deeprank-GNN}{\textstyleInternetlink{Deeprank-GNN}}, called deeprank-gnn-2.}
-\item 
-Partially rewrite Deeprank-GNN, making it:}
-
-\begin{itemize}[series=listWWNumxxx,label=[F0A7?]]
-\item 
-A more object-oriented package.}
-\item 
-Usable for unifying it with the original \href{https://github.com/DeepRank/deeprank}{\textstyleInternetlink{deeprank.}}}
-\item 
-\href{https://drive.google.com/file/d/17Nw5mOpYzyp3uL225OTZNCHz8QVMY2aF/view?usp=share_link}{\textstyleInternetlink{Class
-diagram}} they used to implement such edits.}
+\begin{enumerate}[start=0,label={\bfseries \ding{118} Task \arabic*:}]%[]]
+\item  \textbf{Refactorization of deeprankcore}
+\begin{itemize}[label=\ding{226}]
+\item \textbf{DONE (March-May 2022)}
+\item Such repository was initially a cloned version of
+\href{https://github.com/DeepRank/Deeprank-GNN}{Deeprank-GNN}, called deeprank-gnn-2.
+\item Partially rewrite Deeprank-GNN, making it:
+\begin{itemize}
+\item A more object-oriented package.
+\item Usable for unifying it with the original \href{https://github.com/DeepRank/deeprank}{deeprank}.
+\item \href{https://drive.google.com/file/d/17Nw5mOpYzyp3uL225OTZNCHz8QVMY2aF/view?usp=share_link}{Class diagram} they used to implement such edits.
 \end{itemize}
 \end{itemize}
-\end{itemize}
-
-\bigskip
-
-\begin{itemize}[resume*=listWWNumxxx]
-\item 
-\textbf{Task 1: Construction of databases for protein complexes and features on HDFS}}
-
-\begin{itemize}[resume*=listWWNumxxx,start=1]
-\item 
-\textit{One eScience Research Engineer (0.2 FTE) with expertise in big data, HDFS and database (e.g., MySQL) will be
+\item \textbf{Construction of databases for protein complexes and features on HDFS}
+\begin{itemize}[label=\ding{226}]
+\item \textit{One eScience Research Engineer (0.2 FTE) with expertise in big data, HDFS and database (e.g., MySQL) will be
 responsible building a database hosting these data. LA and the PhD students at RU will be responsible generating 3D
 pMHC models and calculating various interface features. We together apply for the national computation resources at
 SURFSara. We will build on and extend DeepRank(-GNN)'s data generation module. There- fore, a small FTE from EG is
-likely needed. }}
-\item 
-(EG): Evaluate and implement the use of the best HDFS filesystem to host our heterogenous data (making use of the
-national infrastructure at SURFSara). }
-
-\begin{itemize}[resume*=listWWNumxxx,start=1]
-\item 
-\textbf{Expected: Q1 2022}}
-\item 
-\textbf{DONE (March 2022)}}
-\item 
-We decided to save the generated grids/graphs data (inputs for the neural networks) in hdf5 files, being HDF
-Hierarchical Data Format. This was already implemented in the original code-base.}
-
-\begin{itemize}[series=listWWNumxxx,label=[F0B7?]]
-\item 
-Main pros}
-
-
-Designed to store large amounts of data in an organized manner (folder-like architechture)}
-
-Consist of \textit{Datasets }that can store arrays of data, \textit{Groups }which can store datasets or other groups,
-and \textit{metadata }consisting of mapped key-value pairs for attributes of the data}
-
-Fastness: writing to HDF5 is 16 times faster than to a simple CSV file}
-
-Open-source}
-
-Pythonic interface: \href{https://docs.h5py.org/en/latest/index.html}{\textstyleInternetlink{h5py}}}
+likely needed.}
+\item (EG): Evaluate and implement the use of the best HDFS filesystem to host our heterogenous data (making use of the
+national infrastructure at SURFSara).
+\begin{itemize}
+\item \textbf{Expected: Q1 2022}}
+\item \textbf{DONE (March 2022)}}
+\item We decided to save the generated grids/graphs data (inputs for the neural networks) in hdf5 files, being HDF
+Hierarchical Data Format. This was already implemented in the original code-base.
+\begin{itemize}
+\item Main pros
+\begin{itemize}
+  \item Designed to store large amounts of data in an organized manner (folder-like architechture)
+  \item Consist of \textit{Datasets} that can store arrays of data, \textit{Groups} which can store datasets or other groups,
+and \textit{metadata} consisting of mapped key-value pairs for attributes of the data 
+  \item Fastness: writing to HDF5 is 16 times faster than to a simple CSV file
+  \item Open-source
+  \item Pythonic interface: \href{https://docs.h5py.org/en/latest/index.html}{h5py}
 \end{itemize}
 \end{itemize}
 \end{itemize}
 \end{itemize}
-
-\bigskip
-
-\begin{itemize}[resume*=listWWNumxxx]
-\item 
-\textbf{Task 2: Training, tuning and testing GNN on GPUs.}}
-
+\item \textbf{Training, tuning and testing GNN on GPUs.}
+\iffalse
 \begin{itemize}[resume*=listWWNumxxx,start=1]
 \item 
 \textit{One eScience Research Engineer (1.0 FTE) with expertise in deep learning will implement efficient scheme for
@@ -449,7 +406,8 @@ outreach.}}}\foreignlanguage{english}{\textcolor{black}{ (140 h)}}}
 \foreignlanguage{english}{\textcolor{black}{Basic and advanced tutorials. (60 h)}}}
 \end{itemize}
 \end{itemize}
-
+\fi
+\end{enumerate}
 \bigskip
 
 \clearpage
@@ -630,7 +588,4 @@ If others want to reproduce the results, or train similar models, the methods wi
 
 The software and resulting models will be used by the Lead Applicant as a focus of their research in the coming years
 and will be used by their (MSc) students as well. To create a larger community of users a Lorenz workshop will be held,
-which will focus mostly on (potential) users of the resulting models/dataset.}
-
-
-\bigskip
+which will focus mostly on (potential) users of the resulting models/dataset.
