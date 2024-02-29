@@ -82,8 +82,10 @@
 
 %\input{closing}
 
+%bibliography section rename
 \renewcommand{\bibname}{Related links and references}
-%\setlocalecaption{english}{refname}{Table of Contents}%because babel package is used
+\renewcommand{\bibsection}{\section*{\bibname}}
+
 \bibliographystyle{abbrv}
 \bibliography{references}
 
