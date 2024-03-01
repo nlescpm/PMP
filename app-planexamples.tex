@@ -9,272 +9,204 @@
 \item \href{https://nlesc.sharepoint.com/:b:/s/all/EbVlWkJEcrJEvbH5_bTM7pwBKcLmKLtYHGOBXRkD8eqHvQ?e=mYCtx7}{3D-Vac proposal}
 \end{itemize}
 
-
-
-\begin{enumerate}[start=0,label={\bfseries \ding{118} Task \arabic*:}]%[]]
+\begin{enumerate}[start=0,leftmargin=.7in,label={\bfseries \ding{118} Task \arabic*:}]%[]]
 \item  \textbf{Refactorization of deeprankcore}
-\begin{itemize}[label=\ding{226}]
-\item \status{DONE (March-May 2022)}
-\item Such repository was initially a cloned version of
-\href{https://github.com/DeepRank/Deeprank-GNN}{Deeprank-GNN}, called deeprank-gnn-2.
-\item Partially rewrite Deeprank-GNN, making it:
-\begin{itemize}
-\item A more object-oriented package.
-\item Usable for unifying it with the original \href{https://github.com/DeepRank/deeprank}{deeprank}.
-\item \href{https://drive.google.com/file/d/17Nw5mOpYzyp3uL225OTZNCHz8QVMY2aF/view?usp=share_link}{Class diagram} they used to implement such edits.
-\end{itemize}
-\end{itemize}
+    \begin{itemize}[label=\ding{226}]
+    \item \status{DONE (March-May 2022)}
+    \item Such repository was initially a cloned version of
+    \href{https://github.com/DeepRank/Deeprank-GNN}{Deeprank-GNN}, called deeprank-gnn-2.
+    \item Partially rewrite Deeprank-GNN, making it:
+    \begin{itemize}
+        \item A more object-oriented package.
+        \item Usable for unifying it with the original \href{https://github.com/DeepRank/deeprank}{deeprank}.
+        \item \href{https://drive.google.com/file/d/17Nw5mOpYzyp3uL225OTZNCHz8QVMY2aF/view?usp=share_link}{Class diagram} they used to implement such edits.
+        \end{itemize}
+    \end{itemize}
 \item \textbf{Construction of databases for protein complexes and features on HDFS}
-\begin{itemize}[label=\ding{226}]
-\item \textit{One eScience Research Engineer (0.2 FTE) with expertise in big data, HDFS and database (e.g., MySQL) will be
-responsible building a database hosting these data. LA and the PhD students at RU will be responsible generating 3D
-pMHC models and calculating various interface features. We together apply for the national computation resources at
-SURFSara. We will build on and extend DeepRank(-GNN)'s data generation module. There- fore, a small FTE from EG is
-likely needed.}
-\item (EG): Evaluate and implement the use of the best HDFS filesystem to host our heterogenous data (making use of the
-national infrastructure at SURFSara).
-\begin{itemize}
-\item \textbf{Expected: Q1 2022}
-\item \status{DONE (March 2022)}
-\item We decided to save the generated grids/graphs data (inputs for the neural networks) in hdf5 files, being HDF
-Hierarchical Data Format. This was already implemented in the original code-base.
-\begin{itemize}
-\item Main pros
-\begin{itemize}
-  \item Designed to store large amounts of data in an organized manner (folder-like architechture)
-  \item Consist of \textit{Datasets} that can store arrays of data, \textit{Groups} which can store datasets or other groups,
+    \begin{itemize}[label=\ding{226}]
+        \item \textit{One eScience Research Engineer (0.2 FTE) with expertise in big data, HDFS and database (e.g., MySQL) will be
+    responsible building a database hosting these data. LA and the PhD students at RU will be responsible generating 3D
+    pMHC models and calculating various interface features. We together apply for the national computation resources at
+    SURFSara. We will build on and extend DeepRank(-GNN)'s data generation module. There- fore, a small FTE from EG is
+    likely needed.}
+        \item (EG): Evaluate and implement the use of the best HDFS filesystem to host our heterogenous data (making use of the
+    national infrastructure at SURFSara).
+        \begin{itemize}
+            \item \textbf{Expected: Q1 2022}
+            \item \status{DONE (March 2022)}
+            \item We decided to save the generated grids/graphs data (inputs for the neural networks) in hdf5 files, being HDF Hierarchical Data Format. This was already implemented in the original code-base.
+            \begin{itemize}
+                \item Main pros
+                \begin{itemize}
+                    \item Designed to store large amounts of data in an organized manner (folder-like architechture)
+                    \item Consist of \textit{Datasets} that can store arrays of data, \textit{Groups} which can store datasets or other groups,
 and \textit{metadata} consisting of mapped key-value pairs for attributes of the data 
-  \item Fastness: writing to HDF5 is 16 times faster than to a simple CSV file
-  \item Open-source
-  \item Pythonic interface: \href{https://docs.h5py.org/en/latest/index.html}{h5py}
-\end{itemize}
-\end{itemize}
-\end{itemize}
-\end{itemize}
+                    \item Fastness: writing to HDF5 is 16 times faster than to a simple CSV file
+                    \item Open-source
+                    \item Pythonic interface: \href{https://docs.h5py.org/en/latest/index.html}{h5py}
+                \end{itemize}
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
 \item \textbf{Training, tuning and testing GNN on GPUs.}
-\begin{itemize}%[resume*=listWWNumxxx,start=1]
-\item \textit{One eScience Research Engineer (1.0 FTE) with expertise in deep learning will implement efficient scheme for
+    \begin{itemize}%[resume*=listWWNumxxx,start=1]
+        \item \textit{One eScience Research Engineer (1.0 FTE) with expertise in deep learning will implement efficient scheme for
 generating graph and training of our designed graph network for 3D atom clouds. EG and RU together define UML (object
 relationship diagram) and determine the optimal graph aggregation steps for proteins. LA, the PhD students and postdocs
 will define optimal graphs, mapping the interface features to graphs, working with EG on deep learning implementation.
 RU team will conduct cross-validation over MHC allele types and benchmark 3D-Vac against state-of-the-arts.}
-\item (EG \& RU): Build DB4 - Generate interface graphs for DB2, map features in DB3 to graph nodes and edges.
-\begin{itemize}
-\item \textbf{Expected: Q2-Q3 2022}
-\item \status{ONGOING (July 2022 - ongoing)}
-\item pMHCI
-\begin{itemize}
-\item We generated DB4 (in the form of hdf5 files) for a small subset of data, the only one available at the time of writing
-(\~{}7000 data points). We're waiting for the new data from RU side.
-Giulia is testing the data that the master student put on Snellius (\~{}140000 data points).
-\end{itemize}
-\end{itemize}
-\item (EG \& RU): Implement, train and optimize GNN for MHC epitope predictions.
-\begin{itemize}
-\item \textbf{Expected: Q3-Q4 2022, Q1 2023}
-\item \status{ONGOING (August 2022 - ongoing)}
-\item pMHCI
-\begin{itemize}
-\item We're waiting for the new data to be generated, but the scripts for training and saving/plotting
-results are ready and working
-(\href{https://github.com/DeepRank/3D-Vac/tree/gcroci2_105_regenerate_hdf5_new_data/src/4_train_models/GNN/I/classification/struct}{link}).
-We already trained a small subset of the data, mentioned in the bullet point above.
-\end{itemize}
-\end{itemize}
-\end{itemize}
+        \item (EG \& RU): Build DB4 - Generate interface graphs for DB2, map features in DB3 to graph nodes and edges.
+        \begin{itemize}
+            \item \textbf{Expected: Q2-Q3 2022}
+            \item \status{ONGOING (July 2022 - ongoing)}
+            \item pMHCI
+            \begin{itemize}
+                \item We generated DB4 (in the form of hdf5 files) for a small subset of data, the only one available at the time of writing (\~{}7000 data points). We're waiting for the new data from RU side. Giulia is testing the data that the master student put on Snellius (\~{}140000 data points).
+            \end{itemize}
+        \end{itemize}
+        \item (EG \& RU): Implement, train and optimize GNN for MHC epitope predictions.
+        \begin{itemize}
+            \item \textbf{Expected: Q3-Q4 2022, Q1 2023}
+            \item \status{ONGOING (August 2022 - ongoing)}
+            \item pMHCI
+            \begin{itemize}
+                \item We're waiting for the new data to be generated, but the scripts for training and saving/plotting results are ready and working (\href{https://github.com/DeepRank/3D-Vac/tree/gcroci2_105_regenerate_hdf5_new_data/src/4_train_models/GNN/I/classification/struct}{link}). We already trained a small subset of the data, mentioned in the bullet point above.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
 \item \textbf{Implementation and dissemination.}
-\begin{itemize}
-\item \textit{One eScience Research Engineer (0.8 FTE) with expertise in software development will integrate the resulting GNN
-into DeepRank. Our IT engineer (RU) will work together with EG to implement the web server and publish neoantigen
-database as part of the web service. The PhD students at RU will use 3D-Vac to scan human cancer proteomes and create
-neoantigen database. All members will work together in organizing workshops and write publications.}
-\item (EG): Integrate resulting GNNs into DeepRank.
-\begin{itemize}
-\item \textbf{Expected: Q2-Q3 2023}
-\item \status{TODO}
-\end{itemize}
-\item (EG \& RU): Develop the web server for epitope predictions.
-\begin{itemize}
-\item \textbf{Expected: Q3-Q4 2023}
-\item \status{TODO}
-\item \status{Unrealistic, I would cut this out}
-\end{itemize}
-\item (EG \& RU): Use 3D-Vac to scan human cancer proteomes and build predicted neo-antigens into a database (DB6).
-\begin{itemize}
-\item \textbf{Expected: Q3-Q4 2023, Q1 2024}
-\item \status{TODO}
-\end{itemize}
-\item (EG \& RU): Organize workshops and work on publications.
-\begin{itemize}
-\item \textbf{Expected: Q3-Q4 2023, Q1-Q2-Q3-Q4 2024}
-\item \status{TODO}
-\end{itemize}
-\end{itemize}
+    \begin{itemize}
+        \item \textit{One eScience Research Engineer (0.8 FTE) with expertise in software development will integrate the resulting GNN into DeepRank. Our IT engineer (RU) will work together with EG to implement the web server and publish neoantigen database as part of the web service. The PhD students at RU will use 3D-Vac to scan human cancer proteomes and create neoantigen database. All members will work together in organizing workshops and write publications.}
+        \item (EG): Integrate resulting GNNs into DeepRank.
+        \begin{itemize}
+            \item \textbf{Expected: Q2-Q3 2023}
+            \item \status{TODO}
+        \end{itemize}
+        \item (EG \& RU): Develop the web server for epitope predictions.
+        \begin{itemize}
+            \item \textbf{Expected: Q3-Q4 2023}
+            \item \status{TODO}
+            \item \status{Unrealistic, I would cut this out}
+        \end{itemize}
+        \item (EG \& RU): Use 3D-Vac to scan human cancer proteomes and build predicted neo-antigens into a database (DB6).
+        \begin{itemize}
+            \item \textbf{Expected: Q3-Q4 2023, Q1 2024}
+            \item \status{TODO}
+        \end{itemize}
+        \item (EG \& RU): Organize workshops and work on publications.
+        \begin{itemize}
+            \item \textbf{Expected: Q3-Q4 2023, Q1-Q2-Q3-Q4 2024}
+            \item \status{TODO}
+        \end{itemize}
+    \end{itemize}
 \end{enumerate}
-
-
-
-\begin{itemize}
-\item \textbf{Deliverables}
+%
+\begin{itemize}[leftmargin=0.27in,label={\bfseries \ding{118}}]
+    \item \textbf{Deliverables}
+    \begin{enumerate}[start=1,leftmargin=.7in,label={\ding{226} D\arabic*.}]
+        \item Publications
+        \begin{itemize}
+            \item \textbf{Expected: 2023, 2024}
+            \item \status{TODO}
+            \item Publish our technology advances and discoveries in open-access journals and conference proceedings.
+            \begin{itemize}
+                \item Two publications focusing on the science part led by our research group and targeting the user community
+                \item Two focusing on the eScience technology part led by the e-science engineers and targeting the eScience communities.
+            \end{itemize}
+        \end{itemize}
+        \item Software and web server
+        \begin{itemize}
+            \item Software for GNN-based data mining on 3D atom clouds with GPUs and MPI supports
+            \begin{itemize}
+                \item \textbf{Expected: 2023}
+                \item \status{TODO}
+            \end{itemize}
+            \item DeepRank v2, a general GDL framework for data mining protein interfaces
+            \begin{itemize}
+                \item \textbf{Expected: 2024}
+                \item \status{TODO}
+            \end{itemize}
+            \item 3D-Vac software for MHC epitope predictions (GitHub)
+            \begin{itemize}
+                \item \textbf{Expected: 2024}
+                \item \status{TODO}
+            \end{itemize}
+            \item A web server for MHC epitope predictions (hosted at CMBI)
+            \begin{itemize}
+                \item \textbf{Expected: 2024}
+                \item \status{TODO}
+                \item \status{Unrealistic, I would cut this out}
+            \end{itemize}
+        \end{itemize}
+        \item Databases
+        \begin{itemize}
+            \item \textbf{Expected: 2024}
+            \item \status{TODO}
+            \item Neoantigen database (DB5)
+        \end{itemize}   
+        \item Tutorials and documentation
+        \begin{itemize}
+            \item \textbf{Expected: 2024}
+            \item \status{TODO}
+            \item Online tutorial describing the use of 3D-Vac to epitope predictions on the web server
+            \item Online documentation for DeepRank v2 (GitHub)
+            \item Online tutorial blogs on \href{https://towardsdatascience.com/}{Towards Data Science}
+        \end{itemize}
+        \item Workshops and conferences
+        \begin{itemize}
+            \item \textbf{Expected: 2023, 2024}
+            \item \status{TODO}
+            \begin{enumerate}[label=\alph*.]
+                \item Geometric deep learning for protein structures workshop
+                \item DeepRank v2 tutorial workshop (co-organize with the human genetics department at Radboudumc)
+                \item 3D-Vac tutorial workshop (co-organize with the cancer immunotherapy group at Radboudumc and Immuno company)
+            \end{enumerate}
+        \end{itemize}        
+    \end{enumerate}
 \end{itemize}
-
-
-
-\begin{itemize}
-\item \begin{itemize}
-\item D1. Publications
-\begin{itemize}
-\item \textbf{Expected: 2023, 2024}
-\item \status{TODO}
-\item Publish our technology advances and discoveries in open-access journals and conference proceedings.
-\begin{itemize}
-\item Two publications focusing on the science part led by our research group and targeting the user community
-\item Two focusing on the eScience technology part led by the e-science engineers and targeting the eScience communities.
-\end{itemize}
-\end{itemize}
-\end{itemize}
-\end{itemize}
-
-
-
-\begin{itemize}
-\item \begin{itemize}
-\item D2. Software and web server
-\begin{itemize}
-\item Software for GNN-based data mining on 3D atom clouds with GPUs and MPI supports
-\begin{itemize}
-\item \textbf{Expected: 2023}
-\item \status{TODO}
-\end{itemize}
-\item DeepRank v2, a general GDL framework for data mining protein interfaces
-\begin{itemize}
-\item \textbf{Expected: 2024}
-\item \status{TODO}
-\end{itemize}
-\item 3D-Vac software for MHC epitope predictions (GitHub)
-\begin{itemize}
-\item \textbf{Expected: 2024}
-\item \status{TODO}
-\end{itemize}
-\item A web server for MHC epitope predictions (hosted at CMBI)
-\begin{itemize}
-\item \textbf{Expected: 2024}
-\item \status{TODO}
-\item \status{Unrealistic, I would cut this out}
-\end{itemize}
-\end{itemize}
-\end{itemize}
-\end{itemize}
-
-\begin{itemize}
-\item \begin{itemize}
-\item D3. Databases
-\begin{itemize}
-\item \textbf{Expected: 2024}
-\item \status{TODO}
-\item Neoantigen database (DB5)
-\end{itemize}
-\end{itemize}
-\end{itemize}
-
-
-
-\begin{itemize}
-\item \begin{itemize}
-\item D4. Tutorials and documentation
-\begin{itemize}
-\item \textbf{Expected: 2024}
-\item \status{TODO}
-\item Online tutorial describing the use of 3D-Vac to epitope predictions on the web server
-\item Online documentation for DeepRank v2 (GitHub)
-\item Online tutorial blogs on Towards Data Science (\url{https://towardsdatascience.com/})
-\end{itemize}
-\end{itemize}
-\end{itemize}
-
-
-
-\begin{itemize}
-\item \begin{itemize}
-\item D5. Workshops and conferences
-\begin{itemize}
-\item \textbf{Expected: 2023, 2024}
-\item \status{TODO}
-\begin{enumerate}[label=\alph*.]
-\item Geometric deep learning for protein structures workshop
-\item DeepRank v2 tutorial workshop (co-organize with the human genetics department at Radboudumc)
-\item 3D-Vac tutorial workshop (co-organize with the cancer immunotherapy group at Radboudumc and Immuno company)
-\end{enumerate}
-\end{itemize}
-\end{itemize}
-\end{itemize}
-
 
 
 
 \subsection*{Generalization budget}
 
+\bigskip
+
 \begin{itemize}
 \item \href{https://nlesc.sharepoint.com/:w:/s/all/ERrdfYPm_2ZOgUUXyXRxx7wBuZIZJNIKS9pSH20kdDMdig?e=VS0mTQ}{Generalization plan}
 \end{itemize}
-
-
-
-\begin{itemize}
-\item \textbf{Task 1:} make the interface more flexible to attract new users (240 hours).
-\begin{itemize}[label=o]
-\item The code was not suitable for users, the API functionality was limited and the documentation was
-extremely lacking.
-\item \status{ONGOING (November 2022 – ongoing)}
-\item \href{https://github.com/DeepRank/deeprank-core/projects/6}{Generalization} kanban board
-\end{itemize}
-\end{itemize}
-
-
-
-\begin{itemize}
-\item \textbf{Task 2: Integrate DeepRank} classes and functions into \href{https://github.com/DeepRank/deeprank-core/blob/class_diagram/deeprankcore/uml/classes_npl.svg}{DeepRank-core}
-(160 h).
-\begin{itemize}
-\item Their API should be very similar and coherent and should give the user the
+\begin{enumerate}[start=1,leftmargin=.8in,label={\bfseries \textbullet{} Task \arabic*:}]
+    \item make the interface more flexible to attract new users (240 hours).
+    \begin{itemize}[label=o]
+        \item The code was not suitable for users, the API functionality was limited and the documentation was extremely lacking.
+        \item \status{ONGOING (November 2022 – ongoing)}
+        \item \href{https://github.com/DeepRank/deeprank-core/projects/6}{Generalization} kanban board
+    \end{itemize}
+    \item \textbf{Integrate DeepRank} classes and functions into \href{https://github.com/DeepRank/deeprank-core/blob/class_diagram/deeprankcore/uml/classes_npl.svg}{DeepRank-core} (160 h).
+    \begin{itemize}
+        \item Their API should be very similar and coherent and should give the user the
 possibility to choose among CNNs and GNNs with no difficulty, only changing the classes called.
-\begin{enumerate}[label=\roman*.]
-\item Uniform DeepRank and DeepRank-core APIs, according to the modifications done
+        \begin{enumerate}[label=\roman*.]
+            \item Uniform DeepRank and DeepRank-core APIs, according to the modifications done
 in DeepRank-core during task 1. (100 h)
-\item Integrate DeepRank functions and classes in DeepRank-core. (60 h)
+            \item Integrate DeepRank functions and classes in DeepRank-core. (60 h)
+        \end{enumerate}
+    \end{itemize} 
+    \item \textbf{Update documentation} accordingly. (100 h)
+    \begin{itemize}[label=o]
+        \item Release to Read the Docs including automatic API reference. (20 h)
+        \item Outward-facing classes and functions documentation in the codebase. (80 h)
+    \end{itemize}
+    \item \textbf{DeepRank-core package deployment}. (20 h)
+    \begin{itemize}[label=o]
+        \item PyPI. (10 h)
+        \item Anaconda. (10 h)
+    \end{itemize}
+    \item \textbf{Publish material for dissemination and outreach.}(140 h)
+    \begin{itemize}[label=o]
+        \item A software paper (either SoftwareX or JOSS) on DeepRank-core. (80 h)
+        \item Basic and advanced tutorials. (60 h)
+    \end{itemize}
 \end{enumerate}
-\end{itemize}
-\end{itemize}
-
-
-
-\begin{itemize}
-\item \textbf{Task 3: Update documentation} accordingly. (100 h)
-\begin{itemize}[label=o]
-\item Release to Read the Docs including automatic API reference. (20 h)
-\item Outward-facing classes and functions documentation in the codebase. (80 h)
-\end{itemize}
-\end{itemize}
-
-
-
-\begin{itemize}
-\item \textbf{Task 4: DeepRank-core package deployment}. (20 h)
-\begin{itemize}
-\item PyPI. (10 h)
-\item Anaconda. (10 h)
-\end{itemize}
-\end{itemize}
-
-
-
-\begin{itemize}
-\item \textbf{Task 5: Publish material for dissemination and outreach.}(140 h)
-\begin{itemize}
-\item A software paper (either SoftwareX or JOSS) on DeepRank-core. (80 h)
-\item Basic and advanced tutorials. (60 h)
-\end{itemize}
-\end{itemize}
 
 
 \clearpage
@@ -284,68 +216,73 @@ in DeepRank-core during task 1. (100 h)
 \begin{itemize}
 \item \href{https://nlesc.sharepoint.com/:b:/s/all/EZ6Iu_0k89tLkdZALfb7QagBD6t2hy4UkI8jYjyMHoVFnw?e=5BldjB}{EXCITED proposal}
 \end{itemize}
-
-The goal of the EXCITED project is to create a dataset of temporally and spatially consistent CO2 emissions by natural
-ecosystems (i.e., the Net Ecosystem Exchange). 
-
-This dataset will be created from site-scale measurement data (Fluxnet), inverse model results (CarbonTracker), and the 'ERA5' global weather reanalysis product. 
-
-Besides the resulting dataset(s), we will also provide the trained model(s) and code. 
-
-%\setlist[enumerate]{noitemsep,label*=\arabic*.}
-\subsubsection{Used technologies}
-
-The project will make extensive use of Python, due to its broad ecosystem of (netCDF) data processing and machine
-learning packages. 
-
-More specifically, we will make use of the following packages: 
-\begin{description}[font=\itshape]
-  \item[Data intake/processing:] \hfill
-\begin{itemize}
-\item xarray 
-\item dask 
-\item flox (xarray+dask extension for fast groupby operations).
-\end{itemize}
- \item See \url{https://flox.readthedocs.io/en/latest/}.
- \item With these packages, we will be able to efficiently load and process the data and use all computing cores, both on a
-local PC and HPC. 
-\item[Machine learning:] \hfill
-\begin{itemize}
-\item sklearn
-\item pycaret (for comparing performance of different ML models)
-\item Possibly LightGBM (“Light Gradient Boosting Machine” a decision tree model like XGBoost, but much faster).
-Mostly for performance reasons.
-\end{itemize}
-\item Additionally, we will make use of ONNX to be able to save and share the trained models in an open format.
+\begin{description}[fullwidth,style=nextline]
+    \item[] The goal of the EXCITED project is to create a dataset of temporally and spatially consistent CO2 emissions by natural
+    ecosystems (i.e., the Net Ecosystem Exchange). 
+    \item[] This dataset will be created from site-scale measurement data (Fluxnet), inverse model results (CarbonTracker), and the 'ERA5' global weather reanalysis product. 
+    \item[] Besides the resulting dataset(s), we will also provide the trained model(s) and code. 
 \end{description}
 
-Analysis and cooperation with the LA will be through Surf Research Cloud. 
+%\setlist[enumerate]{noitemsep,label*=\arabic*.}
+\begin{enumerate}[label={\bfseries \arabic*. }]
+    \item \textbf{Used technologies}
+    \begin{description}[fullwidth,style=nextline]
+        \item[] The project will make extensive use of Python, due to its broad ecosystem of (netCDF) data processing and machine
+learning packages. 
+        \item[] More specifically, we will make use of the following packages: 
+        \begin{description}[font=\itshape]
+            \item[Data intake/processing:] \hfill
+            \begin{itemize}
+                \item xarray 
+                \item dask 
+                \item flox (xarray+dask extension for fast groupby operations).
+            \end{itemize}
+            \item See \href{https://flox.readthedocs.io/en/latest/}{https://flox.readthedocs.io/en/latest/}.
+            \item With these packages, we will be able to efficiently load and process the data and use all computing cores, both on a local PC and HPC. 
+            \item[Machine learning:] \hfill
+            \begin{itemize}
+                \item sklearn
+                \item pycaret (for comparing performance of different ML models)
+                \item Possibly LightGBM (“Light Gradient Boosting Machine” a decision tree model like XGBoost, but much faster).
+                Mostly for performance reasons.
+            \end{itemize}
+            \item Additionally, we will make use of ONNX to be able to save and share the trained models in an open format.
+        \end{description}
+        \item[] Analysis and cooperation with the LA will be through Surf Research Cloud. 
+    \end{description}
+    \item \textbf{Technological outcomes}   
+    \begin{description}
+        \item[] In the project we will develop an efficient and reproducible workflow to generate the following outcomes:
+        \begin{itemize}
+            \item A python workflow
+            \begin{itemize}
+                \item which preprocesses input data, trains the ML model, as well as provide some useful plotting utilities to analyze the
+        trained model
+                \item hosted on Github, Zenodo, and the RSD. If the workflow proves to be sufficiently reusable and generic, we can publish it
+        as a package on pypi.
+                \item To ensure code quality, we will make use of testing, (static) code analysis and typing (i.e., pytest, black, ruff,
+        mypy). Workflows will be added to Github Actions. We will guide the LA on these aspects as well, so they can maintain
+        the code once the project is finished.
+            \end{itemize}
+            \item The trained models in ONNX format, on Zenodo.
+            \item The output datasets, where the model is applied on (global) ERA5 data. To be hosted on Zenodo.
+        \end{itemize}
+    \end{description}
+    \item \textbf{Reusability and adoptability}
+    \begin{description}[fullwidth,style=nextline]
+        \item[] To allow others to (re)use the results, access to the datasets and models will be provided, and documentation will be created to guide the users.
+        \item[] If others want to reproduce the results, or train similar models, the methods will be available and documented as well.
+        \item[] The software and resulting models will be used by the Lead Applicant as a focus of their research in the coming years and will be used by their (MSc) students as well. To create a larger community of users a Lorenz workshop will be held, which will focus mostly on (potential) users of the resulting models/dataset.
+    \end{description}
+\end{enumerate}
 
 
-\subsubsection{Technological outcomes}
 
-In the project we will develop an efficient and reproducible workflow to generate the following outcomes:
-\begin{itemize}
-\item A python workflow
-  \begin{itemize}
-  \item which preprocesses input data, trains the ML model, as well as provide some useful plotting utilities to analyze the
-trained model
-  \item hosted on Github, Zenodo, and the RSD. If the workflow proves to be sufficiently reusable and generic, we can publish it
-as a package on pypi.
-  \item To ensure code quality, we will make use of testing, (static) code analysis and typing (i.e., pytest, black, ruff,
-mypy). Workflows will be added to Github Actions. We will guide the LA on these aspects as well, so they can maintain
-the code once the project is finished.
-  \end{itemize}
-\item The trained models in ONNX format, on Zenodo.
-\item The output datasets, where the model is applied on (global) ERA5 data. To be hosted on Zenodo.
-\end{itemize}
 
-\subsubsection{Reusability and adoptability}
-To allow others to (re)use the results, access to the datasets and models will be provided, and documentation will be
-created to guide the users.
 
-If others want to reproduce the results, or train similar models, the methods will be available and documented as well.
 
-The software and resulting models will be used by the Lead Applicant as a focus of their research in the coming years
-and will be used by their (MSc) students as well. To create a larger community of users a Lorenz workshop will be held,
-which will focus mostly on (potential) users of the resulting models/dataset.
+
+
+
+
+
