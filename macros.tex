@@ -34,6 +34,15 @@
 %\titleformat{\section}{\fontsize{11}{15}\bfseries}{\Roman{section}}{1.5em}{USI }
 
 
-\hypersetup{,urlcolor=blue,citecolor=blue,linkcolor=blue}
+\makeatletter
+\Hy@AtBeginDocument{%
+  \def\@pdfborder{0 0 1}% Overrides border definition set with colorlinks=true
+  \def\@pdfborderstyle{/S/U/W 1}% Overrides border style set with colorlinks=true
+                                % Hyperlink border style will be underline of width 1pt
+}
+\makeatother
+\hypersetup{linkcolor=nlesc-blue,linkbordercolor=nlesc-blue,urlcolor=nlesc-blue,urlbordercolor=nlesc-blue,citecolor=nlesc-blue}
+
+\newcommand{\status}[1]{\underline{\textbf{#1}}}
 
 
