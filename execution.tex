@@ -35,7 +35,7 @@ the project log to improve readability of the log and avoid duplicate informatio
 The PM stays informed about the status of the project and communicates with the Lead RSE on a regular basis.
 
 \begin{table}[h!]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={gray!20}}
+\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
     \toprule
     Scheduled: &  Once every 4-6 weeks \\[1.5ex]
     Stakeholders: & PM (organizer), Lead RSE, optionally: TL\footnote{The TL participation is mandatory for the techology-oriented projects.}, other RSEs. \\[1.5ex]
@@ -72,7 +72,7 @@ To keep the entire project team informed on project progress, the Lead RSE toget
 project meeting. The frequency and format depend on the complexity of the project and size of the project team.
 
 \begin{table}[h!]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.85\textwidth}|},row{even}={gray!20}}
+\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
     \toprule
     Scheduled: &  Once every 2-6 weeks \\[1.5ex]
     Stakeholders: & Lead RSE or LA (organizer), LA (chair), RSEs and other project team members from the LA side. \\[1.5ex]
@@ -114,13 +114,16 @@ regular call projects, RSEs can write hours on awarded projects as soon as they 
 happens within a month of the project being granted. The PM writes management hours on the project budget.
 
 Project hours are managed by different parties with different responsibilities:
+\let\myhcolw\relax 
+\newlength{\myhcolw}
+\setlength{\myhcolw}{0.4\textwidth}
 \begin{table}[!h]
 \renewcommand{\arraystretch}{1.5}
-\begin{booktabs}{colspec={|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|},row{even}={gray!20}}
+\begin{booktabs}{colspec={|p{0.12\textwidth}|p{0.4\textwidth}|p\myhcolw|},row{even}={gray!20}}
     \toprule
     \textbf{Stakeholder} &  \textbf{Responsibilities} & \textbf{More info} \\\toprule
     PM & 
-    \begin{minipage}[t]{0.4\textwidth}
+    \begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item checks and approves the hours submitted in Exact for the projects for which they are accountable before the 5th workday of the next month
         \item provide monthly hour status to the Lead RSE 
@@ -130,14 +133,14 @@ Project hours are managed by different parties with different responsibilities:
       \end{minipage}
     & \\\midrule
     Lead RSE &     
-    \begin{minipage}[t]{0.4\textwidth}
+    \begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item monitors project hour expenditure and signals deviation from the workplan to the PM
     \end{itemize} 
       \end{minipage}
     &  Asks PM for hours status in Exact, or checks monthly budget status via Ganttic  \\\midrule
     F\&C &
-    \begin{minipage}[t]{0.4\textwidth}
+    \begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item maintains accurate budget information 
         \item monitors and processes approved project hours
@@ -147,7 +150,7 @@ Project hours are managed by different parties with different responsibilities:
       \end{minipage}  
     & All budget changes require a PM and DT decision. \\\midrule
     DoT & 
-    \begin{minipage}[t]{0.4\textwidth}
+    \begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
         \item monitors and approves software sustainability hours 
     \end{itemize} 
@@ -363,6 +366,8 @@ A standard part of every review is a discussion and list of actions on how the r
 reusable and sustainable (as described in the DMP and SMP), how the collaboration is going and possibilities for
 follow-ups to projects.
 
+
+\let\myhcolw\relax % let \myhcolw to \relax to be reused later
 \newlength{\myhcolw}
 \setlength{\myhcolw}{0.75\textwidth}
 
@@ -389,7 +394,7 @@ follow-ups to projects.
 \footnotetext{Mandatory participants of a meeting be present in-person at the office, while all optional participants
 can also participate via video conferencing if they prefer.}
 
-\let\myhcolw\relax % let \myhcolw to \relax to be reused later
+
 
 The agenda of this meeting is:
 \begin{itemize}
@@ -426,7 +431,7 @@ with the Lead RSE.
 \subsubsection{Review meeting preparation}
 \begin{table}[h!]
   \renewcommand{\arraystretch}{1.5}
-\begin{booktabs}{colspec={|>{\bfseries}m{0.3\textwidth}|m{0.7\textwidth}|},row{even}={gray!20}}
+\begin{booktabs}{colspec={|>{\bfseries}m{0.3\textwidth}|m{0.6\textwidth}|},row{even}={gray!20}}
     \toprule
      &  \textbf{Stakeholder} \\[1.5ex]\toprule
     Prepared by: & LA and Lead RSE of the project. Other stakeholders of the project can contribute. \\[1.5ex]
@@ -439,12 +444,11 @@ with the Lead RSE.
 The PM sends the LA team the standard review meeting presentation template~\cite{proj-templates}, updating the slide on RSE hour status. This
 template provides a list of the important points to be discussed. LA and Lead RSE collaboratively prepare the slides.
 In particular, 
-
 \begin{itemize}
 \item the LA adds 3-5 slides (can be separate from the template) to report concisely on the extent to which the research
 objectives of the project have been met. The LA is not expected to present the content of published papers or the
 original workplan or proposal;
-\item the Lead RSE prepares 1-2 slides on a status of the current technology plan and software/datasets/methods/documentation, 
+\item the Lead RSE prepares 1-2 slides on a status of the current technology plan and software, datasets, methods or/and documentation, 
   and remarks on reusability, adoptability and sustainability of the software;
 \item the LA and Lead RSE compile the list of project deliverables. If applicable, the LA reports on the workshops;
 \item the Lead RSE compiles the technology status report (see Section~\ref{sec:exec:tech}) based on the input from LA and
