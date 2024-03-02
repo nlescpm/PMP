@@ -262,7 +262,83 @@ archives);
 To formally record results and facilitate knowledge transfer, RSEs must make all project output available in the
 relevant systems, online locations and databases:
 
-TODO
+\let\myhcolw\relax 
+\newlength{\myhcolw}
+\setlength{\myhcolw}{0.3\textwidth}
+\begin{table}[!h]
+\begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.15\textwidth}|p{\myhcolw}|p{0.15\textwidth}|p{0.15\textwidth}|},row{even}={white}}
+\toprule
+\textbf{What} & \textbf{Responsibility of} & \textbf{Responsible for}  & \textbf{URL} & \textbf{Additional info}\\[2ex]\toprule
+\SetCell[r=2]{m,1.5cm} Zenodo (NLeSC community) & PM  & curating and approving new publications &
+\SetCell[r=2]{m,1.5cm} \url{https://zenodo.org/communities/nlesc/}{Zenodo link} & 
+\SetCell[r=2]{m,1.5cm} 
+    \begin{minipage}[t]{\myhcolw}
+    \begin{itemize}\itemsep0em
+        \item Publications uploaded to Zenodo, are added to this community
+        \item PMs are curators of this community and approve new publications
+    \end{itemize} 
+    \end{minipage}  \\[2ex]\midrule
+    & RSEs & getting a concept DOI for a data or software release, or a document (e.g., non-peer-reviewed
+articles, presentations, etc.) &  & \\[2ex]\midrule
+    \SetCell[r=2]{m,1.5cm} Research Software Directory (RSD), software and project pages & Lead RSE & 
+    \begin{minipage}[t]{\myhcolw}
+    \begin{itemize}\itemsep0em
+      \item creating RSD project page, if needed 
+      \item maintaining RSD pages and ensuring the meta data is complete and up to date
+      \item ensuring PM has maintainer access to the page  
+    \end{itemize} 
+    \end{minipage}  & 
+    \SetCell[r=2]{m,1.5cm} See See \url{https://research-software-directory.github.io/documentation/introduction.html} and
+\url{https://github.com/research-software-directory/documentation/blob/main/docs/adding-projects.md} &
+  \SetCell[r=2]{m,1.5cm} Each project has its RSD project page\\[2ex]\midrule 
+    & RSEs &  
+    \begin{minipage}[t]{\myhcolw}
+    \begin{itemize}\itemsep0em
+      \item creating RSD software pages
+      \item a timely and accurate registration and maintenance of the output
+      \item keeping the (meta) data stored such as description, GitHub organization(s), concept DOI, mentions (via DOI or URL), related software and projects complete and up to date
+    \end{itemize} 
+    \end{minipage} &  & \\[2ex]\midrule
+     \SetCell[r=3]{m,1.5cm} Project portfolio (on SharePoint) & PM & adding direct link to the project portfolio folder to Ganttic & 
+     \SetCell[r=3]{m,1.5cm} cf.~\cite{proj-portfolio} and Appendix~\ref{app:folders} for structure explanation. &  
+     \SetCell[r=3]{m,1.5cm}   
+    \begin{minipage}[t]{\myhcolw}
+    \begin{itemize}\itemsep0em    
+       \item An internal archive, which is periodically and automatically backed up
+       \item Direct link to the project portfolio folder is available in Ganttic 
+    \end{itemize} 
+    \end{minipage}  \\[2ex]\midrule
+   \SetCell[r=3]{m,1.5cm}  & Lead RSE & ensuring that the output is uploaded & \SetCell[r=3]{m,1.5cm} & \SetCell[r=3]{m,1.5cm} \\[2ex]\midrule
+   \SetCell[r=3]{m,1.5cm}  & RSE & 
+   \begin{minipage}[t]{\myhcolw}
+    \begin{itemize}\itemsep0em
+        \item uploading the output such as papers, reports, and presentations
+        \item adding links to the source material to the project log
+    \end{itemize} 
+    \end{minipage} & 
+   \SetCell[r=3]{m,1.5cm} & \SetCell[r=3]{m,1.5cm} \\[2ex]\midrule
+  \SetCell[r=2]{m,1.5cm} The eScience Center blog  & RSEs &  
+  \begin{minipage}[t]{\myhcolw}
+    \begin{itemize}\itemsep0em
+        \item Creating blog entry regarding project, its progress or project output
+    \end{itemize} 
+    \end{minipage} &
+  \SetCell[r=2]{m,1.5cm} Indexed at \url{https://blog.esciencecenter.nl/}{eScience Blog}, instructions on blogging are posted on the Intranet~\cite{blog-intranet}. &  
+  \begin{minipage}[t]{\myhcolw}
+    \begin{itemize}\itemsep0em
+        \item URL of final blog entry added to project RSD page
+    \end{itemize} 
+    \end{minipage}\\[2ex]\midrule
+      & Editorial Team & 
+    \begin{minipage}[t]{\myhcolw}
+    \begin{itemize}\itemsep0em
+        \item Reviewing blog post entry of project team 
+        \item Helping at any stage with writing and publishing process
+    \end{itemize} 
+    \end{minipage} & &   \SetCell[r=2]{m,1.5cm} \\                    
+    \bottomrule
+\end{booktabs}
+\end{table}
 
 In terms of project output, the PM expects the project team to follow the plan on deliverables; project deliverables are
 described in the proposal and workplan. RSEs contribute to the publications and software/data releases.
