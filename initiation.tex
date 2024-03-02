@@ -30,11 +30,20 @@ The table offers an overview of the responsibilities of the different stakeholde
 \let\myhcolw\relax 
 \newlength{\myhcolw}
 \setlength{\myhcolw}{0.65\textwidth}
-\begin{table}[!h]
-\setlist[itemize]{leftmargin=*}
+{\setlist[itemize]{leftmargin=*}
+%\begin{longtable}[c]{|>{\bfseries}p{0.15\textwidth}|p{0.15\textwidth}|p{\myhcolw}|}
 \begin{booktabs}{colspec={|>{\bfseries}p{0.15\textwidth}|p{0.15\textwidth}|p{\myhcolw}|},row{even}={white}}
 \toprule
-\textbf{What} & \textbf{By} & \textbf{Responsible for}  \\[2ex]\toprule
+\textbf{What} & \textbf{By} & \textbf{Responsible for}  \\
+\toprule
+%\endfirsthead
+%\toprule
+%\textbf{What} & \textbf{By} & \textbf{Responsible for} \\
+%\midrule
+%\endhead
+%\endfoot
+%\bottomrule
+%\endlastfoot  
 Exact  & F\&C  &
     \begin{minipage}[t]{\myhcolw}
     \begin{itemize}\itemsep0em
@@ -83,8 +92,8 @@ Ganttic  & PM             &
     \end{itemize} 
     \end{minipage}  \\                    
     \bottomrule
-\end{booktabs}
-\end{table}
+\end{booktabs}}
+%\end{longtable}
 \footnotetext{This image can be found in \href{https://nlesc.sharepoint.com/:f:/s/home/EkuP0l2hOI5OuQObI8zZqMgBikKDROkbSDGEn6eCFCbGsg?e=O9meCO}{this folder}.}
 
 \textbf{General status and progress are monitored by the accountable PM.}

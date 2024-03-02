@@ -46,5 +46,10 @@
 \newcommand{\status}[1]{\underline{\textbf{#1}}}
 
 \newlength{\myhcolw} %reusable variable for column size
+\makeatletter
+\let\LT@arraybak\LT@array
+\def\LT@array{\setlist[itemize]{leftmargin=*,after=\strut}\LT@arraybak}
+\makeatother
+
 
 
