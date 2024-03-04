@@ -261,7 +261,6 @@ archives);
 
 To formally record results and facilitate knowledge transfer, RSEs must make all project output available in the
 relevant systems, online locations and databases:
-
 \let\myhcolw\relax 
 \newlength{\myhcolw}
 \setlength{\myhcolw}{0.3\textwidth}
@@ -350,6 +349,43 @@ articles, presentations, etc.) &  & \\[2ex]\midrule
 \let\mycolfourw\relax
 \let\mycolfivew\relax
 
+\clearpage
+
+\NewTblrTheme{fancy}{
+  \SetTblrStyle{firsthead}{font=\bfseries}
+  \SetTblrStyle{firstfoot}{fg=blue2}
+  \SetTblrStyle{middlefoot}{\itshape}
+  \SetTblrStyle{caption-tag}{red2}
+}
+\begin{longtblr}[
+  theme = fancy,
+  %caption = {A Long Long Long Long Long Long Long Table},
+  %entry = {Short Caption},
+  label = {tblr:test},
+  note{a} = {It is the first footnote.},
+  note{$\dag$} = {It is the second long long long long long long footnote.},
+  %remark{Note} = {Some general note. Some general note. Some general note.},
+  %remark{Source} = {Made up by myself. Made up by myself. Made up by myself.},
+]{
+  colspec = {|X|X|X|X|X|}, width = 1\linewidth,
+  rowhead = 1, rowfoot = 1,
+  row{odd} = {gray!20}, row{even} = {white},
+  row{1} = {nlesc-blue}, row{Z} = {nlesc-yellow},
+}
+\hline
+ Head    & Head  & Head    \\
+\hline
+ Head    & Head  & Head    \\
+\hline
+ Epsilon & &  & Zeta\TblrNote{a}       & Eta    \\
+\hline
+ Iota    & &  &Kappa\TblrNote{$\dag$} & Lambda \\
+\hline
+ Foot    & &  &Foot  & Foot    \\
+\hline
+\end{longtblr}
+
+\clearpage
 
 In terms of project output, the PM expects the project team to follow the plan on deliverables; project deliverables are
 described in the proposal and workplan. RSEs contribute to the publications and software/data releases.
