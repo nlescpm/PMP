@@ -261,6 +261,7 @@ archives);
 
 To formally record results and facilitate knowledge transfer, RSEs must make all project output available in the
 relevant systems, online locations and databases:
+\iffalse
 \let\myhcolw\relax 
 \newlength{\myhcolw}
 \setlength{\myhcolw}{0.3\textwidth}
@@ -350,39 +351,114 @@ articles, presentations, etc.) &  & \\[2ex]\midrule
 \let\mycolfivew\relax
 
 \clearpage
-
+\fi
 \NewTblrTheme{fancy}{
   \SetTblrStyle{firsthead}{font=\bfseries}
   \SetTblrStyle{firstfoot}{fg=blue2}
   \SetTblrStyle{middlefoot}{\itshape}
   \SetTblrStyle{caption-tag}{red2}
+  \setlist[itemize]{leftmargin=*}
 }
 \begin{longtblr}[
   theme = fancy,
   %caption = {A Long Long Long Long Long Long Long Table},
   %entry = {Short Caption},
   label = {tblr:test},
-  note{a} = {It is the first footnote.},
-  note{$\dag$} = {It is the second long long long long long long footnote.},
+%  note{a} = {It is the first footnote.},
+%  note{$\dag$} = {It is the second long long long long long long footnote.},
   %remark{Note} = {Some general note. Some general note. Some general note.},
-  %remark{Source} = {Made up by myself. Made up by myself. Made up by myself.},
+  %remark{Source} = {Made up by myself. Made up by myself. Made up by myself.}
 ]{
-  colspec = {|X|X|X|X|X|}, width = 1\linewidth,
-  rowhead = 1, rowfoot = 1,
-  row{odd} = {gray!20}, row{even} = {white},
-  row{1} = {nlesc-blue}, row{Z} = {nlesc-yellow},
+ % colspec = {|X|X|X|X|X|}, width = 1\linewidth,
+  colspec={|m{0.12\textwidth}|m{0.12\textwidth}|m{0.32\textwidth}|m{0.12\textwidth}|m{0.2\textwidth}|}, width = 1\linewidth,
+  rowhead = 1, %rowfoot = 1,
+  row{1} = {font=\bfseries},
+  column{1} = {font=\bfseries},
+  row{odd} = {white}, row{even} = {white},
+  row{1} = {nlesc-blue}, %row{Z} = {nlesc-yellow},
+  cell{2}{1,4,5} = {r=2}{t},
+  cell{6}{1,4,5} = {r=3}{t},
+  cell{9}{1,4} = {r=2}{t},
+  cell
 }
-\hline
- Head    & Head  & Head    \\
-\hline
- Head    & Head  & Head    \\
-\hline
- Epsilon & &  & Zeta\TblrNote{a}       & Eta    \\
-\hline
- Iota    & &  &Kappa\TblrNote{$\dag$} & Lambda \\
-\hline
- Foot    & &  &Foot  & Foot    \\
-\hline
+\toprule[2pt,black]
+What & Responsibility of & Responsible for  & URL & Additional info \\
+\toprule[2pt,black]
+Zenodo (NLeSC community) & PM  & curating and approving new publications & \href{https://zenodo.org/communities/nlesc/}{Zenodo link} & 
+    \begin{minipage}[t]{1\linewidth}
+    \begin{itemize}\itemsep0em
+        \item Publications uploaded to Zenodo, are added to this community
+        \item PMs are curators of this community and approve new publications
+    \end{itemize} 
+    \end{minipage}  \\
+%\midrule
+\cmidrule{2-3}
+    & RSEs & getting a concept DOI for a data or software release, or a document (e.g., non-peer-reviewed
+articles, presentations, etc.) &  & \\
+\midrule
+Research Software Directory (RSD), software and project pages & Lead RSE & 
+    \begin{minipage}[t]{1\linewidth}
+    \begin{itemize}\itemsep0em
+      \item creating RSD project page, if needed 
+      \item maintaining RSD pages and ensuring the meta data is complete and up to date
+      \item ensuring PM has maintainer access to the page  
+    \end{itemize} 
+    \end{minipage}  & 
+    See \href{https://research-software-directory.github.io/documentation/introduction.html}{RSD intro} and
+\href{https://github.com/research-software-directory/documentation/blob/main/docs/adding-projects.md}{Adding RSD project} &
+  Each project has its RSD project page\\
+\midrule
+    & RSEs &  
+    \begin{minipage}[t]{1\linewidth}
+    \begin{itemize}\itemsep0em
+      \item creating RSD software pages
+      \item a timely and accurate registration and maintenance of the output
+      \item keeping the (meta) data stored such as description, GitHub organization(s), concept DOI, mentions (via DOI or URL), related software and projects complete and up to date
+    \end{itemize} 
+    \end{minipage} &  & \\
+\midrule
+     Project portfolio (on SharePoint) & PM & adding direct link to the project portfolio folder to Ganttic & 
+     cf.~\cite{proj-portfolio} and Appendix~\ref{app:folders} for structure explanation. &  
+    \begin{minipage}[t]{1\linewidth}
+    \begin{itemize}\itemsep0em    
+       \item An internal archive, which is periodically and automatically backed up
+       \item Direct link to the project portfolio folder is available in Ganttic 
+    \end{itemize} 
+    \end{minipage}  
+   \\
+\midrule
+    & Lead RSE & ensuring that the output is uploaded & & \\
+\midrule
+    & RSE & 
+   \begin{minipage}[t]{1\linewidth}
+    \begin{itemize}\itemsep0em
+        \item uploading the output such as papers, reports, and presentations
+        \item adding links to the source material to the project log
+    \end{itemize} 
+    \end{minipage} & &  \\
+\midrule
+  The eScience Center blog  & RSEs &  
+  \begin{minipage}[t]{1\linewidth}
+    \begin{itemize}\itemsep0em
+        \item Creating blog entry regarding project, its progress or project output
+    \end{itemize} 
+    \end{minipage} &
+  Indexed at \href{https://blog.esciencecenter.nl/}{eScience Blog}, instructions on blogging are posted on the Intranet~\cite{blog-intranet}. &  
+  \begin{minipage}[t]{1\linewidth}
+    \begin{itemize}\itemsep0em
+        \item URL of final blog entry added to project RSD page
+    \end{itemize} 
+    \end{minipage}\\
+\midrule
+      & Editorial Team & 
+    \begin{minipage}[t]{1\linewidth}
+    \begin{itemize}\itemsep0em
+        \item Reviewing blog post entry of project team 
+        \item Helping at any stage with writing and publishing process
+    \end{itemize} 
+    \end{minipage} & &   \\ 
+% Foot    & &  &Foot  & Foot    \\
+\bottomrule
 \end{longtblr}
 
 \clearpage
