@@ -261,97 +261,7 @@ archives);
 
 To formally record results and facilitate knowledge transfer, RSEs must make all project output available in the
 relevant systems, online locations and databases:
-\iffalse
-\let\myhcolw\relax 
-\newlength{\myhcolw}
-\setlength{\myhcolw}{0.3\textwidth}
-\newlength{\mycolonew}
-\setlength{\mycolonew}{0.12\textwidth}
-\newlength{\mycolfourw}
-\setlength{\mycolfourw}{0.15\textwidth}
-\newlength{\mycolfivew}
-\setlength{\mycolfivew}{0.2\textwidth}
-\begin{table}[!h]
-\setlist[itemize]{leftmargin=*}
-\begin{booktabs}{colspec={|>{\bfseries}p{\mycolonew}|p{0.12\textwidth}|p{\myhcolw}|p{\mycolfourw}|p{\mycolfivew}|},row{even}={white}}
-\toprule
-\textbf{What} & \textbf{Responsibility of} & \textbf{Responsible for}  & \textbf{URL} & \textbf{Additional info}\\[2ex]\toprule
-\SetCell[r=2]{m,\mycolonew} Zenodo (NLeSC community) & PM  & curating and approving new publications &
-\SetCell[r=2]{m,\mycolfourw} \href{https://zenodo.org/communities/nlesc/}{Zenodo link} & 
-\SetCell[r=2]{m,\mycolfivew} 
-    \begin{minipage}[t]{\mycolfivew}
-    \begin{itemize}\itemsep0em
-        \item Publications uploaded to Zenodo, are added to this community
-        \item PMs are curators of this community and approve new publications
-    \end{itemize} 
-    \end{minipage}  \\[2ex]\midrule
-    & RSEs & getting a concept DOI for a data or software release, or a document (e.g., non-peer-reviewed
-articles, presentations, etc.) &  & \\[2ex]\midrule
-    \SetCell[r=2]{m,\mycolonew} Research Software Directory (RSD), software and project pages & Lead RSE & 
-    \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}\itemsep0em
-      \item creating RSD project page, if needed 
-      \item maintaining RSD pages and ensuring the meta data is complete and up to date
-      \item ensuring PM has maintainer access to the page  
-    \end{itemize} 
-    \end{minipage}  & 
-    \SetCell[r=2]{m,\mycolfourw} See \href{https://research-software-directory.github.io/documentation/introduction.html}{RSD intro} and
-\href{https://github.com/research-software-directory/documentation/blob/main/docs/adding-projects.md}{Adding RSD project} &
-  \SetCell[r=2]{m,\mycolfivew} Each project has its RSD project page\\[2ex]\midrule 
-    & RSEs &  
-    \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}\itemsep0em
-      \item creating RSD software pages
-      \item a timely and accurate registration and maintenance of the output
-      \item keeping the (meta) data stored such as description, GitHub organization(s), concept DOI, mentions (via DOI or URL), related software and projects complete and up to date
-    \end{itemize} 
-    \end{minipage} &  & \\[2ex]\midrule
-     \SetCell[r=3]{m,\mycolonew} Project portfolio (on SharePoint) & PM & adding direct link to the project portfolio folder to Ganttic & 
-     \SetCell[r=3]{m,\mycolfourw} cf.~\cite{proj-portfolio} and Appendix~\ref{app:folders} for structure explanation. &  
-     \SetCell[r=3]{m,\mycolfivew}   
-    \begin{minipage}[t]{\mycolfivew}
-    \begin{itemize}\itemsep0em    
-       \item An internal archive, which is periodically and automatically backed up
-       \item Direct link to the project portfolio folder is available in Ganttic 
-    \end{itemize} 
-    \end{minipage}  \\[2ex]\midrule
-    & Lead RSE & ensuring that the output is uploaded & & \\[2ex]\midrule
-    & RSE & 
-   \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}\itemsep0em
-        \item uploading the output such as papers, reports, and presentations
-        \item adding links to the source material to the project log
-    \end{itemize} 
-    \end{minipage} & &  \\[2ex]\midrule
-  \SetCell[r=2]{m,\mycolonew} The eScience Center blog  & RSEs &  
-  \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}\itemsep0em
-        \item Creating blog entry regarding project, its progress or project output
-    \end{itemize} 
-    \end{minipage} &
-  \SetCell[r=2]{m,\mycolfourw} Indexed at \href{https://blog.esciencecenter.nl/}{eScience Blog}, instructions on blogging are posted on the Intranet~\cite{blog-intranet}. &  
-  \begin{minipage}[t]{\mycolfivew}
-    \begin{itemize}\itemsep0em
-        \item URL of final blog entry added to project RSD page
-    \end{itemize} 
-    \end{minipage}\\[2ex]\midrule
-      & Editorial Team & 
-    \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}\itemsep0em
-        \item Reviewing blog post entry of project team 
-        \item Helping at any stage with writing and publishing process
-    \end{itemize} 
-    \end{minipage} & &   \\                    
-    \bottomrule
-\end{booktabs}
-\end{table}
-\let\myhcolw\relax 
-\let\mycolonew\relax
-\let\mycolfourw\relax
-\let\mycolfivew\relax
 
-\clearpage
-\fi
 \NewTblrTheme{fancy}{
   \SetTblrStyle{firsthead}{font=\bfseries}
   \SetTblrStyle{firstfoot}{fg=blue2}
@@ -363,7 +273,7 @@ articles, presentations, etc.) &  & \\[2ex]\midrule
   theme = fancy,
   %caption = {A Long Long Long Long Long Long Long Table},
   %entry = {Short Caption},
-  label = {tblr:test},
+%  label = {tblr:test},
 %  note{a} = {It is the first footnote.},
 %  note{$\dag$} = {It is the second long long long long long long footnote.},
   %remark{Note} = {Some general note. Some general note. Some general note.},
@@ -375,10 +285,10 @@ articles, presentations, etc.) &  & \\[2ex]\midrule
   row{1} = {font=\bfseries},
   column{1} = {font=\bfseries},
   row{odd} = {white}, row{even} = {white},
-  row{1} = {nlesc-blue}, %row{Z} = {nlesc-yellow},
-  cell{2}{1,4,5} = {r=2}{c},
-  cell{6}{1,4,5} = {r=3}{c},
-  cell{9}{1,4} = {r=2}{c},
+  row{1} = {gray!20}, %row{Z} = {nlesc-yellow},
+  cell{2}{1,4,5} = {r=2}{t},
+  cell{6}{1,4,5} = {r=3}{t},
+  cell{9}{1,4} = {r=2}{t},
 }
 \toprule
 What & Responsibility of & Responsible for  & URL & Additional info \\
@@ -395,8 +305,9 @@ Zenodo (NLeSC community) & PM  & curating and approving new publications & \href
     & RSEs & getting a concept DOI for a data or software release, or a document (e.g., non-peer-reviewed
 articles, presentations, etc.) &  & \\
 \midrule
-Research Software Directory (RSD), software and project pages & Lead RSE & 
+RSD, software and project pages & Lead RSE & 
     \begin{minipage}[t]{1\linewidth}
+    \vspace{-1cm}
     \begin{itemize}\itemsep0em
       \item creating RSD project page, if needed 
       \item maintaining RSD pages and ensuring the meta data is complete and up to date
@@ -406,7 +317,7 @@ Research Software Directory (RSD), software and project pages & Lead RSE &
     See \href{https://research-software-directory.github.io/documentation/introduction.html}{RSD intro} and
 \href{https://github.com/research-software-directory/documentation/blob/main/docs/adding-projects.md}{Adding RSD project} &
   Each project has its RSD project page\\
-\midrule
+\cmidrule{2-3}
     & RSEs &  
     \begin{minipage}[t]{1\linewidth}
     \begin{itemize}\itemsep0em
@@ -460,7 +371,6 @@ Research Software Directory (RSD), software and project pages & Lead RSE &
 \bottomrule
 \end{longtblr}
 
-\clearpage
 
 In terms of project output, the PM expects the project team to follow the plan on deliverables; project deliverables are
 described in the proposal and workplan. RSEs contribute to the publications and software/data releases.
