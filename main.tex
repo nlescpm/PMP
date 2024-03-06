@@ -3,27 +3,6 @@
 
 \input{packages}
 \input{macros}
-\usepackage{pifont}
-
-
-
-
-
-\UseTblrLibrary{booktabs}
-\newcommand{\testtable}[0]{
-\begin{booktabs}{colspec={rccc},row{odd}={blue9}}
-    \toprule
-    Thing & Value & Value & Value\\
-    \midrule
-    A & 1 & 2 & 3\\
-    B & 1 & 2 & 3\\
-    C & 1 & 2 & 3\\
-    \specialrule{2.5pt,teal5}{1pt}{1pt}
-    D & 1 & 2 & 3\\
-    E & 1 & 2 & 3\\
-    \bottomrule
-\end{booktabs}
-}
 
 
 \title{{\fontsize{36}{38}\selectfont \textbf{\color{nlesc-purple}Project Management Protocol of the Netherlands eScience Center}}}
@@ -69,19 +48,19 @@
 \clearpage
 \placelogo{}
 
-\input{intro}
+\input{tex/intro}
 
 \clearpage
 
-\input{initiation}
+\input{tex/initiation}
 
 \clearpage
 
-\input{execution}
+\input{tex/execution}
 
 \clearpage
 
-\input{closing}
+\input{tex/closing}
 
 %bibliography section rename
 \renewcommand{\bibname}{Related links and references}
@@ -97,30 +76,30 @@
 {\color{nlesc-blue}\appendixpage}
 \addappheadtotoc
 
-\input{app-leadrse}
+\input{tex/app-leadrse}
 
 \clearpage
 
-\input{app-mandate}
+\input{tex/app-mandate}
 
 \clearpage
 
-\input{app-role}
+\input{tex/app-role}
 
 \clearpage
 
-\input{app-structure}
+\input{tex/app-structure}
 
 \clearpage
 
-\input{app-logexample}
+\input{tex/app-logexample}
 
 \clearpage
 
-\input{app-planexamples}
+\input{tex/app-planexamples}
 
 \clearpage
 
-\input{app-workshop}
+\input{tex/app-workshop}
 
 \end{document}
