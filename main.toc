@@ -1,0 +1,73 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Scope and definitions}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Scope}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Stakeholders}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Types of projects}{6}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Call projects}{6}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}External projects}{7}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Other projects}{7}{subsubsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.4}Project life cycle overview}{8}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Project Initiation}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}PM assignment}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Administrative Setup}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}TL assignment}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Preparation by PM}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Staffing}{11}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Project vacancy announcement}{11}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Assignment of RSEs}{12}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Lead RSE availability}{12}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Project Planning}{12}{subsubsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.6}Kick-off meetings}{13}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Administrative start meeting}{13}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Project Kick-off}{14}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.7}Technology plan}{15}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Legal agreements}{16}{subsection.2.8}%
+\contentsline {section}{\numberline {3}Project execution}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Project logging}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Status update meetings}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Project team meetings}{18}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Writing hours and managing project budget}{18}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Workshops}{19}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Data and Software Management Plans}{21}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Knowledge transfer}{21}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Output management}{21}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}Outreach}{23}{subsubsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.8}Code quality and sustainability checks}{23}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Code development}{24}{subsubsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.2}Code review}{24}{subsubsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.9}Annual project review meeting}{24}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}Review meeting preparation}{25}{subsubsection.3.9.1}%
+\contentsline {subsubsection}{\numberline {3.9.2}Technology status report}{26}{subsubsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.3}At the review meeting}{26}{subsubsection.3.9.3}%
+\contentsline {subsubsection}{\numberline {3.9.4}After the review meeting}{27}{subsubsection.3.9.4}%
+\contentsline {subsection}{\numberline {3.10}Reporting}{27}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Conflict resolution and complaint procedure}{27}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Non-RSE Consultants}{28}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Changes to the project}{28}{subsection.3.13}%
+\contentsline {subsubsection}{\numberline {3.13.1}Proposal changes request}{29}{subsubsection.3.13.1}%
+\contentsline {subsubsection}{\numberline {3.13.2}Processing the changes request and decision}{29}{subsubsection.3.13.2}%
+\contentsline {subsubsection}{\numberline {3.13.3}Early project termination}{30}{subsubsection.3.13.3}%
+\contentsline {subsection}{\numberline {3.14}Opportunities beyond the project}{30}{subsection.3.14}%
+\contentsline {subsubsection}{\numberline {3.14.1}Increasing reusability (in this document called software sustainability)}{31}{subsubsection.3.14.1}%
+\contentsline {subsubsection}{\numberline {3.14.2}Knowledge and Development}{31}{subsubsection.3.14.2}%
+\contentsline {subsubsection}{\numberline {3.14.3}External funding}{31}{subsubsection.3.14.3}%
+\contentsline {subsubsection}{\numberline {3.14.4}Fellowship}{31}{subsubsection.3.14.4}%
+\contentsline {section}{\numberline {4}Project closing}{32}{section.4}%
+\contentsline {subsection}{\numberline {4.1}End report}{32}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Requesting end report}{33}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Checking end report}{33}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Formally closing the project}{33}{subsection.4.2}%
+\contentsline {section}{Appendices}{36}{section*.14}%
+\contentsline {section}{\numberline {A}Lead RSE role description}{36}{appendix.A}%
+\contentsline {section}{\numberline {B}PM mandate to make changes in projects}{38}{appendix.B}%
+\contentsline {section}{\numberline {C}Role of PMs and others in external and Ambition 2 projects}{39}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}Fellowship projects}{39}{subsection.C.1}%
+\contentsline {subsection}{\numberline {C.2}External projects}{39}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.3}KD and SS projects}{40}{subsection.C.3}%
+\contentsline {subsection}{\numberline {C.4}D\&C projects}{40}{subsection.C.4}%
+\contentsline {section}{\numberline {D}Project Portfolio and its Structure}{41}{appendix.D}%
+\contentsline {section}{\numberline {E}Example of the project log}{42}{appendix.E}%
+\contentsline {section}{\numberline {F}Examples of Technology Plan }{43}{appendix.F}%
+\contentsline {subsection}{\numberline {F.1}Technology plan for "Personalized cancer vaccine design through 3D modelling boosted geometric learning (3D-Vac)"}{43}{subsection.F.1}%
+\contentsline {subsection}{\numberline {F.2}Technology plan for "Exchange of CO2 in tropical ecosystems unravelled (EXCITED)"}{47}{subsection.F.2}%
+\contentsline {section}{\numberline {G}Internal Procedure of the Project Workshops Approval}{49}{appendix.G}%
