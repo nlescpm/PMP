@@ -62,6 +62,12 @@
   \setlist[itemize]{leftmargin=*}
 }
 
+%%%%%
+
+
+
+%%%%%
+
  \setcounter{footnote}{0}
  
  \newcommand{\ftnotetxt}[2]{
@@ -70,8 +76,9 @@
    
  \newcommand{\ftnotelbl}[1]{
    \textsuperscript{\ref{#1}}
+   %\footnotemark[\ref{#1}]
    }
-
+%%%%%
 
 % searching automatically list of special terms, hightlight and add these to the index 
 \SearchList{LeadRSEkey}{\colorbox{nlesc-yellow}{#1}\index{#1}}{Lead RSE,LeadRSE} % requires xesearch

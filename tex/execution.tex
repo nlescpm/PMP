@@ -264,7 +264,7 @@ relevant systems, online locations and databases:
 
 \begin{longtblr}[
   theme = fancy,
-  %caption = {A Long Long Long Long Long Long Long Table},
+  caption = {Output management},
   %entry = {Short Caption},
 %  label = {tblr:test},
 %  note{a} = {It is the first footnote.},
@@ -273,13 +273,13 @@ relevant systems, online locations and databases:
   %remark{Source} = {Made up by myself. Made up by myself. Made up by myself.}
 ]{
  % colspec = {|X|X|X|X|X|}, width = 1\linewidth,
-  colspec={|m{0.12\textwidth}|m{0.12\textwidth}|m{0.32\textwidth}|m{0.12\textwidth}|m{0.2\textwidth}|}, width = 1\linewidth,
+  colspec={|p{0.12\textwidth}|p{0.12\textwidth}|p{0.32\textwidth}|p{0.12\textwidth}|p{0.2\textwidth}|}, width = 1\linewidth,
   rowhead = 1, %rowfoot = 1,
   row{1} = {font=\bfseries},
   column{1} = {font=\bfseries},
   row{odd} = {white}, row{even} = {white},
   row{1} = {gray!20}, %row{Z} = {nlesc-yellow},
-  cell{2}{1,4,5} = {r=2}{t},
+  %cell{2}{1,4,5} = {r=2}{t},
   cell{6}{1,4,5} = {r=3}{t},
   cell{9}{1,4} = {r=2}{t},
 }
@@ -295,12 +295,12 @@ Zenodo (NLeSC community) & PM  & curating and approving new publications & \href
     \end{minipage}  \\
 %\midrule
 \cmidrule{2-3}
-    & RSEs & getting a concept DOI for a data or software release, or a document (e.g., non-peer-reviewed
-articles, presentations, etc.) &  & \\
+    & RSEs & getting a concept DOI for a data or software release, or a document (e.g., non-peer-reviewed articles, presentations, etc.) 
+&  & \\
 \midrule
 RSD, software and project pages & Lead RSE & 
     \begin{minipage}[t]{1\linewidth}
-    \vspace{-1cm}
+    %\vspace{-1cm}
     \begin{itemize}\itemsep0em
       \item creating RSD project page, if needed 
       \item maintaining RSD pages and ensuring the meta data is complete and up to date
