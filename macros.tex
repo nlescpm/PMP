@@ -11,7 +11,7 @@
 \AddToShipoutPictureBG{%
 %  \AtPageLowerRight{\makebox[1.3\textwidth][r]{%
 %    \includegraphics[scale=1]{img/a0000-img003.jpg}}}}
-\AtPageUpperLeft{\raisebox{-8\baselineskip}{\makebox[\paperwidth]{\hspace{16cm}\includegraphics[scale=1]{img/a0000-img002.png}}}}
+%\AtPageUpperLeft{\raisebox{-8\baselineskip}{\makebox[\paperwidth]{\hspace{16cm}\includegraphics[scale=1]{img/a0000-img002.png}}}}
   \AtPageLowerLeft{\raisebox{2\baselineskip}{\makebox[\paperwidth]{\hspace{16cm}\includegraphics[scale=1]{img/a0000-img003.jpg}}}} 
 }%
 }
@@ -66,7 +66,7 @@
 
 
 
-%%%%%
+%%%%% script for footnote
 
  \setcounter{footnote}{0}
  
@@ -80,7 +80,7 @@
    }
 %%%%%
 
-%colored box around the text
+%%%%% colored box around the text
 \newcommand{\cfbox}[2]{%
     \colorlet{currentcolor}{.}%
     {\color{white}%
@@ -94,6 +94,6 @@
 %\SearchList{LeadRSEkey}{\colorbox{nlesc-yellow}{#1}\index{#1}}{Lead RSE,LeadRSE} % requires xesearch
 \SearchList{PMkey}{\cbox{nlesc-purple!80}{#1}\index{PM}}{PM,PMs}
 \SearchList{TLkey}{\cbox{nlesc-blue!50!black}{#1}\index{TL}}{TL,TLs}
-\SearchList{Operkey}{\cbox{red!70}{#1}\index{#1}}{Finance,DoO}%Operations,Controller}
+\SearchList{Operkey}{\cbox{green!70!black}{#1}\index{#1}}{Finance,DoO}%Operations,Controller}
 
 \makeindex   
