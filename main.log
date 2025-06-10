@@ -1,0 +1,2774 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.3.30)  10 JUN 2025 23:37
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main
+(./main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (./packages.tex
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count189
+\Gm@cntv=\count190
+\c@Gm@tempcnt=\count191
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen149
+\ESO@tempdimb=\dimen150
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count192
+\U@D=\dimen151
+\l@unhyphenated=\language35
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
+\bbl@readstream=\read2
+\bbl@dirlevel=\count193
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-dutch/dutch.ldf
+Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
+Package babel Info: Making " an active character on input line 127.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
+)
+\XKV@depth=\count194
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count195
+\mult@box=\box50
+\multicol@leftmargin=\dimen152
+\c@unbalance=\count196
+\c@collectmore=\count197
+\doublecol@number=\count198
+\multicoltolerance=\count199
+\multicolpretolerance=\count266
+\full@width=\dimen153
+\page@free=\dimen154
+\premulticols=\dimen155
+\postmulticols=\dimen156
+\multicolsep=\skip49
+\multicolbaselineskip=\skip50
+\partial@page=\box51
+\last@line=\box52
+\maxbalancingoverflow=\dimen157
+\mult@rightbox=\box53
+\mult@grightbox=\box54
+\mult@firstbox=\box55
+\mult@gfirstbox=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\c@minrows=\count267
+\c@columnbadness=\count268
+\c@finalcolumnbadness=\count269
+\last@try=\dimen158
+\multicolovershoot=\dimen159
+\multicolundershoot=\dimen160
+\mult@nat@firstbox=\box93
+\colbreak@box=\box94
+\mc@col@check@num=\count270
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen161
+\Hy@linkcounter=\count271
+\Hy@pagecounter=\count272
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count273
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Option `hyperfootnotes' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count274
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen162
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count275
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count276
+\c@Item=\count277
+\c@Hfootnote=\count278
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box95
+\c@Hy@AnnotLevel=\count279
+\HyField@AnnotCount=\count280
+\Fld@listcount=\count281
+\c@bookmark@seq@number=\count282
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks20
+\pgfutil@tempdima=\dimen165
+\pgfutil@tempdimb=\dimen166
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box96
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks23
+))
+\pgf@x=\dimen167
+\pgf@y=\dimen168
+\pgf@xa=\dimen169
+\pgf@ya=\dimen170
+\pgf@xb=\dimen171
+\pgf@yb=\dimen172
+\pgf@xc=\dimen173
+\pgf@yc=\dimen174
+\pgf@xd=\dimen175
+\pgf@yd=\dimen176
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
+\pgf@sys@id@count=\count287
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)
+\pgfsys@objnum=\count288
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count289
+\pgfsyssoftpath@bigbuffer@items=\count290
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen177
+\pgfmath@count=\count291
+\pgfmath@box=\box97
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count292
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen178
+\pgf@picmaxx=\dimen179
+\pgf@picminy=\dimen180
+\pgf@picmaxy=\dimen181
+\pgf@pathminx=\dimen182
+\pgf@pathmaxx=\dimen183
+\pgf@pathminy=\dimen184
+\pgf@pathmaxy=\dimen185
+\pgf@xx=\dimen186
+\pgf@xy=\dimen187
+\pgf@yx=\dimen188
+\pgf@yy=\dimen189
+\pgf@zx=\dimen190
+\pgf@zy=\dimen191
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen192
+\pgf@path@lasty=\dimen193
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen194
+\pgf@shorten@start@additional=\dimen195
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box98
+\pgf@hbox=\box99
+\pgf@layerbox@main=\box100
+\pgf@picture@serial@count=\count293
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen196
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen197
+\pgf@pt@y=\dimen198
+\pgf@pt@temp=\dimen199
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen256
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen257
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box101
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box102
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen258
+\pgf@nodesepend=\dimen259
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen260
+\pgffor@skip=\dimen261
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen262
+)
+\tikz@lastx=\dimen263
+\tikz@lasty=\dimen264
+\tikz@lastxsaved=\dimen265
+\tikz@lastysaved=\dimen266
+\tikz@lastmovetox=\dimen267
+\tikz@lastmovetoy=\dimen268
+\tikzleveldistance=\dimen269
+\tikzsiblingdistance=\dimen270
+\tikz@figbox=\box103
+\tikz@figbox@bg=\box104
+\tikz@tempbox=\box105
+\tikz@tempbox@bg=\box106
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
+)
+\tikz@expandcount=\count304
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen271
+\captionmargin@=\dimen272
+\captionwidth=\dimen273
+\caption@tempdima=\dimen274
+\caption@indent=\dimen275
+\caption@parindent=\dimen276
+\caption@hangindent=\dimen277
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count305
+\c@continuedfloat=\count306
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count307
+\c@subtable=\count308
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has section divisions on input line 50.
+
+
+Package tocbibind Note: Using section or other style headings.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count309
+\c@@ppsavesec=\count310
+\c@@ppsaveapp=\count311
+)
+(./tabularray.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count312
+\l__color_backend_stack_int=\count313
+\g__color_backend_stack_int=\count314
+\g__graphics_track_int=\count315
+\l__pdf_internal_box=\box107
+\g__pdf_backend_object_int=\count316
+\g__pdf_backend_annotation_int=\count317
+\g__pdf_backend_link_int=\count318
+))
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count319
+\l__tblr_c_int=\count320
+\l__tblr_r_int=\count321
+\l__tblr_d_dim=\dimen278
+\l__tblr_h_dim=\dimen279
+\l__tblr_o_dim=\dimen280
+\l__tblr_p_dim=\dimen281
+\l__tblr_q_dim=\dimen282
+\l__tblr_r_dim=\dimen283
+\l__tblr_s_dim=\dimen284
+\l__tblr_t_dim=\dimen285
+\l__tblr_v_dim=\dimen286
+\l__tblr_w_dim=\dimen287
+\l__tblr_a_box=\box108
+\l__tblr_b_box=\box109
+\l__tblr_c_box=\box110
+\l__tblr_d_box=\box111
+\g__tblr_table_count_int=\count322
+\c@rownum=\count323
+\c@colnum=\count324
+\c@rowcount=\count325
+\c@colcount=\count326
+\abovesep=\dimen288
+\belowsep=\dimen289
+\leftsep=\dimen290
+\rightsep=\dimen291
+\g_tblr_level_int=\count327
+\g__tblr_data_row_key_count_int=\count328
+\g__tblr_data_column_key_count_int=\count329
+\g__tblr_data_cell_key_count_int=\count330
+\g__tblr_array_int=\count331
+\l__tblr_key_count_int=\count332
+\l__tblr_key_quotient_int=\count333
+\l__tblr_key_quotient_two_int=\count334
+\l__tblr_key_remainder_int=\count335
+\g__tblr_data_str_value_count_int=\count336
+\rulewidth=\dimen292
+\l__tblr_strut_dp_dim=\dimen293
+\l__tblr_strut_ht_dim=\dimen294
+\g__tblr_cell_wd_dim=\dimen295
+\g__tblr_cell_ht_dim=\dimen296
+\g__tblr_cell_head_dim=\dimen297
+\g__tblr_cell_foot_dim=\dimen298
+\l__column_target_dim=\dimen299
+\l__tblr_caption_box=\box112
+\l__tblr_caption_left_box=\box113
+\l__tblr_row_head_box=\box114
+\l__tblr_row_foot_box=\box115
+\l__tblr_row_head_foot_dim=\dimen300
+\tablewidth=\dimen301
+\l__tblr_table_firsthead_box=\box116
+\l__tblr_table_middlehead_box=\box117
+\l__tblr_table_lasthead_box=\box118
+\l__tblr_table_firstfoot_box=\box119
+\l__tblr_table_middlefoot_box=\box120
+\l__tblr_table_lastfoot_box=\box121
+\l__tblr_remain_height_dim=\dimen302
+\l__tblr_long_from_int=\count337
+\l__tblr_long_to_int=\count338
+\l__tblr_curr_i_int=\count339
+\l__tblr_prev_i_int=\count340
+\l__tblr_table_page_int=\count341
+\l__tblr_table_head_box=\box122
+\l__tblr_table_foot_box=\box123
+\l__tblr_table_head_foot_dim=\dimen303
+\l__tblr_table_head_body_foot_dim=\dimen304
+\l__tblr_table_box=\box124
+\l__tblr_table_hlines_box=\box125
+\l__tblr_hline_box=\box126
+\l__tblr_row_box=\box127
+\l__tblr_col_o_wd_dim=\dimen305
+\l__tblr_col_b_wd_dim=\dimen306
+\l__tblr_hline_leftskip_dim=\dimen307
+\l__tblr_hline_rightskip_dim=\dimen308
+\l__tblr_row_ht_dim=\dimen309
+\l__tblr_row_dp_dim=\dimen310
+\l__tblr_row_abovesep_dim=\dimen311
+\l__tblr_row_belowsep_dim=\dimen312
+\l__tblr_row_vlines_box=\box128
+\l__tblr_vline_box=\box129
+\l__tblr_cell_box=\box130
+\l__row_upper_dim=\dimen313
+\l__row_lower_dim=\dimen314
+\l__row_vpace_dim=\dimen315
+\l__tblr_vline_aboveskip_dim=\dimen316
+\l__tblr_vline_belowskip_dim=\dimen317
+\l__tblr_cell_wd_dim=\dimen318
+\l__tblr_cell_ht_dim=\dimen319
+\l__tblr_diag_box=\box131
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ltablex/ltablex.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count342
+\LTcapwidth=\dimen320
+\LT@head=\box132
+\LT@firsthead=\box133
+\LT@foot=\box134
+\LT@lastfoot=\box135
+\LT@gbox=\box136
+\LT@cols=\count343
+\LT@rows=\count344
+\c@LT@tables=\count345
+\c@LT@chunks=\count346
+\LT@p@ftn=\toks32
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen321
+\ar@mcellbox=\box137
+\extrarowheight=\dimen322
+\NC@list=\toks33
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box138
+)
+\TX@col@width=\dimen323
+\TX@old@table=\dimen324
+\TX@old@col=\dimen325
+\TX@target=\dimen326
+\TX@delta=\dimen327
+\TX@cols=\count347
+\TX@ftn=\toks34
+))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen328
+\lightrulewidth=\dimen329
+\cmidrulewidth=\dimen330
+\belowrulesep=\dimen331
+\belowbottomsep=\dimen332
+\aboverulesep=\dimen333
+\abovetopsep=\dimen334
+\cmidrulesep=\dimen335
+\cmidrulekern=\dimen336
+\defaultaddspace=\dimen337
+\@cmidla=\count348
+\@cmidlb=\count349
+\@aboverulesep=\dimen338
+\@belowrulesep=\dimen339
+\@thisruleclass=\count350
+\@lastruleclass=\count351
+\@thisrulewidth=\dimen340
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count352
+\l__fontspec_language_int=\count353
+\l__fontspec_strnum_int=\count354
+\l__fontspec_tmp_int=\count355
+\l__fontspec_tmpa_int=\count356
+\l__fontspec_tmpb_int=\count357
+\l__fontspec_tmpc_int=\count358
+\l__fontspec_em_int=\count359
+\l__fontspec_emdef_int=\count360
+\l__fontspec_strong_int=\count361
+\l__fontspec_strongdef_int=\count362
+\l__fontspec_tmpa_dim=\dimen341
+\l__fontspec_tmpb_dim=\dimen342
+\l__fontspec_tmpc_dim=\dimen343
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip58
+\enit@outerparindent=\dimen344
+\enit@toks=\toks35
+\enit@inbox=\box139
+\enit@count@id=\count363
+\enitdp@description=\count364
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box140
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen345
+\ttl@minus=\dimen346
+\ttl@toksa=\toks36
+\titlewidth=\dimen347
+\titlewidthlast=\dimen348
+\titlewidthfirst=\dimen349
+))
+(/usr/share/texlive/texmf-dist/tex/xetex/xesearch/xesearch.sty
+Package: xesearch 2019/04/24 v.0.2 Searching documents.
+\xs@TempCount=\count365
+\xs@CaseSensitive=\count366
+\xs@TempLength=\count367
+\xs@Length=\count368
+\xs@Box=\box141
+\xs@DefToks=\toks37
+\xs@NoReplaceToks=\toks38
+) (./macros.tex
+
+Package fontspec Info: Assistant-Regular scale = 0.861996984484868.
+
+
+Package fontspec Info: Assistant-Regular scale = 0.861996984484868.
+
+
+Package fontspec Info: Assistant-Bold scale = 0.861996984484868.
+
+
+Package fontspec Info: Nunito-LightItalic scale = 0.8904928756308861.
+
+
+Package fontspec Info: Nunito-Italic scale = 0.8904928756308861.
+
+
+Package fontspec Info: Font family 'Assistant(0)' created for font 'Assistant'
+(fontspec)             with options
+(fontspec)             [Mapping=tex-text,Scale=MatchLowercase,Ligatures=TeX,Pat
+h
+(fontspec)             = font/,Extension = .ttf,UprightFont =
+(fontspec)             *-Regular,BoldFont = *-Bold,ItalicFont =
+(fontspec)             Nunito-LightItalic,BoldItalicFont = Nunito-Italic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.861996984484868]"[font/Assistant-Regular.ttf]/OT
+:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.861996984484868]"[font/Assistant-Bold.ttf]/OT:sc
+ript=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.8904928756308861]"[font/Nunito-LightItalic.ttf]/
+OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.8904928756308861]"[font/Nunito-Italic.ttf]/OT:sc
+ript=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 9.43889pt on input line 25.
+\myhcolw=\skip61
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count369
+))
+\main@idxfile=\write4
+\openout4 = `main.idx'.
+
+
+Writing index file main.idx
+(/usr/share/texlive/texmf-dist/tex/latex/tablefootnote/tablefootnote.sty
+Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count370
+\calc@Bcount=\count371
+\calc@Adimen=\dimen350
+\calc@Bdimen=\dimen351
+\calc@Askip=\skip62
+\calc@Bskip=\skip63
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count372
+\calc@Cskip=\skip64
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+))) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 15.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count373
+)
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
+
+(./main.out) (./main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ninecolors/ninecolors.sty
+Package: ninecolors 2021/05/24 v2021C Select colors with proper color contrast
+)
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 15.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 15.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 15.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 15.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 15.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 15.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 15.
+LaTeX Font Info:    Redeclaring math accent \check on input line 15.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 15.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 15.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 15.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 15.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 15.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Assistant(0)/m/n on input line 15.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 15.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/Assistant(0)/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/Assistant(0)/m/n --> TU/Assistant(0)/m/n on input li
+ne 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/Assistant(0)/m/it on input line 15.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/Assistant(0)/b/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/Assistant(0)/m/n --> TU/Assistant(0)/b/n on input li
+ne 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/Assistant(0)/b/it on input line 15
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 15.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 14.89534pt on input line 25.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 31.03198pt on input line 25.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/b/n' will be
+(Font)              scaled to size 31.03198pt on input line 25.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 10.344pt on input line 25.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 6.896pt on input line 25.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 5.172pt on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 38.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/b/n' will be
+(Font)              scaled to size 9.43889pt on input line 38.
+
+Overfull \hbox (45.31111pt too wide) in paragraph at lines 31--39
+[][] 
+ []
+
+File: img/a0000-img001.png Graphic file (type bmp)
+<img/a0000-img001.png>
+[1
+
+]
+LaTeX Font Info:    Font shape `TU/Assistant(0)/b/n' will be
+(Font)              scaled to size 15.51599pt on input line 50.
+ (./main.toc [1
+
+])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [2] (./tex/intro.tex
+LaTeX Font Info:    Font shape `TU/Assistant(0)/b/n' will be
+(Font)              scaled to size 13.79199pt on input line 4.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/it' will be
+(Font)              scaled to size 9.75082pt on input line 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Lead Appli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 main ap-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 plicant and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 recipient of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 primary contact for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 eScience Center project,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 responsibilities defined
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 in the call text, the Terms
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 and Conditions docu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 ment, and potentially a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 Consortium/Collaboration
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Programme
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 assigned by
+ []
+
+
+Underfull \hbox (badness 4647) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 sponsible for realization of
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 project results given prede-
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Full text of responsibilities
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Lead Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 search
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 Software
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 appointed by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 accountable
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 scription of []\TU/Assistant(0)/b/n/10.95 Lead RSE[]
+[] \TU/Assistant(0)/m/n/10.95 (Ap-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Research
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 Software
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 Engineer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 assigned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 by the ac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 countable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 responsible for the timely
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 by []\TU/Assistant(0)/b/n/10.95 Lead RSE[][] \TU/Ass
+istant(0)/m/n/10.95 in agreement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Consulting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 Research
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 Software
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Consulting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 involved at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 request of
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 72--72
+[]\TU/Assistant(0)/b/n/10.95 Lead RSE[][] \TU/Assistant(0)/m/n/10.95 or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 accountable
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 responsible for contributing
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 expertise to a project for a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 limited but predetermined
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 time, can be involved in
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 some of the key meetings,
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 in addition to an expertise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Technology
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 assigned by
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 acts as point of contact for
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 72--72
+[]\TU/Assistant(0)/b/n/10.95 Lead RSE[][] \TU/Assistant(0)/m/n/10.95 to the []\
+TU/Assistant(0)/b/n/10.95 TL[][] \TU/Assistant(0)/m/n/10.95 team.
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 The []\TU/Assistant(0)/b/n/10.95 TLs[][] \TU/Assi
+stant(0)/m/n/10.95 team is responsi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 assigned by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 the PM/SH
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 line manager of RSEs, re-
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 pletion; maintain overview
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Communica-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 and external communica-
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 tions of projects, including
+ []
+
+
+Underfull \hbox (badness 7740) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 ing projects through news
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 items, website, newsletters,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Community
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 advise on developing out-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 responsible for external
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 organizes formal meetings,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 provide with agenda and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 slide template, invitation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Programme
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 the escalation point for
+ []
+
+
+Underfull \hbox (badness 6078) in paragraph at lines 72--72
+[]\TU/Assistant(0)/b/n/10.95 PMs[][]\TU/Assistant(0)/m/n/10.95 , the contact po
+int of
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 72--72
+[]\TU/Assistant(0)/b/n/10.95 PMs[][] \TU/Assistant(0)/m/n/10.95 to DT for proje
+ct re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 lated changes that need
+ []
+
+
+Underfull \hbox (badness 7203) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 the DT decision, approves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 agreement with []\TU/Assistant(0)/b/n/10.95 Finance[
+][]
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 on the financial part). The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Director of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 The escalation point for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]\TU/Assistant(0)/b/n/10.95 TLs[][]\TU/Assistant(0)/m/n/10.95 , the contact po
+int of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 responsible) for licences
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 and Intellectual Property
+ []
+
+
+Underfull \hbox (badness 6792) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 (IP), software sustainability
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Director of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 handles legal questions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 (e.g., contracts, Collabora-
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 tive Agreements and guest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|[]\TU/Assistant(0)/b/n/10.95 Finance[][] \TU/Assistant(0)/m/n/10.95 &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 part of Op-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 erations,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 troller, and
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 responsible for maintaining
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Directors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 comprised
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 of DoT, []\TU/Assistant(0)/b/n/10.95 DoO[][]\TU/Assi
+stant(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 General Di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 rector and
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 appointed by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 the DT, see
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 the Intranet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 for contact
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 consults on GDPR [[]] or
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 Officer. GDPR aspects must
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 ter project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 eScience
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 comprises
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]\TU/Assistant(0)/b/n/10.95 TL[][] \TU/Assistant(0)/m/n/10.95 working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 responsible for the timely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 comprises
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 the eScience
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 project team,
+ []
+
+
+Underfull \hbox (badness 6236) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 LA and their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 team (in-
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 cluding team
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 members
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 indicated in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 the project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 responsible for the timely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 Editorial
+ []
+
+
+Underfull \hbox (badness 4036) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 provides support with out-
+ []
+
+
+Underfull \hbox (badness 3713) in paragraph at lines 72--72
+[]|\TU/Assistant(0)/m/n/10.95 The eScience Center main-
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 72--72
+\TU/Assistant(0)/m/n/10.95 tains a blog, and has pres-
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[3
+
+]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [4]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [5]
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 7.758pt on input line 72.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 4.31pt on input line 72.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 72.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 72.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/b/n' will be
+(Font)              scaled to size 7.758pt on input line 72.
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [6]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [7]
+File: img/lifecycle-stages.png Graphic file (type bmp)
+<img/lifecycle-stages.png>
+)
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [8
+
+] (./tex/initiation.tex
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 7777) in paragraph at lines 98--98
+\TU/Assistant(0)/b/n/10.95 in the relevant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]\TU/Assistant(0)/b/n/10.95 Research Soft-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\TU/Assistant(0)/b/n/10.95 ware Directory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\TU/Assistant(0)/b/n/10.95 (RSD), project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\TU/Assistant(0)/b/n/10.95 page and soft-
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 98--98
+[]\TU/Assistant(0)/m/n/10.95 Advising and reviewing content for the pages, incl
+uding editing sum-
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 98--98
+[]\TU/Assistant(0)/b/n/10.95 Corporate web-
+ []
+
+
+Package tabularray Warning: Table width is too small, need 14.94327pt more!
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 7777) in paragraph at lines 98--98
+\TU/Assistant(0)/b/n/10.95 in the relevant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]\TU/Assistant(0)/b/n/10.95 Research Soft-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\TU/Assistant(0)/b/n/10.95 ware Directory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\TU/Assistant(0)/b/n/10.95 (RSD), project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\TU/Assistant(0)/b/n/10.95 page and soft-
+ []
+
+
+Overfull \hbox (14.94327pt too wide) detected at line 98
+ [] 
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[9
+
+]
+Underfull \hbox (badness 1253) in paragraph at lines 98--98
+[]\TU/Assistant(0)/m/n/10.95 Advising and reviewing content for the pages, incl
+uding editing sum-
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 98--98
+[]\TU/Assistant(0)/b/n/10.95 Corporate web-
+ []
+
+
+Overfull \hbox (14.94327pt too wide) detected at line 98
+ [] 
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[10]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [11]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+
+Package tabularray Warning: Table width is too small, need 2.55019pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (2.55019pt too wide) in paragraph at lines 265--266
+[][] 
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[12]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+
+Package tabularray Warning: Table width is too small, need 2.55019pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (2.55019pt too wide) in paragraph at lines 297--298
+[][] 
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[13]
+\myhcolw=\skip65
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+
+Package tabularray Warning: Table width is too small, need 2.55019pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (2.55019pt too wide) in paragraph at lines 365--366
+[][] 
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[14])
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [15] (./tex/execution.tex
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+
+Package tabularray Warning: Table width is too small, need 2.55019pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (2.55019pt too wide) in paragraph at lines 51--52
+[][] 
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[16
+
+]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+
+Package tabularray Warning: Table width is too small, need 2.55019pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (2.55019pt too wide) in paragraph at lines 88--89
+[][] 
+ []
+
+
+Overfull \hbox (1.27525pt too wide) in paragraph at lines 104--108
+[]\TU/Assistant(0)/m/n/10.95 The project execution phase roughly consists of th
+ree parts: exploration, development, sustaining. For the call projects,
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[17]
+File: img/budget-stages.png Graphic file (type bmp)
+<img/budget-stages.png>
+File: img/budget-faster.png Graphic file (type bmp)
+<img/budget-faster.png>
+\myhcolw=\skip66
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 3343) in paragraph at lines 190--190
+[]\TU/Assistant(0)/m/n/10.95 automatically puts read-only status on the project
+
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 190--190
+[]\TU/Assistant(0)/m/n/10.95 All budget changes require a []\TU/Assistant(0)/b/
+n/10.95 PM[][]
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 190--190
+[]\TU/Assistant(0)/m/n/10.95 There is a separate protocol on
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 3343) in paragraph at lines 190--190
+[]\TU/Assistant(0)/m/n/10.95 automatically puts read-only status on the project
+
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 190--190
+[]\TU/Assistant(0)/m/n/10.95 All budget changes require a []\TU/Assistant(0)/b/
+n/10.95 PM[][]
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 190--190
+[]\TU/Assistant(0)/m/n/10.95 There is a separate protocol on
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[18]
+Overfull \hbox (0.80414pt too wide) in paragraph at lines 229--236
+[]\TU/Assistant(0)/m/n/10.95 These workshops differ from the eScience-Lorentz C
+enter Competition workshops that are funded by both the eScience
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[19]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Overfull \hbox (4.49754pt too wide) in paragraph at lines 385--385
+[]\TU/Assistant(0)/b/n/10.95 Responsibility
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/b/n/10.95 Zenodo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/b/n/10.95 (NLeSC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Publications up-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 loaded to Zenodo,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 are added to this
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 rators of this com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/b/n/10.95 RSD, soft-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/b/n/10.95 ware and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/b/n/10.95 project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 creating RSD project page, if
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 and [][]Adding
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Each project has its
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 with the []\TU/Assistant(0)/b/n/10.95 PM[][] \TU/Ass
+istant(0)/m/n/10.95 can use
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 the project is granted
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 from another funding
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 source. In this case,
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 respective text should
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 as description, GitHub organiza-
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 385--385
+[]\TU/Assistant(0)/b/n/10.95 Project port-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 cf. [[]] for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 structure
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 An internal archive,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 and automatically
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Direct link to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 project portfolio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Creating blog entry regarding
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 project, its progress or project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Indexed at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[][]\TU/Assistant(0)/m/n/10.95 eScience
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 Blog[][], in-
+ []
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 structions on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 blogging are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Editorial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Reviewing blog post entry of
+ []
+
+
+Package tabularray Warning: Table width is too small, need 8.03908pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (4.49754pt too wide) in paragraph at lines 385--385
+[]\TU/Assistant(0)/b/n/10.95 Responsibility
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/b/n/10.95 Zenodo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/b/n/10.95 (NLeSC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Publications up-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 loaded to Zenodo,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 are added to this
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 rators of this com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/b/n/10.95 RSD, soft-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/b/n/10.95 ware and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/b/n/10.95 project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 creating RSD project page, if
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 and [][]Adding
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Each project has its
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 with the []\TU/Assistant(0)/b/n/10.95 PM[][] \TU/Ass
+istant(0)/m/n/10.95 can use
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 the project is granted
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 from another funding
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 source. In this case,
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 respective text should
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 as description, GitHub organiza-
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 385--385
+[]\TU/Assistant(0)/b/n/10.95 Project port-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 cf. [[]] for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 structure
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 An internal archive,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 and automatically
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Direct link to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 project portfolio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Creating blog entry regarding
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 project, its progress or project
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Indexed at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[][]\TU/Assistant(0)/m/n/10.95 eScience
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 Blog[][], in-
+ []
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 structions on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\TU/Assistant(0)/m/n/10.95 blogging are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Editorial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\TU/Assistant(0)/m/n/10.95 Reviewing blog post entry of
+ []
+
+
+Overfull \hbox (8.03908pt too wide) detected at line 385
+ [] 
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[21]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [22]
+\myhcolw=\skip67
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+
+Package tabularray Warning: Table width is too small, need 2.5502pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (2.5502pt too wide) in paragraph at lines 515--516
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[23]
+Overfull \hbox (6.28415pt too wide) in paragraph at lines 548--551
+[]\TU/Assistant(0)/m/n/10.95 For \TU/Assistant(0)/b/n/10.95 external projects\T
+U/Assistant(0)/m/n/10.95 , review meetings are usually organized as part of the
+ project process. Whether or not (a lightweight
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[24]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [25]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [26]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+
+Package tabularray Warning: Table width is too small, need 2.55019pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (2.55019pt too wide) in paragraph at lines 720--721
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[27]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [28]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [29])
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [30] (./tex/closing.tex
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+
+Package tabularray Warning: Table width is too small, need 25.19997pt more!
+
+> Step: build the whole table.
+
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 29--30
+[][] 
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[31
+
+]) (./main.bbl
+Missing character: There is no ć (U+0107) in font [font/Assistant-Regular.ttf]/
+OT:script=latn;language=dflt;mapping=tex-text;!
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[32]
+Underfull \hbox (badness 7273) in paragraph at lines 105--109
+[]\TU/Assistant(0)/m/n/10.95 The Netherlands eScience Center.  eScience Trainin
+g: Digital skills workshops.  [][]$[][][][][] [] [] [] [][][] []
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 111--115
+[]\TU/Assistant(0)/m/n/10.95 The Netherlands eScience Center.  Fellowship Progr
+amme.  [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][] [] [][] 
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--128
+[]\TU/Assistant(0)/m/n/10.95 The Netherlands eScience Center.  Netherlands eSci
+ence Center strategy.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--128
+[][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][] [] [][] [] [][]
+[][][][][][][][][] [] [][][][][][][] [] [][][][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] [] [][][] [] [][][][
+][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
+[]\TU/Assistant(0)/m/n/10.95 Universiteitsbibliotheek Utrecht.  Amendement tave
+rne.  [][]$[][][][][] [] [] [] [][][] [] [][] [] [][] []
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[33])
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [34]
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 17.87787pt on input line 80.
+LaTeX Font Info:    Font shape `TU/Assistant(0)/b/n' will be
+(Font)              scaled to size 17.87787pt on input line 80.
+ (./tex/app-leadrse.tex
+\myhcolw=\skip68
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 2932) in paragraph at lines 53--53
+[]\TU/Assistant(0)/m/n/10.95 Ensuring that generalization and re-usability oppo
+rtunities are imple-
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 53--53
+[]\TU/Assistant(0)/m/n/10.95 Making sure all project output is properly release
+d, documented and
+ []
+
+
+Package tabularray Warning: Table width is too small, need 2.5502pt more!
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 2932) in paragraph at lines 53--53
+[]\TU/Assistant(0)/m/n/10.95 Ensuring that generalization and re-usability oppo
+rtunities are imple-
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 53--53
+[]\TU/Assistant(0)/m/n/10.95 Making sure all project output is properly release
+d, documented and
+ []
+
+
+Overfull \hbox (2.5502pt too wide) in paragraph at lines 53--54
+[][] 
+ []
+
+)
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [35
+
+] (./tex/app-role.tex
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [36
+
+])
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [37] (./tex/app-logexample.tex
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1783) in paragraph at lines 42--42
+[]\TU/Assistant(0)/m/n/10.95 Uploaded to RSD and
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 1783) in paragraph at lines 42--42
+[]\TU/Assistant(0)/m/n/10.95 Uploaded to RSD and
+ []
+
+)
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [38
+
+] (./tex/app-planexamples.tex
+LaTeX Font Info:    Font shape `TU/Assistant(0)/m/n' will be
+(Font)              scaled to size 12.27057pt on input line 39.
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [39
+
+]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [40]
+Overfull \hbox (14.96237pt too wide) in paragraph at lines 162--163
+[]\TU/Assistant(0)/m/n/10.95 3D-Vac tutorial workshop (co-organize with the can
+cer immunotherapy group at Radboudumc
+ []
+
+
+Overfull \hbox (12.24117pt too wide) in paragraph at lines 189--191
+[]\TU/Assistant(0)/m/n/10.95 Uniform DeepRank and DeepRank-core APIs, according
+ to the modifications done in DeepRank-
+ []
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[41]
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [42]
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 219.
+
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 229.
+
+LaTeX Font Info:    Font shape `TU/Assistant(0)/b/it' will be
+(Font)              scaled to size 9.75082pt on input line 234.
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 272.
+
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+[43
+
+])
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [44]
+runsystem(makeindex main.idx)...executed safely (allowed).
+
+ (./main.ind
+File: img/a0000-img003.jpg Graphic file (type bmp)
+<img/a0000-img003.jpg>
+ [45
+
+
+
+\indexentry{DoO|hyperpage}{45}
+\indexentry{Finance|hyperpage}{45}
+\indexentry{Lead RSE|hyperpage}{45}
+\indexentry{PM|hyperpage}{45}
+\indexentry{TL|hyperpage}{45}
+
+]) (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 6450C7C948198CE501BCA946648AA4CE;8061.
+ ) 
+Here is how much of TeX's memory you used:
+ 34470 strings out of 477600
+ 712353 string characters out of 5839383
+ 1127926 words of memory out of 5000000
+ 54592 multiletter control sequences out of 15000+600000
+ 491350 words of font info for 116 fonts, out of 8000000 for 9000
+ 350 hyphenation exceptions out of 8191
+ 89i,16n,134p,705b,2268s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (46 pages).
