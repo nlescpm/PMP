@@ -302,7 +302,27 @@ each other and the PM stores both slide decks (from PM and LA) and agreements in
 \end{table}
 \ftnotetxt{ft:participants}{Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
 
-
+\iffalse
+\renewcommand{\TblrNewPage}{\clearpage}  %% <--- Added this line only
+\begin{longtblr}[
+  label = none,
+  note{a} = {Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
+]{
+  colspec = {|Q[0.15\textwidth,font=\bfseries]|Q[0.8\textwidth]|},
+  row{even} = {gray!20},
+  rowhead = 1,
+  booktabs,
+  width = \linewidth
+}
+\toprule
+Scheduled: & Around the date indicated by LA in the start form, after the administrative start meeting. \\[1.5ex]
+Stakeholders: & PM (organizer, chair), the entire project team, TL, and other relevant stakeholders (e.g., SH)\TblrNote{a} \\[1.5ex]
+Purpose: & The project kick-off focuses on the execution of the project, on the technological requirements, scientific challenges, relevant communities, project goals and outputs. \\[1.5ex]
+Duration: & Max. 1.5 hours \\[1.5ex]
+Location: & At the eScience Center office or at the institute of the LA. \\[1.5ex]
+\bottomrule
+\end{longtblr}
+\fi
 
 
 For this meeting the standard agenda is:
