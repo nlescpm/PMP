@@ -117,26 +117,21 @@ email). %Should the assigned TL become unavailable for an extended period, the T
 \textbf{Responsible: TL team (at request of the PM).}
 
 \subsection{Preparation by PM}
-PM provides an overview of project requirements based on the project proposal, covering the following topics:
+The PM reviews the project proposal to identify key requirements:
 \begin{itemize}
-\item What technology/eScience expertise is requested from the eScience Center, and at what level (novice, expert)?
+\item requested expertise: what eScience/technology expertise is needed and at what level?
 \textbf{Action}: In collaboration with the TL, the PM checks the skills survey for technological expertise required by the project.
-\item What are the research questions and goals? \textbf{Action:} PM asks senior members of the Center with relevant domain
-expertise for their opinion and prepares relevant tags for the project information.
-\item What is the proposed workplan and timeline? Is the work feasible? \textbf{Action}: Together with the TL, the PM assesses
-if a workplan is feasible or needs to be adjusted in the context of the Technology plan (Section~\ref{sec:init:techplan}).
-\item What type of support other than RSE expertise is requested and needed? (e.g., training workshops, time and help of CMs,
-use of SURF or other infrastructure) \textbf{Action}: PM notes this information for discussion with the LA and Lead
-RSE. PM consults TL about management plans (see Section~\ref{sec:exec:mp}) and CMs about training workshops (see
+\item research goals: what are the main questions and goals? \textbf{Action:} PM consults senior domain experts and prepares project tags.
+\item workplan and feasibility: Is the proposed timeline realistic? \textbf{Action}: PM and TL assess feasibility in the context of the Technology Plan (Section~\ref{sec:init:techplan}).
+\item additional support: is other support needed (e.g., training, CMs, SURF)? \textbf{Action}: PM discusses this with the LA and Lead RSE. PM consults TL about management plans (see Section~\ref{sec:exec:mp}) and CMs about training workshops (see
 Section~\ref{sec:exec:outreach}).
 \end{itemize}
 PM flags issues such as:
 \begin{itemize}
-\item GDPR – is there any personally identifiable information involved in the data required by the project? 
-\item IP and licensing – does the project team ask for an exception to the Apache 2.0 and the CC by 4.0 default? 
-\item Long term sustainability of the software – does the project have a sustainability plan? 
-\item Anything else potentially problematic – for example, military application, animal or human tests, etc. (see also the
-final statements in the application form).
+\item GDPR: are personal data involved?
+\item IP/licensing: any deviations from standard licenses (Apache 2.0, CC BY 4.0)? 
+\item Sustainability: is there a plan for long-term software maintenance?
+\item Ethical or other risks: Any sensitive aspects (e.g., military use, human/animal testing)? See also the final statements in the application form.
 \end{itemize}
 
 Depending on the issue, PM contacts relevant consultants (see Section~\ref{sec:exec:consult}).
@@ -147,10 +142,9 @@ PM records all relevant information in the project log (Section~\ref{sec:exec:lo
 
 \subsection{Staffing}
 \label{sec:init:vacancy}
-PM assigns the project to a team~\cite{rse-teams} and appoints a Lead RSE in agreement with SHs and budget
-holders relevant to the team activities. The PM can adjust staffing at any point during the project life cycle
-whenever necessary. The PM informs the LA on staffing changes concerning Lead RSE and PM. 
-Otherwise, the Lead RSE is the primary contact for the project.
+The PM assigns the project to a team~\cite{rse-teams} and appoints a Lead RSE in coordination with SHs and relevant budget 
+holders. Staffing can be adjusted throughout the project as needed. The PM informs the LA of any changes involving 
+the Lead RSE or PM; otherwise, the Lead RSE serves as the main contact.
 
 %PMs normally assign a project in such a way that it does not involve more than one team, unless no team is willing to
 %take up the project. PMs assign RSEs to projects, taking the RSEs' expression of interest %(see Section~\ref{sec:init:vacancy} below) 
@@ -159,11 +153,8 @@ Otherwise, the Lead RSE is the primary contact for the project.
 
 \subsubsection{Project vacancy announcement}
 
-Project vacancies are announced internally at the discretion of the \textbf{accountable PM} in a timely manner.
-%,via email. An announcement message must contain an instruction on how to access information on the project and how to
-%express interest (filling out form, via email, comments on Announcement Board in Teams etc.). In turn, 
-RSEs can express their interest (also on behalf of their team) within the allocated time and provide a motivational text including
-expertise and skills relevant to the project work. PM informs RSEs on staffing results.
+Project vacancies are announced internally by the \textbf{accountable PM}. RSEs may express interest (also on behalf of their team) 
+within the given timeframe, including a short motivation outlining relevant expertise and skills. The PM informs RSEs of the staffing outcome.
 
 \subsubsection{Assignment of RSEs}
 %To find RSEs suitable for the project, the PM:
@@ -198,7 +189,7 @@ If %there is a shortage of RSE expertise and
 the project cannot be staffed, the PM signals the vacancy to the respective
 SH and the PM representative in the hiring committee following rules described in the hiring process~\cite{intranet}.
 
-\paragraph{PM/TL availability} If the PM or the TL becomes unavailable, their team appoints new one for the project.
+\paragraph{PM / TL availability} If the PM or the TL becomes unavailable, their team appoints new one for the project.
 The PM/TL plans with Lead RSE any pending important milestone on the project (review meeting, code release, paper publication).
 The former PM informs LA of the changes and planning, and introduces the new PM in the email. The former TL informs the PM and the Lead RSE of the change.
 
@@ -365,10 +356,8 @@ The project team submits a technology plan by the date agreed during the project
 \item the technological outcomes of the project (software and data) 
 \item steps to be taken regarding reusability and adoptability, etc. 
 \end{itemize}
-The technology plan covers the choice of programming language(s), expected quality levels, etc. The plan should be seen
-as an evolving record of the considerations and choices regarding the technology employed; it ensures that RSEs make
-good use of the expertise present in the Center and that optimal choices are made throughout the project. An example of
-project technology plan is available in~\cite{spaaks2023asreview}.
+The technology plan outlines key choices such as programming languages and quality standards. It serves as a living document, 
+capturing technical decisions and ensuring optimal use of in-house expertise. An example can be found in ~\cite{spaaks2023asreview}.
 
 \let\myhcolw\relax 
 \newlength{\myhcolw}
@@ -392,28 +381,22 @@ project technology plan is available in~\cite{spaaks2023asreview}.
 \end{booktabs}
 \end{table}
 
-The Lead RSE is encouraged to reach out to RSEs or other colleagues who have the relevant expertise in the process of
-developing the technology plan. CMs can advise on engaging the target audience with regard to software reusability and
-adoptability. Since TLs are accountable for safeguarding the suitable technology in the project, the involvement of the
+The Lead RSE is encouraged to consult colleagues with relevant expertise when drafting the technology plan. CMs can advise 
+on engaging the target audience for software reuse and adoption. Since TLs are accountable for safeguarding the suitable technology in the project, the involvement of the
 TL in writing the technology plan is important. Therefore, the PM must consult the TL on the technology plan, submitted
 by the Lead RSE before any technological decisions are made in the project.
 
-Upon approval of the technology plan (via email), the project team updates the management plans, if necessary. The Lead
-RSE logs the decisions in the project log (see Section~\ref{sec:exec:log}) and archives emails in the project
-portfolio, if necessary. The Lead RSE keeps the technology plan up to date: if it changes during the project, this
-should be simply appended to the original technology plan (e.g., in a separate document or in the project log). The
-Lead RSE explains why adaptations to the plan were required. The aim is to obtain a record of the lessons learned from.
-beginning to end of the project, to facilitate collaboration and to document decisions in case a project must be
-transferred to other RSEs due to unforeseen circumstances. The Lead RSE discusses any changes made to the technology
-plan during the status update meetings (Section~\ref{sec:exec:status}).
+Once the TL approves the technology plan (via email), the project team updates the management plans if needed. The Lead 
+RSE logs key decisions (see Section~\ref{sec:exec:log}) and, if necessary, archives related emails in the project portfolio. 
+Any updates to the plan during the project should be appended to the original, with an explanation of the changes. 
+This ensures continuity, documents lessons learned, and supports knowledge transfer if team changes occur. Plan updates are reviewed during the status update meetings (Section~\ref{sec:exec:status})..
 
 \subsection{Legal agreements}
 \label{sec:init:legal}
-The eScience Center champions and supports open and reproducible science and open-source development. LAs 
-get their projects awarded under the eScience Center's Terms and Conditions~\cite{nlesc-terms}. The default agreement forms offered by universities often contain IP related provisions that contradict
-our Terms and conditions.
-
-Regardless of the type of the project, RSEs must not sign any formal agreement document prior to consulting the PM. Such
+The eScience Center promotes open, reproducible science and open-source development. The call projects are awarded under our Terms and Conditions~\cite{nlesc-terms}. 
+The default university agreement templates often include IP clauses that conflict with these terms. 
+% 
+Regardless of the type of the project, RSEs must not sign any formal agreements without consulting the PM. Such
 documents include but are not limited to:
 \begin{itemize}
 \item Guest agreement (to get guest status at the project partner organization)

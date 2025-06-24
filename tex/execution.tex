@@ -104,8 +104,8 @@ Awarding letter, the proposal and Exact.
 The project execution phase roughly consists of three parts: exploration, development, sustaining.
 In call projects, the budget is roughly split as follows: 25\% for 
 exploration (including learning), 50\% for development, and 25\% for sustaining (including research
-and dissemination activities). The Lead RSE must consult the PM if project execution deviates from this plan.
-
+and dissemination activities). The Lead RSE must consult the PM if project execution deviates from this plan. 
+%
 The left plot of Figure~\ref{fig:project-budget} assumes a constant budget spending rate. If possible, RSEs are encouraged to complete the first two phases faster, 
 keeping the end date unchanged. This leaves more time for the sustaining phase (cf. Figure~\ref{fig:project-budget}), which benefits outputs like publications. 
 It also leads to more effective budget use under the current eScience Center financial system.
@@ -138,22 +138,22 @@ project budget only to the PM.
 The eScience project team (including PM and RSEs) must submit project hours in Exact by the end of each month. All entries must be completed within one working week after month-end. 
 %Hours must be submitted and approved on time, preferably on a weekly basis.
 %
-For regular call projects, RSEs can write hours once the project is active in Exact, typically within a month of grant approval. The PM records management hours on the project budget.
-
+For regular call projects, RSEs can write hours once the project is active in Exact, typically within a month of grant approval. The PM records management hours on the project budget. 
+%
 Project hours are managed by different parties with different responsibilities:%, see Table~\ref{tab:budget}.
 \let\myhcolw\relax 
 \newlength{\myhcolw}
-\setlength{\myhcolw}{0.5\textwidth}
+ \setlength{\myhcolw}{0.6\textwidth}
 \begin{table}[!htb]
 % \caption{Parties at the eScience Center and their responsibilities}
 \renewcommand{\arraystretch}{1.5}
-\begin{booktabs}{colspec={|p{0.11\textwidth}|p\myhcolw|p{0.3\textwidth}|},row{even}={gray!20}}
+\begin{booktabs}{colspec={|p{0.1\textwidth}|p\myhcolw|p{0.3\textwidth}|},row{even}={gray!20}}
     \toprule
     \textbf{Stakeholder} &  \textbf{Responsibilities} & \textbf{More info} \\\toprule
     PM & 
     \begin{minipage}[t]{\myhcolw}
     \begin{itemize}[itemsep=-4pt,parsep=4pt,leftmargin=0.5cm]
-        \item reviews and approves project hours in Exact by the 5th workday of the following month.
+        \item reviews and approves project hours by the 5th workday of the following month.
         \item shares monthly hour status with RSEs via Ganttic
         \item flags issues (e.g., incorrect budgets) to Finance
         \item notifies Finance of budget changes.
@@ -167,7 +167,8 @@ Project hours are managed by different parties with different responsibilities:%
         \item signals deviation from the workplan to the PM
     \end{itemize} 
       \end{minipage}
-    &  Asks PM for hours status in Exact or via Ganttic  \\\midrule
+    &  %Asks PM for hours status in Exact or via Ganttic  
+    \\\midrule
     Finance &
     \begin{minipage}[t]{\myhcolw}
     \begin{itemize}[itemsep=-4pt,parsep=4pt,leftmargin=0.5cm]
@@ -178,7 +179,7 @@ Project hours are managed by different parties with different responsibilities:%
         \item sets project to read-only if hours are depleted/exceeded early.
     \end{itemize} 
       \end{minipage}  
-    & All budget changes require a PM and DT decision. \\\midrule
+    & All budget changes require a formal decision (see~\ref{sec:exec:changes}). \\\midrule
     DoT & 
     \begin{minipage}[t]{\myhcolw}
     \begin{itemize}[itemsep=-4pt,parsep=4pt,leftmargin=0.5cm]
@@ -194,11 +195,9 @@ Project hours are managed by different parties with different responsibilities:%
 It is possible to travel for a project, however RSEs must ask approval of their line managers (a respective SH) before
 committing to an event requiring travel and fill out a travel form. See the Intranet for more information.
 
-For \textbf{external projects}, the rules on writing hours differ from regular call projects. Only RSEs and the PM
-working on the project are allowed to write hours on the project budget. Moreover, for some projects (e.g., Horizon
-Europe projects) only direct contributions to the project are allowed; other non-project related activities such as
-time spent on a SIG cannot be declared on these projects. The Lead RSE and PM are aware of restrictions related to
-their project (otherwise, consult Finance).
+For \textbf{external projects}, only the PM and RSEs formally working on the project may write hours. Some projects 
+(e.g., Horizon Europe) allow only direct project activities -- non-project activities like SIG involvement cannot be charged on the project. 
+The Lead RSE and PM must know these restrictions or consult Finance if unsure.
 
 \subsection{Workshops}
 \label{sec:exec:workshops}
@@ -237,8 +236,8 @@ delivering the workshop, and, possibly, in publishing any outcome drafted during
 
 \subsection{Data and Software Management Plans}
 \label{sec:exec:mp}
-For some projects, Data and Software Management Plans (DMP~\cite{dmp-guide} and SMP~\cite{smp-guide}) outline how project data and software are maintained.
-
+For some projects, Data and Software Management Plans (DMP~\cite{dmp-guide} and SMP~\cite{smp-guide}) outline how project data and software are maintained. 
+%
 Depending on the call, the LA must submit complete DMP and SMP documents within 6 months of the project. The Lead RSE 
 may assist in drafting the DMP, which the LA submits to the PM, who asks a TL for review and approval. For call projects since 2021, SMPs are included in project proposals.
 
@@ -266,8 +265,8 @@ Project deliverables include research articles, presentations, talks, posters, t
 as well as software-related outputs such as code releases, software papers, demos, videos, tutorials, and training materials. 
 %
 RSEs strive to apply FAIR principles~\cite{fair-principles,FAIR4RS} to all project deliverables. They should have
-\begin{itemize}
-\item concept DOIs from publishers or open-access archives like Zenodo, arXiv, or DANS;
+\begin{itemize}\itemsep0em
+\item (concept) DOIs from publishers or open-access archives like Zenodo, arXiv, or DANS;
 \item acknowledge the eScience Center project grant~\footnote{By adding the following sentence into the publication: "<full project title> is a project of the Netherlands eScience Center, funded under grant number <grantid>."}; and
 \item listed RSEs working on the project as (co-)authors.
 \end{itemize}
@@ -286,7 +285,7 @@ The PM expects the team to follow the deliverables plan outlined in the proposal
   %remark{Source} = {Made up by myself. Made up by myself. Made up by myself.}
 ]{
  % colspec = {|X|X|X|X|X|}, width = 1\linewidth,
-  colspec={|p{0.12\textwidth}|p{0.12\textwidth}|p{0.32\textwidth}|p{0.12\textwidth}|p{0.2\textwidth}|}, width = 1\linewidth,
+  colspec={|p{0.12\textwidth}|p{0.12\textwidth}|p{0.35\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}|}, width = 1\linewidth,
   rowhead = 1, %rowfoot = 1,
   row{1} = {font=\bfseries},
   column{1} = {font=\bfseries},
@@ -309,7 +308,7 @@ Zenodo (NLeSC community) & PM / CMs  & curating and approving new publications &
     \end{minipage}  \\
 %\midrule
 \cmidrule{2-3}
-    & RSEs & getting a concept DOI for a data or software release, or a document (e.g., non-peer-reviewed publications) 
+    & RSEs & getting a (concept) DOI for a data or software release, or a document (e.g., non-peer-reviewed publications) 
 &  & \\
 \midrule
 RSD, software and project pages & PM / Lead RSE & 
@@ -317,7 +316,7 @@ RSD, software and project pages & PM / Lead RSE &
     %\vspace{-1cm}
     \begin{itemize}\itemsep0em
       \item ensure the eScience team has maintainer access 
-      \item decide whether to reuse the project page if the project continues under new funding.
+      \item decide on reuse of the project page if the project continues under new funding.
     \end{itemize} 
     \end{minipage}  & 
     See \href{https://research-software-directory.github.io/documentation/introduction.html}{RSD intro} and
@@ -328,8 +327,8 @@ RSD, software and project pages & PM / Lead RSE &
     & RSEs &  
     \begin{minipage}[t]{1\linewidth}
     \begin{itemize}\itemsep0em
-      \item create RSD project page, if needed 
-      \item maintain RSD pages with complete, up-to-date metadata
+      \item create project page, if needed 
+      \item maintain pages with complete, up-to-date metadata
     \end{itemize} 
     \end{minipage} &  & \\
 \midrule
@@ -352,7 +351,7 @@ RSD, software and project pages & PM / Lead RSE &
   \begin{minipage}[t]{1\linewidth}
     \begin{itemize}\itemsep0em
         \item Create a blog post about the project, its progress, or outcomes.
-        \item add final blog entry URL to project RSD page
+        \item add final blog URL to project RSD page
     \end{itemize} 
     \end{minipage} &
   Indexed at \href{https://blog.esciencecenter.nl/}{eScience Blog} & Instructions on blogging are posted on the Intranet~\cite{intranet}
@@ -370,13 +369,13 @@ RSD, software and project pages & PM / Lead RSE &
 \end{longtblr}
 
 
-Open access publications and open software are a requirement for all call projects; PM and Lead RSE keep the LA informed
-on this matter, if necessary. The funds for open access publication fees are internally budgeted in the call budget by
-Finance (with the approval of the PD every year). If no budget is available, the following option could be explored:
+Open access publications and open source software are mandatory for all call projects. The PM and Lead RSE inform the LA if needed. 
+Open access fees are budgeted by Finance annually in the call budget (with the PD approval); if no budget is available, alternatives can be explored:
+
 \begin{itemize}\itemsep0em
   \item publishing through the LA's institution (either open access funds are available or the LA organization is connected to publish open access in a lot of journals through the library without a fee)
   \item choosing the best option for open-access publishing (is it a diamond or gold open-access journal)
-  \item publishing closed access but self-publishing preprint or after six months (as allowed by the Taverne agreement in Dutch copyright law, see for example~\cite{taverne}).
+  \item publishing closed access and self-archiving either a preprint or publication after six months under Taverne agreement in Dutch copyright law (cf.~\cite{taverne}).
 \end{itemize}
 The Lead RSE and PM consult Finance regarding payments for an open access publication.
 
@@ -397,11 +396,9 @@ or used. The Lead RSE (or occasionally the PM) provides Communications with rele
 Blog posts are an optional but highly recommended output of the projects. Any team member, from LA to RSE, can author them. 
 Topics may include simplified research summaries, tutorials on learned skills or technologies, or updates on workshops, publications, and other project outputs.
 
-RSEs engage in activities to inform colleagues about the project and the results (e.g., technology plan, milestones,
-code releases), including presentations at SIGs. For internal and external events, each RSE should prepare a
-three-slide presentation or a pitch~\cite{proj-portfolio} 
-regularly update it. The Lead RSE is responsible for ensuring a presentation in the form of a demonstrator (e.g., of the
-software developed in the project) is available after the first major release of the software.
+RSEs share project progress and results (e.g., technology plan, milestones, code releases) with colleagues, 
+including SIG presentations. Each RSE prepares and updates a 3-slide deck or pitch \cite{proj-portfolio}. 
+The Lead RSE ensures a demonstrator is available after the first major software release.
 
 
 The LA and their team are encouraged to participate in relevant Digital Skills Workshops~\cite{digital-skills} from the eScience Center. Furthermore, if the LA and their team
@@ -411,9 +408,7 @@ require a project-specific training workshop, the Lead RSE involves
 \item the PM discusses RSE hours spent on training organization and consults Finance if needed.
 \end{itemize}
 
-Again, for \textbf{external projects} separate agreements may exist with the project consortium on how to communicate
-results of the project (for example, Non-Disclosure Agreement or NDA). The Lead RSE and PM consult these agreements at
-the start of project to know what can be communicated and what not.
+For \textbf{external projects}, consortium agreements (e.g., Non-Disclosure Agreement or NDA) may define result communication. The Lead RSE and PM review these at project start to clarify communication boundaries.
 
 \subsection{Code quality and sustainability checks}
 Ensuring software quality and sustainability is integral to the code development process cycle at the eScience
@@ -424,7 +419,7 @@ designed to be as generic and reusable as possible from the start.
 \label{sec:exec:code}
 At the initial stage of code development in the project, the Lead RSE together with RSEs:
 
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item set up a GitHub organization for the project, following the eScience Center Guide and the Turing Way~\cite{the_turing_way-2023}
 \item add the URL of this organization to the RSD project page.
 \end{itemize}
@@ -434,15 +429,13 @@ review, comment and approve pull requests in the project codebase.
 
 \subsubsection{Code review}
 As part of the annual review (see Section~\ref{sec:exec:annual}), a code review is organized by the Lead RSE. Depending
-on the project it could take the form of a reusabilithon\footnote{The term coined by the Software Sustainability SIG.
-It refers to the 2-3 hours session with a group of RSEs to check usability of a software, give feedback to the
-developers and to come up with recommendations to improve the software (re-)usability.}, a review of code on GitHub, or
+on the project it could take the form of a reusabilithon\footnote{Coined by the Software Sustainability SIG, the term refers to a 2-3 hour session where a group of RSEs evaluates a piece of software for usability, provides feedback to the developers, and formulates recommendations to improve its (re)usability.}, a review of code on GitHub, or
 something else entirely (format to be approved by TL). The reviewers for this process are typically other RSEs at the
 eScience Center.
 
 
 The goal is to review software of the project for:
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item its usability (reproducing steps of installations, and running it on a machine/laptop)
 \item overall software quality and suitability
 \item whenever appropriate, correctness of code
@@ -457,10 +450,6 @@ the TL for the formal annual review meeting (see Section~\ref{sec:exec:annual}).
 
 \subsection{Annual project review meeting}
 \label{sec:exec:annual}
-For call projects longer than one year, the PM organizes annual reviews. The details are described in the
-terms and conditions document~\cite{nlesc-terms}. For one-year projects, review meetings are optional and decided by the PM in consultation with the TL and Lead RSE.
-
-Each review includes discussion and actions on reusability and sustainability of project results (as described in the DMP and SMP), status of collaboration, and follow-up opportunities.
 
 \let\myhcolw\relax % let \myhcolw to \relax to be reused later
 \newlength{\myhcolw}
@@ -480,7 +469,7 @@ Each review includes discussion and actions on reusability and sustainability of
     \end{itemize} 
       \end{minipage}
     \\[1.5ex]
-    Outcomes/Actions: & List of agreements, action points, advises (from the PM and the TL) for project team members on future steps. \\[1.5ex]
+    Outcomes/Actions: & List of agreed actions and PM/TL advice for next steps. \\[1.5ex]
     Duration: &  Max 1.5 hours \\[1.5ex]
     Location: &  At the eScience Center or the project location\ftnotelbl{ft:participants} \\[1.5ex]
     \bottomrule
@@ -489,34 +478,36 @@ Each review includes discussion and actions on reusability and sustainability of
 %\footnotetext[2]{Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
 
 
+For call projects longer than one year, the PM organizes annual reviews. The details are described in the
+terms and conditions document~\cite{nlesc-terms}. For one-year projects, review meetings are optional and decided by the PM in consultation with the TL and Lead RSE.
 
-The agenda of this meeting is:
-\begin{itemize}
-\item introduction and purpose of meeting
-\item project overview and deliverables
-\begin{itemize}
-\item scientific goals status (by LA and team)
-\item status of the output (by the project team)
-\end{itemize}
-\item collaboration status (including hours admin and bottlenecks)
-\item use of digital infrastructure and SURF support (if applicable)
-\item next steps
-\item opportunities beyond the project.
-\end{itemize}
-
+Each review includes discussion and actions on reusability and sustainability of project results (as described in the DMP and SMP), status of collaboration, and follow-up opportunities. 
+%
+\iffalse
 The goals of the meeting are to:
 \begin{itemize}
-\item review progress with respect to the original workplan
+\item review progress against the original workplan
 \item discuss research results, their novelty and current deliverables
 \item update management plans if needed
 \item plan strategies to share results with a wider community
-\item discuss strategies and actions to ensure the software reuse and sustainability
+\item address software reuse and sustainability
 \item identify bottlenecks and improvements for team efficiency
 \item report project financials (RSE hours remaining)
-\item explore further collaboration and funding opportunities
-\item consider potential cross-project collaboration.
+\item explore further collaboration, funding, and cross-project opportunities
 \end{itemize}
-
+\fi
+The agenda of this meeting is:
+\begin{itemize}\itemsep0em
+\item introduction and purpose of meeting
+%\item project overview and deliverables
+%\begin{itemize}
+\item scientific goals status (the LA and team)
+\item project output status (the project team)
+%\end{itemize}
+\item collaboration status (including hours admin and bottlenecks)
+\item use of digital infrastructure and SURF support (if applicable)
+\item next steps and future opportunities.
+\end{itemize}
 For \textbf{external projects}, review meetings are typically part of the project process. The PM, with the Lead RSE, decides if a (lightweight) internal review is needed.
 
 
@@ -526,7 +517,7 @@ For \textbf{external projects}, review meetings are typically part of the projec
 \begin{booktabs}{colspec={|>{\bfseries}m{0.3\textwidth}|m{0.6\textwidth}|},row{even}={gray!20}}
     \toprule
      &  \textbf{Stakeholder} \\[1.5ex]\toprule
-    Prepared by: & LA and Lead RSE of the project. Other stakeholders of the project can contribute. \\[1.5ex]
+    Prepared by: & LA and Lead RSE, with optional input from other stakeholders. \\[1.5ex]
     Reviewed by: &  PM accountable for project, TL accountable for technology. \\[1.5ex]
     Target audience: & PMs, TLs, SHs and RSEs. \\[1.5ex]
     \bottomrule
@@ -534,7 +525,7 @@ For \textbf{external projects}, review meetings are typically part of the projec
 \end{table}
 
 The Lead RSE coordinates preparations for the review meeting:
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item request the PM to share the standard review meeting slide template~\cite{proj-portfolio} with the LA team
 \item requests project team members to contribute to the review meeting slides, wherever appropriate,
 \item compiles technology status report (see Section~\ref{sec:exec:tech}).
@@ -542,7 +533,7 @@ The Lead RSE coordinates preparations for the review meeting:
 
 
 LA and Lead RSE jointly prepare the slides:
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item 3-5 slides summarizing progress toward research goals. The LA is not expected to present published content or the
 original workplan or proposal. If applicable, the LA reports on workshops.
 \item 1-2 slides on the technology plan status, including reuse, adoption, and sustainability, supporting the technology status report.
@@ -552,7 +543,7 @@ original workplan or proposal. If applicable, the LA reports on workshops.
 \end{itemize}
  
 Additionally, the Lead RSE:
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item together with the LA, ensures all output is properly registered (see Section~\ref{sec:exec:output}), and adds missing URLs/DOIs to the slides;
 \item coordinates with the team to finalize the presentation at least 2 working days before the review meeting;
 \item uploads the slides to the project portfolio; and
@@ -565,8 +556,8 @@ Prior to the annual review meeting, the PM asks Lead RSE to fill in the technolo
 summarizes the technical progress of the project and includes RSD project page with its deliverables, URLs
 to project plans, software quality and community involvement. The Lead RSE prepares it in collaboration with the project team; it serves as input for the TL during the review.
 
-the Lead RSE:
-\begin{itemize}
+The Lead RSE:
+\begin{itemize}\itemsep0em
 \item collects output and relevant information from LA and team
 \item meets with CM to draft the technology status report  
 \item draft the rest of the report with the TL
@@ -580,18 +571,15 @@ The report and the review(s) are archived by the TL in the project portfolio.
 
 \subsubsection{At the review meeting}
 The time breakdown of the meeting agenda is follows:
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item presentation by the LA (max. 20 min)
-\item presentation by the Lead RSE (max. 20 min), including a description of RSE roles and project deliverables.
+\item presentation by the Lead RSE (max. 20 min), including the RSE roles and deliverables
 \item discussion (max. 40 min)
 \item summary, action points and conclusions.
 \end{itemize}
 
-The PM chairs the meeting, acting as a reviewer together with the TL. The TL raises possible issues related to
-technology and software. Other invited stakeholders can comment and contribute to the discussions. The PM and TL
-comment on the status of the deliverables:
-
-\begin{itemize}
+The PM chairs the meeting and, with the TL, acts as reviewer. The TL highlights tech/software issues. Everyone contributes to the discussion. PM and TL assess deliverables, and comment on their status:
+\begin{itemize}\itemsep0em
 \item have the objectives outlined in the proposal been sufficiently addressed? (PM)
 \item does the project follow the workplan in terms of deliverables? (PM)
 \item has the output been registered according to the rules of output management (Section~\ref{sec:exec:output})? (PM, TL)
@@ -614,67 +602,54 @@ final version of the presentation(s) uploaded to the project portfolio is correc
 \subsection{Reporting}
 For call projects the annual review meeting and end report serve as formal progress reports.
 
-\textbf{External projects} may require periodic reporting to the consortium on progress according to the workplan,
-including deliverables. The PM and Lead RSE consult the Consortium/Collaboration Agreement, the contract and the
-proposed workplan and involve Finance for the financial part of the report. Normally, the external project coordinator
-(e.g., EU project coordinator, NWO programme officer) signals the deadline of a deliverable or report. The Lead RSE
-contributes to the report on project activities required to be done by the eScience Center, and the PM checks the
-document. The PM asks Finance to check or fill in the financial part of the report, signed by the DoO if necessary. Once
-the final version is ready, the PM sends it to the external project coordinator (via EU portal done by Finance) and
-archives this report in the project portfolio.
+\textbf{External projects} may require periodic reporting to the consortium on progress and deliverables. 
+The PM and Lead RSE consult the agreements, contract, and workplan; Finance handles financial input. 
+The external coordinator (e.g., EU project coordinator, NWO programme officer) signals deadlines on the report delivery. 
+The Lead RSE drafts the eScience Center's contribution, the PM reviews it. Finance fills in the financial part of the report 
+(signed by the DoO if needed). The PM submits the final report to the external project coordinator 
+(via EU portal done by Finance) and archives it in the project portfolio.
 
 \subsection{Conflict resolution and complaint procedure}
-The eScience Center follows the Code of Conduct as outlined in the Personnel Policy (cf.~\cite{cao} for the details).
-
-All conflicts on projects involving the eScience Center RSEs and the LA and their team should be resolved using the
-following four-step process:
-
-\begin{enumerate}
-\item When problems arise in a project, the Lead RSE is expected to resolve problems in consultation with the LA. If needed,
-the PM can be asked to join in discussions on finding the best course of action;
-\item Both RSEs and LA can escalate issues related to the project to the PM (preferably, via the Lead RSE). The PM organizes a
-meeting to discuss the problem and tries to resolve it;
-\item If the problem remains unsolved, the RSEs or the LA can escalate it to the PD by sending a letter summarizing the
-situation to the accountable PM, who will forward it to the PD; and
-\item The PD can escalate the problem to the DT.
+The eScience Center adheres to the Code of Conduct outlined in the Personnel Policy (cf.~\cite{cao}). 
+%
+Conflicts involving eScience and the LA team on the projects should be addressed using this four-step process:
+\begin{enumerate}\itemsep0em
+\item The Lead RSE first seeks resolution with the LA; the PM may be consulted or join in discussion if needed.
+\item If unresolved, the issue is escalated to the PM (via the Lead RSE), who organizes a meeting to mediate.
+\item Persistent issues can be escalated to the PD via a written summary submitted through the PM.
+\item The PD may escalate to the DT if necessary.
 \end{enumerate}
 
-If the problem is with the PM, RSEs can escalate to their manager (SH).
-
-The eScience Center also has an external confidential advisor ('Vertrouwenspersoon') who can be contacted anonymously. See the Personnel
-Policy for details.
-
-Resolving conflicts may result in changes to the project, such as changes in staffing or changes described in Section~\ref{sec:init:vacancy}.
+If the issue concerns the PM, RSEs may escalate to their manager (SH). An external confidential advisor ('Vertrouwenspersoon') is also available for anonymous support~\cite{intranet}. 
+Conflict resolution may lead to project adjustments, such as staffing changes (cf. Section~\ref{sec:init:vacancy}).
 
 \subsection{Non-RSE Consultants}
 \label{sec:exec:consult}
-Certain issues will require that the project team consults with other persons inside the eScience Center. The following
-situations require the team member to notify the PM, any actions may be delegated to any eScience team member:
+Certain issues require consultation beyond the project team. Team members must inform the PM, who may delegate actions as needed:
 
-\begin{itemize}
-\item For project related GDPR issues, or personal identifiable data, consultation with the GDPR contact person is
-obligatory. For contacts, cf. GDPR section on the Intranet~\cite{intranet}. 
-\item For issues related to software or data accessibility and quality, contact the TL.
-\item For issues related to scientific integrity, contact the scientific integrity officer (cf. the Intranet page~\cite{intranet}).
-\item For issues related to SURF (use of their infrastructure or need of advisor), contact SURF liaisons. For
-contacts, see the intranet page~\cite{intranet}.
-\item For issues around sustainability, contact the TL and CMs.
-\item For IP and licensing issues, contact TLs and the DoT (cf. Section~\ref{sec:init:kickoff}).
-\item For legal matters, contact the DoO (cf. Section~\ref{sec:init:legal}).
-\item For external opportunities, contact PD (cf. Section \ref{sec:opportunities:external-funding}).
+\begin{itemize}\itemsep0em
+\item GDPR/personal data: consult the GDPR contact~\cite{intranet}. 
+\item Software/data quality and access: contact the TL.
+\item Scientific integrity: contact the integrity officer~\cite{intranet}.
+\item SURF-related matters: contact SURF liaisons~\cite{intranet}.
+\item Sustainability: contact TL and CMs.
+\item IP/licensing: contact TLs and DoT. (cf. Section~\ref{sec:init:kickoff}).
+\item Legal matters: contact the DoO (cf. Section~\ref{sec:init:legal}).
+\item External funding/opportunities: contact the PD (cf. Section \ref{sec:opportunities:external-funding}).
 \end{itemize}
 
 \subsection{Changes to the project}
 \label{sec:exec:changes}
 During the project life cycle, the workplan may change substantially:
 
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item New deliverables because of additional funding
 \item New workplan because of changes in the research goal and/or in the technology used
 \item Timeline, leading to a different end date.
 \end{itemize}
 
 Any of these changes needs explicit approval from the PM team or the DT.
+
 
 \begin{table}[h!]
 \begin{booktabs}{colspec={|m{0.65\textwidth}|m{0.3\textwidth}|},row{even}={gray!20}}
@@ -688,34 +663,26 @@ Any of these changes needs explicit approval from the PM team or the DT.
 \end{table}
 
 
-For \textbf{external projects} changes to a project must be handled as described in the formal documents for this
-project (e.g., grant agreement, consortium agreement). If it is within the PM mandate, the PM discusses with the PM
-team any extensions required for the project. Otherwise, the decision is made by the DT. The PM informs the external
-funder or consortium of the decision.
+For \textbf{external projects}, changes must follow the formal agreements (e.g., grant or consortium agreement). 
+The PM handles extensions within their mandate or escalates to the DT. The PM informs the external funder or consortium of the outcome.
 
 \subsubsection{Proposal changes request}
 The LA must submit a formal request to the PM team (by email via the PM, in PDF format, signed) containing:
 
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item project title and project number
 \item requested change (e.g., time/dates, RSE hours, scientific goal) and motivation for this change
-\item conditions such as deliverables: 
-\begin{itemize}
-\item If there are new deliverables, what are those and what is the new planning? 
-\item If there are no new deliverables, that should be stated explicitly.
-\end{itemize}
+\item conditions such as deliverables: any new deliverables should have updated timeline. If none, state explicitly.
 \item any motivated budget change, such as 
 \begin{itemize}
 \item LA wants to increase their involvement 
 \item change in research personnel (if applicable in the case of older projects)
-\item transfer from hardware costs to RSE contribution or PYR for research personnel on the LA side (or vice versa) (if
-applicable in the case of older projects)
+\item transfer between hardware and PYR for RSE or LA personnel costs (if applicable, for older projects)
 \item any in-kind to cash change, or vice versa (including requests with the extra cash budget from the LA).
 \end{itemize}
 \item any prior or planned inactivity on the project, such as
 \begin{itemize}
-\item shortage of personnel on the LA side due to e.g. maternity leave, sick leave, hiring delays (for example, a PhD student
-or a postdoc needs to be hired but there is a concise timeline on the hiring procedure)
+\item personnel shortage on the LA side due to maternity/sick leave or hiring delays (but there is a concise timeline on the hiring procedure)
 \item unavailability of RSEs 
 \item additional data that needs to be collected.
 \end{itemize}
@@ -725,19 +692,18 @@ or a postdoc needs to be hired but there is a concise timeline on the hiring pro
 
 \subsubsection{Processing the changes request and decision}
 Upon receipt of the request, the PM assesses if the request should be granted based on considerations such as 
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item whether the new objective is scientifically promising or technologically interesting? (if applicable)
 \item collaboration status with the LA;
 \item prior problems regarding the project;
-\item the benefit of continuing the project for the eScience Center (e.g., good wrap up of the collaboration, this leads to
-another funding opportunity together); and/ or
+\item benefits for the eScience Center (e.g., smooth wrap-up, future funding opportunity); and/or
 \item availability of RSEs with relevant expertise to work on it.
 \end{itemize}
 
 The PM can consult with RSEs and the TL on whether the new planning is feasible, and with Finance for a budget remaining after necessary recalculation. In case of additional funding, the DT
 (via the PD) will decide, after a budget calculation by the Finance and approval by the DoO. Otherwise, the PM puts the
 request on the agenda for the next PM meeting, containing: 
-\begin{itemize}
+\begin{itemize}\itemsep0em
 \item the motivated request (uploaded to the project portfolio
 \item the recommended action
 \item the prepared decision on the PM meeting agenda.
@@ -748,9 +714,9 @@ can provide the new information via an additional PDF signed letter or as amendm
 
 After the final decision, the PM notes the official decision in the decision document. If the request is not approved,
 the PM communicates this to the LA. If the request is approved, the PM
-\begin{itemize}
-\item communicates with Finance, which finalizes the extension (recalculation of project hour budget, changes in Exact, the extension letter for the LA, communication to the LA);
-\item double checks if budget and hours in Exact are still correct;
+\begin{itemize}\itemsep0em
+\item coordinates with Finance to finalize the extension (budget/Exact update, extension letter, LA communication);
+%\item double checks if budget and hours in Exact are still correct;
 \item communicates the extension to the Lead RSE.
 \end{itemize}  
   The Lead RSE then 
@@ -763,22 +729,12 @@ the PM communicates this to the LA. If the request is approved, the PM
 If the request involves a DT decision, the PM submits a request formally through the PD.
 
 \subsubsection{Early project termination}
-Early project termination can be
-\begin{itemize}
-\item agreed on by mutual consent;
-\item initiated by the LA; and/ or
-\item initiated by the eScience Center.
-\end{itemize}
+Early project termination may occur by mutual agreement, or be initiated by the LA or the eScience Center. In the first two cases, 
+the LA submits a signed letter (via the PM) to the DT, requesting project termination, explaining the situation and proposing how to 
+handle remaining project resources (e.g., RSE hours, cash contribution, FTE commitment of the LA, workshops, sustainability budget).
 
-In the first and the second case, the PM submits a letter (written together with and signed by the LA) explaining the
-situation to the DT. The letter should contain (a proposal for) an agreement on how to handle all the remaining
-resources of the project (RSE hours, cash contribution, FTE commitment for LA, workshops, software sustainability
-budget, etc.). 
-
-The PM can request the termination of a project if the conditions and agreements in the Awarding letter and Bijzondere
-voorwaarden have been violated by the LA or the project partners. The PM submits the letter to the DT (via the PD
-explaining the situation). If the DT approves the termination, the PM communicates this decision to Finance, which
-finalizes the process (by making changes in Exact and preparing a termination letter).
+The PM may request project termination if the LA or project partners violate the terms of Awarding Letter or Special conditions ("Bijzondere Voorwaarden"). 
+The PM submits a letter with the explanation to the DT via the PD. If approved, the PM informs Finance, which finalizes the process (by making changes in Exact and preparing a termination letter).
 
 \subsection{Opportunities beyond the project}
 \label{sec:opportunities}
@@ -789,15 +745,13 @@ team during the review meeting.
 
 \subsubsection{Increasing reusability (in this document called software sustainability)}
 \label{sec:opportunities:ss}
-For some projects, or entire calls, specific budget is available for software sustainability~\cite{nlesc2024software}. Until 2020, each
-individual project was assigned a so-called Generalization budget (“Generalisatie”), for generalization and reuse of
-project results. Since 2020, however, this budget is no longer assigned per project, but for the entire programme/call.
-The PM and the Lead RSE check the corresponding call text and the awarding letter of the project to determine If the
-software sustainability budget is available.
+Some projects or calls have dedicated software sustainability budgets~\cite{nlesc2024software}. Until 2020, each project 
+received its own Generalization (“Generalisatie”) budget for reuse of project results.
+Since 2020, this budget is allocated at the programme or call level. The PM and Lead RSE must check the call text, awarding 
+letter to confirm its availability.
 
-The PM signals potential for reusability to the TL. The TL discusses this opportunity with the Lead RSE and if
-necessary, the TL team. If RSEs have an idea and are interested to work on a project funded by this budget, they may
-contact TLs or DoT for more information. The process follows the SS protocol~\cite{intranet}.
+The PM signals potential for reuse to the TL, who discusses it with the Lead RSE and, if needed, the TL team. 
+RSEs with ideas for sustainability projects can contact the TL or DoT. The process follows the SS protocol~\cite{intranet}.
 
 \subsubsection{Knowledge and Development}
 \label{sec:opportunities:kd}
