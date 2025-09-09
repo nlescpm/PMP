@@ -79,6 +79,7 @@
    %\footnotemark[\ref{#1}]
    }
 %%%%%
+% 
 
 %%%%% colored box around the text
 \newcommand{\cfbox}[2]{%
@@ -89,14 +90,5 @@
 
 \newcommand{\cbox}[2]{\textcolor{#1}{\textbf{#2}}}
 
-% searching automatically list of special terms, hightlight and add these to the index 
-\SearchList{LeadRSEkey}{\cbox{nlesc-yellow!80!black}{#1}\index{#1}}{Lead RSE,LeadRSE} % requires xesearch
-%\SearchList{LeadRSEkey}{\colorbox{nlesc-yellow}{#1}\index{#1}}{Lead RSE,LeadRSE} % requires xesearch
-\SearchList{PMkey}{\cbox{nlesc-purple!80}{#1}\index{PM}}{PM,PMs}
-\SearchList{TLkey}{\cbox{nlesc-blue!50!black}{#1}\index{TL}}{TL,TLs}
-\SearchList{Operkey}{\cbox{green!70!black}{#1}\index{#1}}{Finance,DoO}%Operations,Controller}
-
-
-%\SearchList{TermGanttic}{eScience Planner}{Ganttic}
 
 \makeindex   

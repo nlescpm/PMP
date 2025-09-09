@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{geometry}
+
+\usepackage{tabularray}
+\usepackage{functional}
+\UseTblrLibrary{counter}
+%\UseTblrLibrary{functional}
+
+\makeatletter
+\IgnoreSpacesOn
+\tlNew \gFootNoteTl
+\intNew \gFootNoteInt
+\prgNewFunction \footNote {m}
+  {
+    \tlPutRight \gFootNoteTl
+      {
+        \stepcounter{footnote}
+        \footnotetext{#1}
+      }
+    \prgReturn {\footnotemark{}}
+  }
+\AddToHook{env/longtblr/before}{
+  \intSetEq \gFootNoteInt \c@footnote
+  \tlClear \gFootNoteTl
+}
+\AddToHook{env/longtblr/after}{
+  \intSetEq \c@footnote \gFootNoteInt
+  \tlUse \gFootNoteTl
+}
+\IgnoreSpacesOff
+\makeatother
+
+\begin{document}
+
+Some note\footnote{some note} before.
+
+\bigskip
+
+\begin{longtblr}[evaluate=\footNote]{colspec={ll},hlines}
+a line & a text\footNote{with a note} in the middle\\
+another line & another text\footNote{with another note} in the middle
+\end{longtblr}
+
+\bigskip
+
+Another note\footnote{another note} after.
+
+\end{document}
