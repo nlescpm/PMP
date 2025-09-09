@@ -3,32 +3,39 @@
 The project initiation phase starts immediately after the project has been granted. Its goal is to set up the project
 within the eScience Center, including a planning in terms of staffing and a work plan.
 
-For \textbf{external projects} and projects from specific calls (e.g., collaborative calls), Finance ensures that all
-paperwork is in place (e.g., contracts, Consortium/Collaborative Agreements, Memorandum of Understanding) before making
-a project active in Exact, allowing RSEs to write hours spent on the project. The PD regularly keeps PMs up to date on
-outstanding applications for external funding, signals to PMs and Finance whenever a project has been granted, and hands
-over relevant documents (such as proposal, agreements made, preliminary budget, etc) to PMs. 
+For call projects, Finance uses the grant package (see Table in Section~\ref{sec:init:admin}) to initiate the project, activating it in Exact, thereby, 
+enabling RSEs to write hours. For \textbf{external projects} and projects from special calls (e.g., collaborative calls), Finance make sure all 
+paperwork (contracts, agreements, Memorandum of Understanding) is complete before project initiation. The PD updates PMs on funding applications, notifies PMs 
+and Finance upon grant approval, and shares relevant documents (proposal, agreements, budget, etc.). 
+When arranging legal paperwork, the eScience position on open science and open-source development must be considered (see Section~\ref{sec:init:legal}).
 
-PMs are accountable for call projects. For the \textbf{external projects}, PMs assign a PM and Lead RSE to the project
-(i.e., the RSE involved in the submission procedure). The Lead RSE with the help of DoO, PD and the PM works with the project partners
-to get all paperwork in order (such as a subcontract), see Section~\ref{sec:init:legal}. 
 
 \subsection{PM assignment}
 \label{sec:init:pm-assign}
-Each project has one accountable PM. The PM team assigns PMs to new projects at the first PM meeting following the
-granting decision, records the assignation and asks Finance to update Exact with new budget holder information (the newly
-assigned PM). If agreement over an assignment is not reached, the PD makes the final decision in their capacity as PM
-team chair.
+
+Each project has one assigned PM. PMs are accountable for (call) projects. The PM team assigns PMs at the first meeting post-grant, records the assignment, 
+and requests Finance to update Exact with the new budget holder. In case of no consensus, the PD decides as PM team chair.
 %Should the accountable PM become unavailable for an extended period, the PM team can decide to put another PM in charge
 %of the project.
+% 
+For the \textbf{external projects}, PMs assign a PM and Lead RSE to the project
+(i.e., the RSE involved in the submission procedure). The Lead RSE with the help of DoO, PD and the PM works with the project partners
+to get all paperwork in order (such as a subcontract), see Section~\ref{sec:init:legal}. 
 
 \textbf{Responsible: PM team.}
 
 \subsection{Administrative Setup}
+\label{sec:init:admin}
 The table offers an overview of the responsibilities of the different stakeholders in setting up a project:
 
-\begin{longtblr}[theme = fancy%,
+\renewcommand{\TblrNewPage}{\clearpage}  %% <--- Added this line only
+\begin{longtblr}[theme = fancy,
     %note{a} = {It is the first footnote.}
+    %label = none,
+   % note{b}={The image is provided by the Communications.},
+    note{a}={In this case, the proposal and all supporting documents submitted by the LA, Awarding letter.},%
+    %\ftnotetxt{ft:logo}{The image is provided by the Communications.}
+    %\ftnotetext{ft:grantingpck}{In this case, the proposal and all supporting documents submitted by the LA, Awarding letter.}
   %
 ]{
   colspec={|p{0.15\textwidth}|p{0.15\textwidth}|p{0.65\textwidth}|}, width = 1\linewidth,
@@ -45,43 +52,45 @@ The table offers an overview of the responsibilities of the different stakeholde
     Exact  & Finance  &
     \begin{minipage}[t]{1\linewidth}
     \begin{itemize}\itemsep0em
-        \item Creating project code
-        \item Entering and uploading granting package documents~\ftnotelbl{ft:grantingpck}\TblrNote{a}. If the signed start form (Meldingsformulier start) is not received, Finance requests the LA.
-        \item Making PM a budget holder 
+        \item Creating project code, uploading grant package~\TblrNote{a} %\ftnotelbl{ft:grantingpck}. 
+        \item Requesting a missing start form from the LA
+        \item Making PM a budget holder.
     \end{itemize} 
     \end{minipage}  \\
   \midrule
-    Project portfolio on SharePoint~\cite{proj-portfolio}  & Finance  & 
+    Project portfolio  & Finance  & 
     \begin{minipage}[t]{1\linewidth}
     \begin{itemize}\itemsep0em
-        \item Creating folder in project portfolio (with template subfolder \& documents)
-        \item Uploading granting package documents~\ftnotelbl{ft:grantingpck}, signed start form, and CA if applicable
+        \item Creating project portfolio folder~\cite{proj-portfolio} (with template subfolder \& docs)
+        \item Uploading grant package, 
+          %\ftnotelbl{ft:grantingpck},
+          signed start form, and CA if applicable
     \end{itemize} 
     \end{minipage}  \\
   \midrule  
     Research Software Directory (RSD), project page and software pages & PM  & 
     \begin{minipage}[t]{1\linewidth}
     \begin{itemize}\itemsep0em
-        \item Creating an RSD project page~\cite{rsd-nlesc}, putting placeholder image with the eScience logo\ftnotelbl{ft:logo}.
+        \item Creating an RSD project page (see~\cite{rsd:manual}, Appendix~\ref{app:rsd-page}). % with placeholder image\TblrNote{a}.%\ftnotelbl{ft:logo}.
         \item Signalling requirements for corporate website to Communications 
-        \item Copying website summary from the proposal (if applicable) or writing a summary and obtaining approval from LA for edited versions  
-        \item Finding appropriate image (e.g., royalty-free images offered by shutterstock.com and unsplash.com) 
-        \item Ensuring Lead RSE has a maintainer access to the RSD page
+        \item Copying (from the proposal) or asking LA to draft website summary  
+        \item Selecting suitable image (e.g., from Shutterstock or Unsplash)
+        \item Giving Lead RSE maintainer access to RSD page
     \end{itemize} 
     \end{minipage}  \\
  \midrule
       & Communications & 
     \begin{minipage}[t]{1\linewidth}
     \begin{itemize}\itemsep0em    
-       \item Advising and reviewing content for the pages, including editing summaries, supporting with images 
+       \item Advising on page content, editing summaries, and supporting with images
     \end{itemize} 
     \end{minipage}  \\
   \midrule
     Corporate website  & Communications &  
     \begin{minipage}[t]{1\linewidth}
         \begin{itemize}\itemsep0em
-            \item Ensuring content is displayed on the corporate web page with information supplied by PM
-            \item Promoting projects to target stakeholders, when relevant. Promotion may include but is not limited to news items, inclusion in newsletters and social media
+            \item Publishing content on corporate website using PM's input
+            \item Promoting projects to stakeholders via news, newsletters, or social media
         \end{itemize} 
         \end{minipage}  \\
   \midrule
@@ -89,16 +98,15 @@ The table offers an overview of the responsibilities of the different stakeholde
     \begin{minipage}[t]{1\linewidth}
     \begin{itemize}[itemsep=-4pt,parsep=4pt]
         \item Checking if import project information from Exact is correct 
-        \item Adding labels
-        \item Adding respective project portfolio URLs
+        \item Adding meta-info (labels, respective project URLs, etc.)
         \item Planning RSEs, if applicable (e.g., for external projects)
     \end{itemize} 
     \end{minipage}  \\ 
 \midrule
 \end{longtblr}
 
-\ftnotetxt{ft:logo}{This image can be found in \href{https://nlesc.sharepoint.com/:f:/s/home/EkuP0l2hOI5OuQObI8zZqMgBikKDROkbSDGEn6eCFCbGsg?e=O9meCO}{this folder}.}
-\ftnotetxt{ft:grantingpck}{In this case, the proposal and all supporting documents submitted by the LA, Awarding letter.}
+%\ftnotetxt{ft:logo}{The image is provided by the Communications.}
+%\ftnotetxt{ft:grantingpck}{In this case, the proposal and all supporting documents submitted by the LA, Awarding letter.}
 
 For \textbf{external projects}, in particular, EU projects, PD and DoO make sure that the Finance and the PM have access to the project via the EU portal.
 
@@ -113,26 +121,21 @@ email). %Should the assigned TL become unavailable for an extended period, the T
 \textbf{Responsible: TL team (at request of the PM).}
 
 \subsection{Preparation by PM}
-PM provides an overview of project requirements based on the project proposal, covering the following topics:
+The PM reviews the project proposal to identify key requirements:
 \begin{itemize}
-\item What technology/eScience expertise is requested from the eScience Center, and at what level (novice, expert)?
+\item requested expertise: what eScience/technology expertise is needed and at what level?
 \textbf{Action}: In collaboration with the TL, the PM checks the skills survey for technological expertise required by the project.
-\item What are the research questions and goals? \textbf{Action:} PM asks senior members of the Center with relevant domain
-expertise for their opinion and prepares relevant tags for the project information.
-\item What is the proposed workplan and timeline? Is the work feasible? \textbf{Action}: Together with the TL, the PM assesses
-if a workplan is feasible or needs to be adjusted in the context of the Technology plan (Section~\ref{sec:init:techplan}).
-\item What type of support other than RSE expertise is requested and needed? (e.g., training workshops, time and help of CMs,
-use of SURF or other infrastructure) \textbf{Action}: PM notes this information for discussion with the LA and Lead
-RSE. PM consults TL about management plans (see Section~\ref{sec:exec:mp}) and CMs about training workshops (see
+\item research goals: what are the main questions and goals? \textbf{Action:} PM consults senior domain experts and prepares project tags.
+\item workplan and feasibility: Is the proposed timeline realistic? \textbf{Action}: PM and TL assess feasibility in the context of the Technology Plan (Section~\ref{sec:init:techplan}).
+\item additional support: is other support needed (e.g., training, CMs, SURF)? \textbf{Action}: PM discusses this with the LA and Lead RSE. PM consults TL about management plans (see Section~\ref{sec:exec:mp}) and CMs about training workshops (see
 Section~\ref{sec:exec:outreach}).
 \end{itemize}
 PM flags issues such as:
 \begin{itemize}
-\item GDPR – is there any personally identifiable information involved in the data required by the project? 
-\item IP and licensing – does the project team ask for an exception to the Apache 2.0 and the CC by 4.0 default? 
-\item Long term sustainability of the software – does the project have a sustainability plan? 
-\item Anything else potentially problematic – for example, military application, animal or human tests, etc. (see also the
-final statements in the application form).
+\item GDPR: are personal data involved?
+\item IP/licensing: any deviations from standard licenses (Apache 2.0, CC BY 4.0)? 
+\item Sustainability: is there a plan for long-term software maintenance?
+\item Ethical or other risks: Any sensitive aspects (e.g., military use, human/animal testing)? See also the final statements in the application form.
 \end{itemize}
 
 Depending on the issue, PM contacts relevant consultants (see Section~\ref{sec:exec:consult}).
@@ -143,10 +146,9 @@ PM records all relevant information in the project log (Section~\ref{sec:exec:lo
 
 \subsection{Staffing}
 \label{sec:init:vacancy}
-PM assigns the project to a team~\cite{rse-teams} and appoints a Lead RSE in agreement with SHs and budget
-holders relevant to the team activities. The PM can adjust staffing at any point during the project life cycle
-whenever necessary. The PM informs the LA on staffing changes concerning Lead RSE and PM. 
-Otherwise, the Lead RSE is the primary contact for the project.
+The PM assigns the project to a team~\cite{rse-teams} and appoints a Lead RSE in coordination with SHs and relevant budget 
+holders. Staffing can be adjusted throughout the project as needed. The PM informs the LA of any changes involving 
+the Lead RSE or PM; otherwise, the Lead RSE serves as the main contact.
 
 %PMs normally assign a project in such a way that it does not involve more than one team, unless no team is willing to
 %take up the project. PMs assign RSEs to projects, taking the RSEs' expression of interest %(see Section~\ref{sec:init:vacancy} below) 
@@ -155,11 +157,8 @@ Otherwise, the Lead RSE is the primary contact for the project.
 
 \subsubsection{Project vacancy announcement}
 
-Project vacancies are announced internally at the discretion of the \textbf{accountable PM} in a timely manner.
-%,via email. An announcement message must contain an instruction on how to access information on the project and how to
-%express interest (filling out form, via email, comments on Announcement Board in Teams etc.). In turn, 
-RSEs can express their interest (also on behalf of their team) within the allocated time and provide a motivational text including
-expertise and skills relevant to the project work. PM informs RSEs on staffing results.
+Project vacancies are announced internally by the \textbf{accountable PM}. RSEs may express interest (also on behalf of their team) 
+within the given timeframe, including a short motivation outlining relevant expertise and skills. The PM informs RSEs of the staffing outcome.
 
 \subsubsection{Assignment of RSEs}
 %To find RSEs suitable for the project, the PM:
@@ -192,9 +191,9 @@ professional and/or personal development needs of the Lead RSE.
 
 If %there is a shortage of RSE expertise and 
 the project cannot be staffed, the PM signals the vacancy to the respective
-SH and the PM representative in the hiring committee following rules described in the hiring process~\cite{hiring-intranet}.
+SH and the PM representative in the hiring committee following rules described in the hiring process~\cite{intranet}.
 
-\paragraph{PM/TL availability} If the PM or the TL becomes unavailable, their team appoints new one for the project.
+\paragraph{PM / TL availability} If the PM or the TL becomes unavailable, their team appoints new one for the project.
 The PM/TL plans with Lead RSE any pending important milestone on the project (review meeting, code release, paper publication).
 The former PM informs LA of the changes and planning, and introduces the new PM in the email. The former TL informs the PM and the Lead RSE of the change.
 
@@ -216,7 +215,7 @@ and the next steps in the project execution), ensures proper RSD pages handover.
 \label{init:planning}
 Project planning in Ganttic is used as an agreement between the PMs and the RSEs. RSEs are expected to adhere to the
 planning as agreed; if required, they can discuss and renegotiate the planning with the PMs.
-The Lead RSE is responsible for the planning of the project, following the rules described in "Project planning"~\cite{planning-intranet}.
+The Lead RSE is responsible for the planning of the project, following the rules described in "Project planning"~\cite{intranet}.
 
 %To plan projects, PMs rely on information available in Ganttic. SHs ensure that information on the availability of RSEs
 %for at least the next 6 months is up to date; this includes the overall planning overview of an
@@ -244,7 +243,7 @@ The PM archives the material used during the meeting and the meeting notes (from
 project portfolio folder.
 
 The PM can combine the two meetings, if necessary, into a single workshop-style meeting. This applies in particular to
-specific categories of projects (e.g., based on a collaborative call, or an OpenSSI call). This is held at the eScience
+specific categories of projects (e.g., based on a \href{https://research-software-directory.org/organisations/netherlands-escience-center?categories=%5B%22Collaborative%20Calls%22%5D&tab=projects}{collaborative call}, or an \href{10.5281/zenodo.5163292}{OpenSSI call}). This is held at the eScience
 Center office, and a suitable room is arranged by the PM.
 
 For \textbf{external projects}, the way kick-off meetings are arranged depends on the nature of the project. The Lead
@@ -265,7 +264,7 @@ the responsibility of the Lead RSE to keep the PM in the loop.
 \end{booktabs}
 \end{table}
 
-For this meeting, the PM uses the administrative (PowerPoint) presentation~\cite{proj-templates}, ensuring that information is in the line
+For this meeting, the PM uses the administrative presentation~\cite{proj-portfolio}, ensuring that information is in the line
 with the call text, and current Terms, IP policies, etc.
 
 The meeting covers the following topics:
@@ -292,11 +291,34 @@ each other and the PM stores both slide decks (from PM and LA) and agreements in
     Stakeholders: & PM (organizer, chair), the entire project team, TL, and other relevant stakeholders (e.g., SH)  \\[1.5ex]
     Purpose: &  The project kick-off focuses on the execution of the project, on the technological requirements, scientific challenges, relevant communities, project goals and outputs. \\[1.5ex]
     Duration: & Max. 1.5 hours \\[1.5ex]
-    Location: & At the eScience Center office or at the institute of the LA\ftnotelbl{ft:participants}\\[1.5ex]
+    Location: & At the eScience Center office or at the institute of the LA\ftnotelbl{ft:participants}\\[1.5ex] %
     \bottomrule
 \end{booktabs}
 \end{table}
 \ftnotetxt{ft:participants}{Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
+
+\iffalse
+\renewcommand{\TblrNewPage}{\clearpage}  %% <--- Added this line only
+\begin{longtblr}[
+  label = none,
+  note{a} = {Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
+]{
+  colspec = {|Q[0.15\textwidth,font=\bfseries]|Q[0.8\textwidth]|},
+  row{even} = {gray!20},
+  rowhead = 1,
+  booktabs,
+  width = \linewidth
+}
+\toprule
+Scheduled: & Around the date indicated by LA in the start form, after the administrative start meeting. \\[1.5ex]
+Stakeholders: & PM (organizer, chair), the entire project team, TL, and other relevant stakeholders (e.g., SH)\TblrNote{a} \\[1.5ex]
+Purpose: & The project kick-off focuses on the execution of the project, on the technological requirements, scientific challenges, relevant communities, project goals and outputs. \\[1.5ex]
+Duration: & Max. 1.5 hours \\[1.5ex]
+Location: & At the eScience Center office or at the institute of the LA. \\[1.5ex]
+\bottomrule
+\end{longtblr}
+\fi
+
 
 For this meeting the standard agenda is:
 \begin{itemize}
@@ -334,14 +356,12 @@ a technology plan is the eScience section, the workplan and the timeline of the 
 
 The project team submits a technology plan by the date agreed during the project kick-off, describing
 \begin{itemize}
-\item possible choices of the available technologies and which of them will be used for the project, and for which reason
+\item available technology options, selected tools for the project, and the rationale for their use
 \item the technological outcomes of the project (software and data) 
 \item steps to be taken regarding reusability and adoptability, etc. 
 \end{itemize}
-The technology plan covers the choice of programming language(s), expected quality levels, etc. The plan should be seen
-as an evolving record of the considerations and choices regarding the technology employed; it ensures that RSEs make
-good use of the expertise present in the Center and that optimal choices are made throughout the project. An example of
-project technology plan is included in the Appendix~\ref{app:exampleplan}.
+The technology plan outlines key choices such as programming languages and quality standards. It serves as a living document, 
+capturing technical decisions and ensuring optimal use of in-house expertise. An example can be found in ~\cite{spaaks2023asreview}.
 
 \let\myhcolw\relax 
 \newlength{\myhcolw}
@@ -365,28 +385,22 @@ project technology plan is included in the Appendix~\ref{app:exampleplan}.
 \end{booktabs}
 \end{table}
 
-The Lead RSE is encouraged to reach out to RSEs or other colleagues who have the relevant expertise in the process of
-developing the technology plan. CMs can advise on engaging the target audience with regard to software reusability and
-adoptability. Since TLs are accountable for safeguarding the suitable technology in the project, the involvement of the
+The Lead RSE is encouraged to consult colleagues with relevant expertise when drafting the technology plan. CMs can advise 
+on engaging the target audience for software reuse and adoption. Since TLs are accountable for safeguarding the suitable technology in the project, the involvement of the
 TL in writing the technology plan is important. Therefore, the PM must consult the TL on the technology plan, submitted
 by the Lead RSE before any technological decisions are made in the project.
 
-Upon approval of the technology plan (via email), the project team updates the management plans, if necessary. The Lead
-RSE logs the decisions in the project log (see Section~\ref{sec:exec:log}) and archives emails in the project
-portfolio, if necessary. The Lead RSE keeps the technology plan up to date: if it changes during the project, this
-should be simply appended to the original technology plan (e.g., in a separate document or in the project log). The
-Lead RSE explains why adaptations to the plan were required. The aim is to obtain a record of the lessons learned from.
-beginning to end of the project, to facilitate collaboration and to document decisions in case a project must be
-transferred to other RSEs due to unforeseen circumstances. The Lead RSE discusses any changes made to the technology
-plan during the status update meetings (Section~\ref{sec:exec:status}).
+Once the TL approves the technology plan (via email), the project team updates the management plans if needed. The Lead 
+RSE logs key decisions (see Section~\ref{sec:exec:log}) and, if necessary, archives related emails in the project portfolio. 
+Any updates to the plan during the project should be appended to the original, with an explanation of the changes. 
+This ensures continuity, documents lessons learned, and supports knowledge transfer if team changes occur. Plan updates are reviewed during the status update meetings (Section~\ref{sec:exec:status})..
 
 \subsection{Legal agreements}
 \label{sec:init:legal}
-The eScience Center champions and supports open and reproducible science and open-source development. LAs 
-get their projects awarded under the eScience Center's Terms and Conditions~\cite{nlesc-terms}. The default agreement forms offered by universities often contain IP related provisions that contradict
-our Terms and conditions.
-
-Regardless of the type of the project, RSEs must not sign any formal agreement document prior to consulting the PM. Such
+The eScience Center promotes open, reproducible science and open-source development. The call projects are awarded under our Terms and Conditions~\cite{nlesc-terms}. 
+The default university agreement templates often include IP clauses that conflict with these terms. 
+% 
+Regardless of the type of the project, RSEs must not sign any formal agreements without consulting the PM. Such
 documents include but are not limited to:
 \begin{itemize}
 \item Guest agreement (to get guest status at the project partner organization)
