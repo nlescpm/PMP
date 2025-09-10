@@ -145,6 +145,8 @@ latexmk -c
 ```
 PMP/
 ├── main.tex                 # Main document file
+├── macros.tex               # Macros file
+├── packages.tex             # Packages file
 ├── references.bib         # Bibliography database
 ├── tex/               # Individual sections
 │   ├── intro.tex
