@@ -145,10 +145,10 @@ latexmk -c
 ```
 project-management-protocol/
 ├── main.tex                 # Main document file
-├── bibliography.bib         # Bibliography database
-├── chapters/               # Individual chapters
-│   ├── introduction.tex
-│   ├── methodology.tex
+├── references.bib         # Bibliography database
+├── tex/               # Individual sections
+│   ├── intro.tex
+│   ├── execution.tex
 │   └── ...
 ├── img/                    # Images and figures
 ├── font/                   # Custom fonts (if any)
@@ -161,9 +161,9 @@ project-management-protocol/
 
 ### Adding Content
 
-- **New chapters**: Add `.tex` files to the `tex/` directory and include them in `main.tex` with `\input`
+- **New sections**: Add `.tex` files to the `tex/` directory and include them in `main.tex` with `\input`
 - **Images**: Place figures in the `img/` directory
-- **Bibliography**: Add references to `bibliography.bib`
+- **Bibliography**: Add references to `references.bib`
 
 ### Styling
 
