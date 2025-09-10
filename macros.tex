@@ -90,5 +90,21 @@
 
 \newcommand{\cbox}[2]{\textcolor{#1}{\textbf{#2}}}
 
+\newcommand{\LeadRSEtext}{\cbox{nlesc-yellow!80!black}{Lead RSE}\index{Lead RSE}}
+\newcommand{\PMtext}{\cbox{nlesc-purple!80}{PM}\index{PM}}
+\newcommand{\TLtext}{\cbox{nlesc-blue!50!black}{TL}\index{TL}}
+
+% Add this after your \SearchList definitions but before \begin{document}
+\newcommand{\disablehighlights}{%
+  \UndoBoundary{LeadRSEkey}%
+  \UndoBoundary{PMkey}%  
+  \UndoBoundary{TLkey}%
+}
+
+\newcommand{\enablehighlights}{%
+  \SearchList{LeadRSEkey}{\LeadRSEtext}{Lead RSE,LeadRSE}%
+  \SearchList{PMkey}{\PMtext}{PM,PMs}%
+  \SearchList{TLkey}{\TLtext}{TL,TLs}%
+}
 
 \makeindex   
