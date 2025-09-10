@@ -15,8 +15,6 @@ A project management protocol of the Netherlands eScience Center. This is a docu
 - [Compiling the Document](#compiling-the-document)
 - [Project Structure](#project-structure)
 - [Customization](#customization)
-- [Contributing](#contributing)
-- [Citation](#citation)
 - [See Also](#see-also)
 
 ## Overview
@@ -155,6 +153,8 @@ PMP/
 ├── img/                    # Images and figures
 ├── font/                   # Custom fonts (if any)
 ├── CITATION.cff            # Citation metadata
+├── CONTRIBUTING.md         # Contributing guidelines
+├── LICENSE                 # License file
 ├── .gitattributes          # Git export settings
 └── README.md               # This file
 ```
@@ -179,34 +179,6 @@ The document includes automatic highlighting for key roles such as:
 - **Lead RSE** (Research Software Engineer)
 - **PM** (Programme Manager)  
 - **TL** (Technical Lead)
-
-## Contributing
-
-1. Open an issue and get agreement how it should be addressed in PMP
-2. Fork the repository
-3. Create a feature branch (`git checkout -b feature/improvement`)
-4. Make your changes
-5. Test compilation
-6. Commit your changes (`git commit -am 'Add improvement'`) and refer to the issue (`addresses #`, `closes #`)
-7. Push to the branch (`git push origin feature/improvement`)
-8. Create a Pull Request and refer to the issues it addresses.
-
-## Citation
-
-If you use this project management protocol in your work, please cite it as:
-
-```bibtex
-@software{project_management_protocol,
-  author = {R. Bakhshi, J. Attema, N. Drost, P. Lopez-Tarifa, C. Bos, J. Maassen, C. Martinez-Ortiz and the Netherlands eScience Center},
-  title = {Project Management Protocol of the Netherlands eScience Center},
-  version = {3.5},
-  year = {2024},
-  url = {https://github.com/yourusername/project-management-protocol},
-  doi = {10.5281/zenodo.XXXXXX}
-}
-```
-
-Or use the "Cite this repository" button on GitHub.
 
 ## See Also
 
