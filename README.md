@@ -147,16 +147,16 @@ PMP/
 ├── main.tex                 # Main document file
 ├── macros.tex               # Macros file
 ├── packages.tex             # Packages file
-├── references.bib         # Bibliography database
-├── tex/               # Individual sections
+├── references.bib           # Bibliography database
+├── tex/                     # Individual sections
 │   ├── intro.tex
 │   ├── execution.tex
 │   └── ...
 ├── img/                    # Images and figures
 ├── font/                   # Custom fonts (if any)
-├── CITATION.cff           # Citation metadata
-├── .gitattributes         # Git export settings
-└── README.md              # This file
+├── CITATION.cff            # Citation metadata
+├── .gitattributes          # Git export settings
+└── README.md               # This file
 ```
 
 ## Customization
@@ -197,7 +197,7 @@ If you use this project management protocol in your work, please cite it as:
 
 ```bibtex
 @software{project_management_protocol,
-  author = {R. Bakhshi, J. Attema, N. Drost, P. Lopez-Tarifa, C. Bos, J. Maassen, C. Martinez and the Netherlands eScience Center},
+  author = {R. Bakhshi, J. Attema, N. Drost, P. Lopez-Tarifa, C. Bos, J. Maassen, C. Martinez-Ortiz and the Netherlands eScience Center},
   title = {Project Management Protocol of the Netherlands eScience Center},
   version = {3.5},
   year = {2024},
