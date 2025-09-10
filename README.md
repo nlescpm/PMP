@@ -143,7 +143,7 @@ latexmk -c
 ## Project Structure
 
 ```
-project-management-protocol/
+PMP/
 ├── main.tex                 # Main document file
 ├── references.bib         # Bibliography database
 ├── tex/               # Individual sections
