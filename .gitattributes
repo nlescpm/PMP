@@ -1,0 +1,46 @@
+# Exclude development files from releases
+word-version/ export-ignore
+font/ export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+
+# LaTeX build artifacts
+main.aux export-ignore
+main.bbl export-ignore
+main.blg export-ignore
+main.idx export-ignore
+main.ilg export-ignore
+main.ind export-ignore
+main.log export-ignore
+main.out export-ignore
+main.toc export-ignore
+main.fdb_latexmk export-ignore
+main.fls export-ignore
+main.synctex.gz export-ignore
+
+# Temporary and test files
+*.tmp export-ignore
+test.tex export-ignore
+
+# CI/CD files
+.travis.yml export-ignore
+.github/ export-ignore
+
+# Development images and source files
+"img/2024-11-21 Project stereotype faster.pptx" export-ignore
+img/budget-triangle.pdf export-ignore
+img/budget-triangle.tex export-ignore
+
+# Wildcard patterns for common LaTeX artifacts
+*.aux export-ignore
+*.log export-ignore
+*.out export-ignore
+*.toc export-ignore
+*.bbl export-ignore
+*.blg export-ignore
+*.idx export-ignore
+*.ind export-ignore
+*.ilg export-ignore
+*.fdb_latexmk export-ignore
+*.fls export-ignore
+*.synctex.gz export-ignore
