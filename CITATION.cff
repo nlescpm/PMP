@@ -1,0 +1,47 @@
+# YAML 1.2
+---
+cff-version: 1.2.0
+title: "Project Management Protocol of the Netherlands eScience Center"
+message: "If you use this project management protocol in your work, please cite it using the metadata from this file."
+type: software
+authors:
+  - given-names: "R."
+    family-names: "Bakhshi"
+    affiliation: "Netherlands eScience Center"
+  - given-names: "J."
+    family-names: "Attema"
+    affiliation: "Netherlands eScience Center"
+  - given-names: "N."
+    family-names: "Drost"
+    affiliation: "Netherlands eScience Center"
+  - given-names: "P."
+    family-names: "Lopez-Tarifa"
+    affiliation: "Netherlands eScience Center"
+  - given-names: "C."
+    family-names: "Bos"
+    affiliation: "Netherlands eScience Center"
+  - given-names: "J."
+    family-names: "Maassen"
+    affiliation: "Netherlands eScience Center"
+  - given-names: "C."
+    family-names: "Martinez-Ortiz"
+    affiliation: "Netherlands eScience Center"
+repository-code: "https://github.com/nlescpm/PMP"
+url: "https://github.com/nlescpm/PMP"
+abstract: >-
+  A comprehensive project management protocol of the Netherlands eScience Center
+  providing guidelines, best practices, and standardized procedures for effective 
+  project execution of eScience projects. This document covers project lifecycle 
+  management, team roles and responsibilities, and communication workflows.
+keywords:
+  - "project management"
+  - "protocol"
+  - "eScience"
+  - "research software engineering"
+  - "Netherlands eScience Center"
+  - "guidelines"
+  - "eScience project lifecycle"
+  - "best practices"
+license: "CC-BY-4.0"
+version: "3.5"
+date-released: "2024-12-19"
