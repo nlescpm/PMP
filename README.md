@@ -5,7 +5,14 @@
 
 **Current version: 3.5**
 
-A project management protocol of the Netherlands eScience Center. This is a document providing guidelines, best practices, and standardized procedures for effective project execution of the eScience projects.
+This document is the official project management protocol for the Netherlands eScience Center. It describes all phases
+of a project and the procedures required to successfully complete them.
+
+The scope of this document is the execution of research projects awarded by the eScience Center through calls for
+proposals, though other types of projects are also briefly covered. This document gives a detailed description of all
+steps, both required and optional, that must or may be taken in the execution of projects, reflecting the so-called
+project life cycle. For each step, the document clarifies the responsibilities of the project team members (RSEs) and
+other eScience Center employees (e.g. Programme Managers, Finance, Directors Team) involved in the process.
 
 ## Table of Contents
 
@@ -21,8 +28,8 @@ A project management protocol of the Netherlands eScience Center. This is a docu
 
 This document provides a structured approach to project management, covering:
 - Project lifecycle management
-- Team roles and responsibilities
-- Communication workflow
+- Roles and responsibilities of the eScience staff
+- Project workflow and communication around it
 
 ## Requirements
 
@@ -177,7 +184,7 @@ PMP/
 
 The document includes automatic highlighting for key roles such as:
 - **Lead RSE** (Research Software Engineer)
-- **PM** (Programme Manager)  
+- **PM** (Programme Manager)
 - **TL** (Technical Lead)
 
 ## See Also
