@@ -27,9 +27,9 @@ other eScience Center employees (e.g. Programme Managers, Finance, Directors Tea
 ## Overview
 
 This document provides a structured approach to project management, covering:
-- Project lifecycle management
+- Project lifecycle
 - Roles and responsibilities of the eScience staff
-- Project workflow and communication around it
+- Workflow and communication around a project
 
 ## Requirements
 
