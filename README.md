@@ -81,6 +81,7 @@ The following packages are required:
 % Table of contents and appendices
 \usepackage[nottoc,notlof,notlot]{tocbibind} % Control TOC entries
 \usepackage[title]{appendix}     % Appendix formatting
+\usepackage{fancyhdr}
 
 % Utilities
 \usepackage{url}                 % URL formatting
