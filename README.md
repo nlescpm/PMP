@@ -161,7 +161,7 @@ PMP/
 ├── font/                   # Custom fonts (if any)
 ├── CITATION.cff            # Citation metadata
 ├── CONTRIBUTING.md         # Contributing guidelines
-├── LICENSE
+├── LICENSE                 # CC BY 4.0 license text
 ├── .gitattributes          # Git export settings
 └── README.md               # This file
 ```
@@ -182,7 +182,8 @@ PMP/
 
 ### Role Highlighting
 
-The document includes automatic highlighting for key roles such as:
+The document includes automatic highlighting for key eScience project roles:
+
 - **Lead RSE** (Research Software Engineer)
 - **PM** (Programme Manager)
 - **TL** (Technical Lead)
@@ -196,8 +197,9 @@ The document includes automatic highlighting for key roles such as:
 
 ## License
 
-This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+Copyright © 2025 R. Bakhshi, J. Attema, N. Drost, P. Lopez-Tarifa, C. Bos, J. Maassen, R. van Nieuwpoort, C. Martinez-Ortiz and the Netherlands eScience Center.
 
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 You are free to share and adapt both the document content and LaTeX source code with appropriate attribution.
 
 
