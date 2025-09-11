@@ -1,13 +1,24 @@
 # Contributing to Project Management Protocol
 
-Thank you for your interest in contributing to the Netherlands eScience Center's Project Management Protocol! This document provides guidelines for contributing to the project.
+Thank you for your interest in contributing to the Netherlands eScience Center's Project Management Protocol! 
+
+## Contribution Policy
+
+**Primary Contributors**: We primarily accept contributions from Netherlands eScience Center employees, as this protocol reflects our internal practices and procedures.
+
+**External Suggestions**: We welcome suggestions and feedback from the broader community! If you're external to the organization, please:
+- Open an issue to discuss your suggestion
+- Provide context for how the improvement would benefit eScience projects
+- Note that final decisions on incorporating external suggestions rest with eScience Center staff
+
+This document provides guidelines for contributing to the project.
 
 ## How to Contribute
 
 ### Before You Start
 
-1. **Open an issue** to discuss your proposed changes and get agreement on how it should be addressed in the PMP
-2. **Review existing issues** to see if your idea is already being discussed
+1. **Review existing issues** to see if your idea is already being discussed
+2. **Open an issue** to discuss your proposed changes and get agreement on how it should be addressed in the PMP
 3. **Read the current document** to understand the existing structure and style
 
 ### Making Changes
@@ -37,7 +48,7 @@ Thank you for your interest in contributing to the Netherlands eScience Center's
    - Reference the issue number using `addresses #123` or `closes #123`
 7. **Push to your branch**:
    ```bash
-   git push origin feature/improvement-description
+   git push origin improvement/improvement-description
    ```
 8. **Create a Pull Request** on GitHub and reference the issues it addresses
 
@@ -69,7 +80,7 @@ Thank you for your interest in contributing to the Netherlands eScience Center's
 We welcome various types of contributions:
 
 - **Content improvements**: Better explanations, additional examples, clarifications
-- **Updates**: Procedural and workflow updates
+- **New sections**: Coverage of new aspects of project management
 - **Bug fixes**: Corrections to errors, typos, or broken references
 - **Formatting improvements**: Better layout, tables, figures
 - **Documentation updates**: Improvements to README, this guide, or comments
@@ -85,9 +96,9 @@ We welcome various types of contributions:
 ### Getting Help
 
 If you need help with:
-- **LaTeX issues**: (Low priority) Check the [LaTeX documentation](https://www.latex-project.org/help/documentation/) or ask in the issue
+- **LaTeX issues**: Check the [LaTeX documentation](https://www.latex-project.org/help/documentation/) or ask in the issue
 - **Content questions**: Open an issue to discuss before making changes
-- **Technical problems**: (Low priority) Describe your environment and the specific error you're encountering
+- **Technical problems**: Describe your environment and the specific error you're encountering
 
 ### Code of Conduct
 
