@@ -13,8 +13,16 @@
 %    \includegraphics[scale=1]{img/a0000-img003.jpg}}}}
 %\AtPageUpperLeft{\raisebox{-8\baselineskip}{\makebox[\paperwidth]{\hspace{16cm}\includegraphics[scale=1]{img/a0000-img002.png}}}}
   \AtPageLowerLeft{\raisebox{2\baselineskip}{\makebox[\paperwidth]{\hspace{16cm}\includegraphics[scale=1]{img/a0000-img003.jpg}}}} 
+  % License notice (bottom left)
+  % License footer across bottom
+  \AtPageLowerLeft{\raisebox{0.5\baselineskip}{\makebox[\paperwidth][c]{\tiny Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0) | \url{https://creativecommons.org/licenses/by/4.0/}}}}
+  
 }%
 }
+
+\fancyfoot[L]{\small \textcopyright\ 2024 Netherlands eScience Center}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\small CC BY 4.0}
 
 
 %% custom fonts
@@ -93,8 +101,6 @@
 \newcommand{\LeadRSEtext}{\cbox{nlesc-yellow!80!black}{Lead RSE}\index{Lead RSE}}
 \newcommand{\PMtext}{\cbox{nlesc-purple!80}{PM}\index{PM}}
 \newcommand{\TLtext}{\cbox{nlesc-blue!50!black}{TL}\index{TL}}
-\SearchList{Operkey}{\cbox{green!70!black}{#1}\index{#1}}{Finance,DoO}%Operations,Controller}
-\newcommand{\Opertext}{}
 
 
 

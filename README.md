@@ -1,6 +1,6 @@
 # Project Management Protocol 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.XXXX/zenodo.XXXXXX.svg)](https://doi.org/10.XXXX/zenodo.XXXXXX)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 **Current version: 3.5**
@@ -161,7 +161,7 @@ PMP/
 ├── font/                   # Custom fonts (if any)
 ├── CITATION.cff            # Citation metadata
 ├── CONTRIBUTING.md         # Contributing guidelines
-├── LICENSE                 # License file
+├── LICENSE
 ├── .gitattributes          # Git export settings
 └── README.md               # This file
 ```
@@ -193,3 +193,15 @@ The document includes automatic highlighting for key roles such as:
 * [LaTeX Project Official Documentation](https://www.latex-project.org/help/documentation/)
 * [XeLaTeX Guide](https://www.overleaf.com/learn/latex/XeLaTeX)
 * [Bibliography management with biblatex](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
+
+## License
+
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share and adapt both the document content and LaTeX source code with appropriate attribution.
+
+
+## Acknowledgments
+Some LaTeX macros were adapted from examples in a respective LaTeX package documentation.
+
+The README and CONTRIBUTING markdowns have been partially generated using Claude Sonnet 4 (version claude-sonnet-4-20250514). All AI-output has been refined, verified for correctness, accuracy and completeness, adapted where needed, and approved by the contributors of this repository.
