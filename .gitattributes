@@ -21,6 +21,9 @@ main.synctex.gz export-ignore
 # Temporary and test files
 *.tmp export-ignore
 test.tex export-ignore
+tex/.jle/ export-ignore
+.jle/ export-ignore
+img/.jle/ export-ignore
 
 # CI/CD files
 .travis.yml export-ignore

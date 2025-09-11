@@ -31,8 +31,8 @@ url: "https://github.com/nlescpm/PMP"
 abstract: >-
   A comprehensive project management protocol of the Netherlands eScience Center
   providing guidelines, best practices, and standardized procedures for effective 
-  project execution of eScience projects. This document covers project lifecycle 
-  management, team roles and responsibilities, and communication workflows.
+  project execution of eScience projects. This document covers project lifecycle, its
+  management, project team roles and responsibilities, and communication.
 keywords:
   - "project management"
   - "protocol"
