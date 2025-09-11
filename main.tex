@@ -72,8 +72,11 @@
 \input{tex/closing}
 
 %bibliography section rename
+%\renewcommand{\bibname}{Related links and references}
+%\renewcommand{\bibsection}{\section*{\bibname}}
+% Redefine bibsection to use the original section command
 \renewcommand{\bibname}{Related links and references}
-\renewcommand{\bibsection}{\section*{\bibname}}
+\renewcommand{\bibsection}{\oldsection*{\bibname}}
 
 \bibliographystyle{unsrturl}%abbrv}
 \bibliography{references}
@@ -116,7 +119,7 @@
 %\input{tex/app-workshop}
 % Restore the original section definition
 \let\section=\oldsection
-\renewcommand{\indexname}{Roles appearance}
+\renewcommand{\indexname}{Index: Key eScience Roles appearance}
 \printindex
 
 \end{document}
