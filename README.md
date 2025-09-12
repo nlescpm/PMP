@@ -198,7 +198,7 @@ The document includes automatic highlighting for key eScience project roles:
 
 ## License
 
-Copyright © 2025 R. Bakhshi, J. Attema, N. Drost, P. Lopez-Tarifa, C. Bos, J. Maassen, R. van Nieuwpoort, C. Martinez-Ortiz and the Netherlands eScience Center.
+Copyright © 2025 The Netherlands eScience Center.
 
 This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 You are free to share and adapt both the document content and LaTeX source code with appropriate attribution.
