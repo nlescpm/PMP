@@ -39,18 +39,40 @@ the project log to improve readability of the log and avoid duplicate informatio
 \label{sec:exec:status}
 The PM stays informed about the status of the project and communicates with the Lead RSE on a regular basis.
 
+\iffalse
 \begin{table}[h!]
 \begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
     \toprule
-    Scheduled: &  Once every 4-6 weeks \\[1.5ex]
-    Stakeholders: & PM (organizer), Lead RSE, optionally: TL\ftnotelbl{ft:tlparticipation}, other RSEs. \\[1.5ex]
-    Purpose: &  Status update on the project and discussion around project management. \\[1.5ex]
-    Duration: & 30 min –- 1 hour \\[1.5ex]
-    Location: & In-person meeting is default. \\[1.5ex]
+    Scheduled: &  Once every 4-6 weeks \\
+    Stakeholders: & PM (organizer), Lead RSE, optionally: TL\ftnotelbl{ft:tlparticipation}, other RSEs. \\
+    Purpose: &  Status update on the project and discussion around project management. \\
+    Duration: & 30 min –- 1 hour \\
+    Location: & In-person meeting is default. \\
     \bottomrule
 \end{booktabs}
 \end{table}
 \ftnotetxt{ft:tlparticipation}{The TL participation is mandatory for the techology-oriented projects.}
+\fi
+
+\begin{longtblr}[
+  label = none,
+  note{a} = {The TL participation is mandatory for the technology-oriented projects.}
+]{
+  colspec = {|Q[0.15\textwidth,font=\bfseries]|Q[0.8\textwidth]|},
+  row{even} = {gray!20},
+  rows = {ht=0.5em}, % Sets minimum height for all rows
+  rowhead = 1,
+  booktabs,
+  width = \linewidth
+}
+\toprule
+Scheduled: & Once every 4-6 weeks \\
+Stakeholders: & PM (organizer), Lead RSE, optionally: TL~\TblrNote{a} , other RSEs. \\
+Purpose: & Status update on the project and discussion around project management. \\
+Duration: & 30 min –- 1 hour \\
+Location: & In-person meeting is default. \\
+\bottomrule
+\end{longtblr}
 
 PM and Lead RSE discuss:
 \begin{itemize}
@@ -147,7 +169,7 @@ Project hours are managed by different parties with different responsibilities:%
 \begin{table}[!htb]
 % \caption{Parties at the eScience Center and their responsibilities}
 \renewcommand{\arraystretch}{1.5}
-\begin{booktabs}{colspec={|p{0.1\textwidth}|p\myhcolw|p{0.3\textwidth}|},row{even}={gray!20}}
+\begin{booktabs}{colspec={|p{0.1\textwidth}|p\myhcolw|p{0.2\textwidth}|},row{even}={gray!20}}
     \toprule
     \textbf{Stakeholder} &  \textbf{Responsibilities} & \textbf{More info} \\\toprule
     PM & 
@@ -186,7 +208,7 @@ Project hours are managed by different parties with different responsibilities:%
         \item monitors and approves software sustainability hours 
     \end{itemize} 
       \end{minipage}
-    & There is a separate protocol on handling software sustainability. \\
+    & See the SS protocol~\cite{intranet} \\
     \bottomrule
 \end{booktabs}
 %\label{tab:budget}
@@ -418,7 +440,6 @@ designed to be as generic and reusable as possible from the start.
 \subsubsection{Code development}
 \label{sec:exec:code}
 At the initial stage of code development in the project, the Lead RSE together with RSEs:
-
 \begin{itemize}\itemsep0em
 \item set up a GitHub organization for the project, following the eScience Center Guide and the Turing Way~\cite{the_turing_way-2023}
 \item add the URL of this organization to the RSD project page.
@@ -455,6 +476,7 @@ the TL for the formal annual review meeting (see Section~\ref{sec:exec:annual}).
 \newlength{\myhcolw}
 \setlength{\myhcolw}{0.75\textwidth}
 
+\iffalse
 \begin{table}[h!]
 \begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{\myhcolw}|},row{even}={gray!20}}
     \toprule
@@ -476,7 +498,35 @@ the TL for the formal annual review meeting (see Section~\ref{sec:exec:annual}).
 \end{booktabs}
 \end{table}
 %\footnotetext[2]{Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
+\fi
 
+\begin{longtblr}[
+  label = none,
+  note{a} = {Mandatory participants must attend the meeting in person, while optional participants may join via video conference.}
+]{
+  colspec = {|Q[0.2\textwidth,font=\bfseries]|Q[0.75\textwidth]|},
+  row{even} = {gray!20},
+  rowhead = 1,
+  booktabs,
+  width = \linewidth
+}
+\toprule
+Scheduled: & Yearly \\
+Stakeholders: & PM (organizer, chair), Lead RSE, LA, TL, optional: other project team members, SH \\
+Purpose: & 
+\begin{minipage}[t]{0.75\textwidth}
+\begin{itemize}[leftmargin=0.3cm]\itemsep0em
+    \item to ensure that the project is still on track
+    \item to discuss any persistent issues to ensure optimal collaboration between project team
+    \item to explore opportunities beyond the project  
+\end{itemize} 
+\end{minipage}
+\\[1.5ex]
+Outcomes/Actions: & List of agreed actions and PM/TL advice for next steps. \\
+Duration: & Max 1.5 hours \\
+Location: & At the eScience Center or the project location\TblrNote{a} \\
+\bottomrule
+\end{longtblr}
 
 For call projects longer than one year, the PM organizes annual reviews. The details are described in the
 terms and conditions document~\cite{nlesc-terms}. For one-year projects, review meetings are optional and decided by the PM in consultation with the TL and Lead RSE.
@@ -554,8 +604,8 @@ Additionally, the Lead RSE:
 \label{sec:exec:tech}
 Prior to the annual review meeting, the PM asks Lead RSE to fill in the technology status report. This report 
 summarizes the technical progress of the project and includes RSD project page with its deliverables, URLs
-to project plans, software quality and community involvement. The Lead RSE prepares it in collaboration with the project team; it serves as input for the TL during the review.
-
+to project plans, software quality and community involvement. The Lead RSE prepares it in collaboration with the project team; it serves as input for the TL during the review. 
+%
 The Lead RSE:
 \begin{itemize}\itemsep0em
 \item collects output and relevant information from LA and team
@@ -630,10 +680,9 @@ Certain issues require consultation beyond the project team. Team members must i
 
 \begin{itemize}\itemsep0em
 \item GDPR/personal data: consult the GDPR contact~\cite{intranet}. 
-\item Software/data quality and access: contact the TL.
+\item Software/data quality, access and sustainability: contact TL and CMs.
 \item Scientific integrity: contact the integrity officer~\cite{intranet}.
 \item SURF-related matters: contact SURF liaisons~\cite{intranet}.
-\item Sustainability: contact TL and CMs.
 \item IP/licensing: contact TLs and DoT. (cf. Section~\ref{sec:init:kickoff}).
 \item Legal matters: contact the DoO (cf. Section~\ref{sec:init:legal}).
 \item External funding/opportunities: contact the PD (cf. Section \ref{sec:opportunities:external-funding}).

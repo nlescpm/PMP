@@ -284,7 +284,21 @@ each other and the PM stores both slide decks (from PM and LA) and agreements in
 \subsubsection{Project Kick-off}
 \label{sec:init:kickoff}
 
-\begin{table}[h!]
+\iffalse
+\begin{table}[H]
+\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
+    \toprule
+    Scheduled: &  Around the date indicated by LA in the start form, after the administrative start meeting. \\[1.5ex]
+    Stakeholders: & PM (organizer, chair), the entire project team, TL, and other relevant stakeholders (e.g., SH)  \\[1.5ex]
+    Purpose: &  The project kick-off focuses on the execution of the project, on the technological requirements, scientific challenges, relevant communities, project goals and outputs. \\[1.5ex]
+    Duration: & Max. 1.5 hours \\[1.5ex]
+    Location: & At the eScience Center office or at the institute of the LA\footnote{\label{ft:participants}Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}\\[1.5ex]
+    \bottomrule
+\end{booktabs}
+\end{table}
+
+
+\begin{table}[H]
 \begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
     \toprule
     Scheduled: &  Around the date indicated by LA in the start form, after the administrative start meeting. \\[1.5ex]
@@ -296,12 +310,13 @@ each other and the PM stores both slide decks (from PM and LA) and agreements in
 \end{booktabs}
 \end{table}
 \ftnotetxt{ft:participants}{Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
+\fi
 
-\iffalse
+
 \renewcommand{\TblrNewPage}{\clearpage}  %% <--- Added this line only
 \begin{longtblr}[
   label = none,
-  note{a} = {Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
+  note{a} = {Mandatory participants must attend the meeting in person, while optional participants may join via video conference.}
 ]{
   colspec = {|Q[0.15\textwidth,font=\bfseries]|Q[0.8\textwidth]|},
   row{even} = {gray!20},
@@ -317,7 +332,7 @@ Duration: & Max. 1.5 hours \\[1.5ex]
 Location: & At the eScience Center office or at the institute of the LA. \\[1.5ex]
 \bottomrule
 \end{longtblr}
-\fi
+
 
 
 For this meeting the standard agenda is:
@@ -361,7 +376,7 @@ The project team submits a technology plan by the date agreed during the project
 \item steps to be taken regarding reusability and adoptability, etc. 
 \end{itemize}
 The technology plan outlines key choices such as programming languages and quality standards. It serves as a living document, 
-capturing technical decisions and ensuring optimal use of in-house expertise. An example can be found in ~\cite{spaaks2023asreview}.
+capturing technical decisions and ensuring optimal use of in-house expertise; see an example in ~\cite{spaaks2023asreview}.
 
 \let\myhcolw\relax 
 \newlength{\myhcolw}
@@ -393,7 +408,7 @@ by the Lead RSE before any technological decisions are made in the project.
 Once the TL approves the technology plan (via email), the project team updates the management plans if needed. The Lead 
 RSE logs key decisions (see Section~\ref{sec:exec:log}) and, if necessary, archives related emails in the project portfolio. 
 Any updates to the plan during the project should be appended to the original, with an explanation of the changes. 
-This ensures continuity, documents lessons learned, and supports knowledge transfer if team changes occur. Plan updates are reviewed during the status update meetings (Section~\ref{sec:exec:status})..
+This ensures continuity, documents lessons learned, and supports knowledge transfer if team changes occur. Plan updates are reviewed during the status update meetings (Section~\ref{sec:exec:status}).
 
 \subsection{Legal agreements}
 \label{sec:init:legal}
