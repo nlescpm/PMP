@@ -3,7 +3,8 @@
 cff-version: 1.2.0
 title: "Project Management Protocol of the Netherlands eScience Center"
 message: "If you use this project management protocol in your work, please cite it using the metadata from this file."
-type: software
+url: "https://doi.org/10.5281/zenodo.17117785"
+type: document
 authors:
   - given-names: "R."
     family-names: "Bakhshi"
@@ -34,6 +35,7 @@ authors:
     ror: "https://ror.org/00rbjv475"
 repository-code: "https://github.com/nlescpm/PMP"
 url: "https://github.com/nlescpm/PMP"
+url: "https://doi.org/10.5281/zenodo.17117785"
 abstract: >-
   A comprehensive project management protocol of the Netherlands eScience Center
   providing guidelines, best practices, and standardized procedures for effective 
