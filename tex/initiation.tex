@@ -1,126 +1,79 @@
 \section{Project Initiation}
 \label{sec:init}
-The project initiation phase starts immediately after the project has been granted. Its goal is to set up the project
-within the eScience Center, including a planning in terms of staffing and a work plan.
+The project initiation phase begins once a project has been approved for funding. Its purpose is to establish the
+project within the eScience Center by completing the required administrative setup, assigning responsibilities, and
+preparing the project for execution.
 
-For call projects, Finance uses the grant package (see Table in Section~\ref{sec:init:admin}) to initiate the project, activating it in Exact, thereby, 
-enabling RSEs to write hours. For \textbf{external projects} and projects from special calls (e.g., collaborative calls), Finance make sure all 
-paperwork (contracts, agreements, Memorandum of Understanding) is complete before project initiation. The PD updates PMs on funding applications, notifies PMs 
-and Finance upon grant approval, and shares relevant documents (proposal, agreements, budget, etc.). 
-When arranging legal paperwork, the eScience position on open science and open-source development must be considered (see Section~\ref{sec:init:legal}).
+The exact initiation process depends on the project type. External projects, as well as certain internal projects, may 
+require additional contractual or legal arrangements before they can commence. Further information on the different 
+project types is provided in Appendix~\ref{app:internal-projects} and Appendix~\ref{app:external-projects}. Once all 
+administrative, financial, and legal requirements have been completed, the project is ready to enter the execution 
+phase. 
 
-
-\subsection{PM assignment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SH assignment}
 \label{sec:init:pm-assign}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Each project has one assigned PM. PMs are accountable for (call) projects. The PM team assigns PMs at the first meeting post-grant, records the assignment, 
-and requests Finance to update Exact with the new budget holder. In case of no consensus, the PD decides as PM team chair.
-%Should the accountable PM become unavailable for an extended period, the PM team can decide to put another PM in charge
-%of the project.
-% 
-For the \textbf{external projects}, PMs assign a PM and Lead RSE to the project
-(i.e., the RSE involved in the submission procedure). The Lead RSE with the help of DoO, PD and the PM works with the project partners
-to get all paperwork in order (such as a subcontract), see Section~\ref{sec:init:legal}. 
+Each project has one assigned Section Head, who is accountable for the project throughout its lifecycle.
 
-\textbf{Responsible: PM team.}
+For projects funded through the eScience Center’s regular funding calls, the assigned Section Head normally corresponds 
+to the section under which the proposal was submitted. In other cases, or where the assignment is not self-evident, the
+Section Heads jointly determine the most appropriate assignment, taking into account the project’s scope, expertise,
+and organizational responsibilities.
 
-\subsection{Administrative Setup}
-\label{sec:init:admin}
-The table offers an overview of the responsibilities of the different stakeholders in setting up a project:
+Once the assignment has been agreed, the responsible Section Head is recorded and Finance is notified to initiate the
+project registration process.
+
+\textbf{Responsible: Section Heads.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Project registration}
+\label{sec:init:registration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The table below summarizes the main project registration outputs, the responsible stakeholder, and the associated
+activities.
 
 \renewcommand{\TblrNewPage}{\clearpage}  %% <--- Added this line only
 \begin{longtblr}[theme = fancy,
-    %note{a} = {It is the first footnote.}
-    %label = none,
-   % note{b}={The image is provided by the Communications.},
-    note{a}={In this case, the proposal and all supporting documents submitted by the LA, Awarding letter.},%
-    %\ftnotetxt{ft:logo}{The image is provided by the Communications.}
-    %\ftnotetext{ft:grantingpck}{In this case, the proposal and all supporting documents submitted by the LA, Awarding letter.}
-  %
+    caption= {Project registration activities and responsibilities},
+     label = {tab:init:registration},
 ]{
   colspec={|p{0.15\textwidth}|p{0.15\textwidth}|p{0.65\textwidth}|}, width = 1\linewidth,
   rowhead = 1, %rowfoot = 1,
   row{1} = {font=\bfseries},
   column{1} = {font=\bfseries},
   row{odd} = {white}, row{even} = {white},
-  row{1} = {gray!20}, %row{Z} = {nlesc-yellow},
+  row{1} = {gray!20},
   cell{4}{1} = {r=2}{t},
 }
 \toprule
-    What & By & Responsible for  \\  
+Output & Responsible & Main actions \\
 \toprule
-    Exact  & Finance  &
-    \begin{minipage}[t]{1\linewidth}
-    \begin{itemize}\itemsep0em
-        \item Creating project code, uploading grant package~\TblrNote{a} %\ftnotelbl{ft:grantingpck}. 
-        \item Requesting a missing start form from the LA
-        \item Making PM a budget holder.
-    \end{itemize} 
-    \end{minipage}  \\
-  \midrule
-    Project portfolio  & Finance  & 
-    \begin{minipage}[t]{1\linewidth}
-    \begin{itemize}\itemsep0em
-        \item Creating project portfolio folder~\cite{proj-portfolio} (with template subfolder \& docs)
-        \item Uploading grant package, 
-          %\ftnotelbl{ft:grantingpck},
-          signed start form, and CA if applicable
-    \end{itemize} 
-    \end{minipage}  \\
-  \midrule  
-    Research Software Directory (RSD), project page and software pages & PM  & 
-    \begin{minipage}[t]{1\linewidth}
-    \begin{itemize}\itemsep0em
-        \item Creating an RSD project page (see~\cite{rsd:manual}, Appendix~\ref{app:rsd-page}). % with placeholder image\TblrNote{a}.%\ftnotelbl{ft:logo}.
-        \item Signalling requirements for corporate website to Communications 
-        \item Copying (from the proposal) or asking LA to draft website summary  
-        \item Selecting suitable image (e.g., from Shutterstock or Unsplash)
-        \item Giving Lead RSE maintainer access to RSD page
-    \end{itemize} 
-    \end{minipage}  \\
- \midrule
-      & Communications & 
-    \begin{minipage}[t]{1\linewidth}
-    \begin{itemize}\itemsep0em    
-       \item Advising on page content, editing summaries, and supporting with images
-    \end{itemize} 
-    \end{minipage}  \\
-  \midrule
-    Corporate website  & Communications &  
-    \begin{minipage}[t]{1\linewidth}
-        \begin{itemize}\itemsep0em
-            \item Publishing content on corporate website using PM's input
-            \item Promoting projects to stakeholders via news, newsletters, or social media
-        \end{itemize} 
-        \end{minipage}  \\
-  \midrule
-    Ganttic  & PM             & 
-    \begin{minipage}[t]{1\linewidth}
-    \begin{itemize}[itemsep=-4pt,parsep=4pt]
-        \item Checking if import project information from Exact is correct 
-        \item Adding meta-info (labels, respective project URLs, etc.)
-        \item Planning RSEs, if applicable (e.g., for external projects)
-    \end{itemize} 
-    \end{minipage}  \\ 
+Project record & Finance &
+\begin{minipage}[t]{1\linewidth}
+\begin{itemize}\itemsep0em
+    \item Creating the project code in AFAS
+    \item Assigning the responsible Section Head as budget holder
+\end{itemize}
+\end{minipage} \\
+\midrule
+Project portfolio & Finance &
+\begin{minipage}[t]{1\linewidth}
+\begin{itemize}\itemsep0em
+    \item Creating the project portfolio folder~\cite{proj-portfolio} following the rquired template subfolders
+    \item Requesting missing project documentation
+    \item     Uploading the grant package (proposal, awarding letter, signed start form, and supporting documentation
+    submitted by the LA)
+\end{itemize}
+\end{minipage} \\
 \midrule
 \end{longtblr}
+\textbf{Responsible: Finance.}
 
-%\ftnotetxt{ft:logo}{The image is provided by the Communications.}
-%\ftnotetxt{ft:grantingpck}{In this case, the proposal and all supporting documents submitted by the LA, Awarding letter.}
-
-For \textbf{external projects}, in particular, EU projects, PD and DoO make sure that the Finance and the PM have access to the project via the EU portal.
-
-\textbf{General status and progress are monitored by the accountable PM.}
-
-\subsection{TL assignment}
-\label{sec:init:tl-assign}
-The PM asks the TL team to assign a TL to the project, providing all project information. The TL team does so at the TL
-meeting and informs the PM of their decision (by assigning TL to the project in Ganttic as well as a confirmation by
-email). %Should the assigned TL become unavailable for an extended period, the TL team assigns another (temporary) TL to the project.
-
-\textbf{Responsible: TL team (at request of the PM).}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Preparation by PM}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The PM reviews the project proposal to identify key requirements:
 \begin{itemize}
 \item requested expertise: what eScience/technology expertise is needed and at what level?
@@ -144,8 +97,10 @@ PM records all relevant information in the project log (Section~\ref{sec:exec:lo
 
 \textbf{Responsible: accountable PM}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Staffing}
 \label{sec:init:vacancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The PM assigns the project to a team~\cite{rse-teams} and appoints a Lead RSE in coordination with SHs and relevant budget 
 holders. Staffing can be adjusted throughout the project as needed. The PM informs the LA of any changes involving 
 the Lead RSE or PM; otherwise, the Lead RSE serves as the main contact.
@@ -234,7 +189,9 @@ The Lead RSE is responsible for the planning of the project, following the rules
 %PMs share the resulting planning with the organization (e.g., through Ganttic).
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Kick-off meetings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Once administration and staffing are finalized, the PM organizes two kick-off meetings: an administrative start meeting
 introducing the eScience Center and our way of working and a project kick-off, which is focused on the project research
 and workplan. The secretary can assist with organizing the meetings.
