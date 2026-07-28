@@ -98,27 +98,46 @@
 
 \newcommand{\cbox}[2]{\textcolor{#1}{\textbf{#2}}}
 
-\newcommand{\LeadRSEtext}{\cbox{nlesc-yellow!80!black}{Lead RSE}\index{Lead RSE}}
-\newcommand{\PMtext}{\cbox{nlesc-purple!80}{PM}\index{PM}}
-\newcommand{\TLtext}{\cbox{nlesc-blue!50!black}{TL}\index{TL}}
-
-
 
 % Add this after your \SearchList definitions but before \begin{document}
+\newcommand{\LeadRSEtext}{%
+  \cbox{nlesc-yellow!80!black}{Lead RSE}%
+  \index{Lead RSE}%
+}
+
+\newcommand{\SHtext}{%
+  \cbox{nlesc-purple!80}{SH}%
+  \index{SH}%
+}
+
+%\newcommand{\TLtext}{%
+%  \cbox{nlesc-blue!50!black}{TL}%
+%  \index{TL}%
+%}
+
+% Disable automatic role highlighting
+
 \newcommand{\disablehighlights}{%
   \UndoBoundary{LeadRSEkey}%
-  \UndoBoundary{PMkey}%  
-  \UndoBoundary{TLkey}%
+  \UndoBoundary{SHkey}%
+%  \UndoBoundary{TLkey}%
 }
 
+% Enable automatic role highlighting
 \newcommand{\enablehighlights}{%
-  \SearchList{LeadRSEkey}{\LeadRSEtext}{Lead RSE,LeadRSE}%
-  \SearchList{PMkey}{\PMtext}{PM,PMs}%
-  \SearchList{TLkey}{\TLtext}{TL,TLs}%
+  \SearchList
+    {LeadRSEkey}
+    {\LeadRSEtext}
+    {Lead RSE,LeadRSE}%
+  \SearchList
+    {SHkey}
+    {\SHtext}
+    {SH,SHs}%
+%  \SearchList
+%    {TLkey}
+%    {\TLtext}
+%    {TL,TLs}%
 }
-
-%\let\oldsection=\section
-%\renewcommand{\section}[1]{\StopSearching\oldsection{#1}\StartSearching}
 
 
 \makeindex   
