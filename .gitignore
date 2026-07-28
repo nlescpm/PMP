@@ -1,0 +1,44 @@
+# LaTeX auxiliary files
+
+*.aux
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.toc
+
+# Other common LaTeX generated files
+
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.lof
+*.lot
+*.xdv
+*.bcf
+*.run.xml
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+
+# Latexmk
+
+latexmk
+
+# macOS
+
+.DS_Store
+
+# VS Code
+
+.vscode/

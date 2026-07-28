@@ -1,37 +1,87 @@
 \section{Scope and definitions}
 \label{sec:scope}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scope}
 \label{sec:scope:sc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This document is the official project management protocol for the Netherlands eScience Center. It describes all phases
-of a project and the procedures required to successfully complete them.
+This document is the official project management protocol of the Netherlands eScience Center. It describes the
+activities, responsibilities, and procedures required to manage an eScience project after it has been formally awarded, 
+through to its formal closure.
 
-The scope of this document is the execution of research projects awarded by the eScience Center through calls for
-proposals, though other types of projects are also briefly covered. This document gives a detailed description of all
-steps, both required and optional, that must or may be taken in the execution of projects, reflecting the so-called
-\textit{project life cycle}. For each step, the document clarifies the responsibilities of the project team members
-(RSEs) and other eScience Center employees (e.g. Programme Managers, Finance, Directors Team) involved in the
-process.
+The protocol primarily applies to projects awarded through the eScience Center calls for proposals, although it also 
+provides guidance for other types of projects as defined in Section~\ref{sec:scope:types}. It follows the project life
+cycle and, for each phase, specifies the required activities, optional activities, responsible roles, and expected
+outcomes.
 
-Call procedures are governed by a separate protocol~\cite{call-protocol-2015} and fall outside the scope of this document. 
-The call procedure protocol ends with the formal awarding of projects by the eScience
-Center Governing Board or the Directors Team (DT), the notification of Lead Applicants and the formalization of the
-awarding by means of a \textit{toekenningsbrief} ('Awarding letter’). 
-The current document covers all subsequent activities that (need to) take place after the awarding until the formal closing
-of the project. An independent evaluation of projects focused on impact, output, process, and 
-collaboration with project partners, falls outside the scope of this document and will be addressed in a separate publication or a future revision.
-Tools and platforms used for project management (e.g. \href{https://www.ganttic.com/}{Ganttic}, \href{https://www.exact.com/}{Exact}) as well as standard techniques
-(cf.~\cite{pmpm:31,brooks1995mythical,demarco2016peopleware,the_turing_way-2023,intro:2025talk}), are only briefly referenced and are not described in detail in this protocol.
-This document has been approved by the DT and will be subject to evaluation and possible adaptation annually.
+The call process itself is governed by a separate protocol~\cite{call-protocol-2015} and is therefore outside the scope 
+of this document. This protocol starts once a project has been formally awarded and covers all activities until the 
+project is formally closed.
 
-The structure of this document largely follows the project life cycle (see Section~\ref{sec:scope:lifecycle}); the
-protocol describes activities in chronological order.
+The following topics are also outside the scope of this protocol:
+\begin{itemize}
+    \item independent project evaluation (impact, outputs, process, and collaboration);
+    \item detailed guidance on project management tools (e.g. \href{https://www.ganttic.com/}{Ganttic}, 
+    \href{https://www.metabase.com/}{Metabase dashboards}, \href{https://www.afas.nl/}{AFAS});
+    \item general project management methodologies and techniques.
+\end{itemize}
 
+The Management Team (MT) approves this protocol and reviews it annually. The document is organised according to the 
+project life cycle (Section~\ref{sec:scope:lifecycle}), presenting activities in chronological order.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Types of projects}
+\label{sec:scope:types}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The eScience Center receives an annual budget from \href{https://www.nwo.nl/}{NWO} and \href{https://www.surf.nl/}{SURF}
+, the larger part of which is allocated to projects submitted by researchers working at eligible research performing 
+organizations in the Netherlands in the form of the in-kind provision of Research Software Engineers (RSEs). The 
+eScience Center also participates in externally funded projects and carries out internally funded strategic initiatives.
+
+These projects differ in their funding model and governance. Throughout this protocol, they are grouped into the 
+categories shown in Table~\ref{tab:scope:types}.
+
+\renewcommand{\TblrNewPage}{\clearpage}
+\begin{longtblr}[
+    theme = fancy,
+    caption= {Project categories covered by this protocol},
+    label = {tab:scope:types},
+%    note{a} = {here you can insert a note},
+]{
+    colspec={|p{0.15\textwidth}|p{0.55\textwidth}|p{0.25\textwidth}|},
+    width = 1\linewidth,
+    rowhead = 1,
+    row{1} = {font=\bfseries},
+    column{1} = {font=\bfseries},
+    row{odd} = {white},
+    row{even} = {white},
+    row{1} = {gray!20},
+}
+\toprule
+Project type & Description & Governed by \\
+\toprule
+Call projects
+    & Projects funded through the Netherlands eScience Center calls for proposals and delivered through in-kind RSE support.
+    & This protocol \\
+\midrule
+External projects
+    & Projects funded by external organisations (e.g., NWO, Horizon Europe, industry). External contractual obligations take precedence where applicable.
+    & This protocol + external agreements. See Appendix X for further details. \\
+\midrule
+Other projects
+    & Internal initiatives such as Research and Development (R\&D) projects, Fellowship projects, and Dissemination and Community (D\&C) initiatives.
+    & This protocol where applicable + dedicated internal procedures. See Appendix X for further details.\\
+\bottomrule
+\end{longtblr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Stakeholders}
+\label{sec:scope:stakeholders}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 An eScience project is a project involving the eScience Center, where responsibility is shared between different
 stakeholders who each have their own roles and responsibilities during specific phases of the project.
-
 
 %\resizebox{\textwidth}{!}{%
 %\begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
@@ -73,67 +123,26 @@ Editorial Team                                     &                       &    
 \end{tabularx}
 
 
-\subsection{Types of projects}
-The eScience Center receives an annual budget from \href{https://www.nwo.nl/}{NWO} and \href{https://www.surf.nl/}{SURF}, the larger part of which is allocated to projects
-submitted by researchers working at eligible research performing organizations in the Netherlands in the form of the
-in-kind provision of RSEs. Projects may also be \href{https://research-software-directory.org/organisations/netherlands-escience-center?categories=%5B%22External%22%5D&tab=projects}{funded from external sources} (henceforth referred to as \textit{an
-external project) }or funded from the annual budget but carried out internally.
-
-By awarding subsidy to a project or by pledging a contribution to an external project, the eScience Center takes on the
-obligation to deliver high-quality work in a timely manner.
-
-\subsubsection{Call projects}
-The eScience Center publishes a range of calls. Each project is a part of a specific call (regular calls such as
-\href{https://doi.org/10.5281/zenodo.6602691}{OEC}, \href{https://doi.org/10.5281/zenodo.10865584}{SS}, \href{10.5281/zenodo.5163292}{SSI}, or \href{https://research-software-directory.org/organisations/netherlands-escience-center?categories=%5B%22Collaborative%20Calls%22%5D&tab=projects}{calls in collaboration with other funders} such as \href{https://zoek.officielebekendmakingen.nl/stcrt-2019-32775.html}{Big Data \& Health}, 
-\href{https://www.nwo-i.nl/wp-content/uploads/2017/03/JCER-call-2017_UK.pdf}{JCER}, \href{https://zoek.officielebekendmakingen.nl/stcrt-2019-54263.html}{ESI-FAR}). Projects from the regular calls before 2021 are partly in-cash, while projects awarded later
-are fully in-kind (plus a reserved budget for workshops).
-
-Calls can reserve part of the project or the call budget to serve the eScience Center agenda to increase the impact of
-software beyond the project itself. Henceforth this will be referred to as the software sustainability budget, formerly
-known as generalization budget). The budget is intended for software generalization, reuse and sustainability, and
-community building. The DoT is the holder of this budget. Details concerning this budget are included in the Awarding
-letter. See Section~\ref{sec:opportunities:ss} for more information.
-
-Project teams (mainly Lead RSE, PM and TL) are expected to consult legal documents such as the specific call text, Awarding letter
-(‘Toekenningsbrief’), Terms and Conditions document (‘Bijzondere voorwaarden’, ‘Subsidieregeling’, etc.), Consortium/Collaboration Agreement (CA), and/or
-contracts for grant terms and conditions. The LA is responsible for adhering to the conditions of the project, while
-the PM, with the help of the Lead RSE, monitors this.
-
-In our call projects, most of the total requested budget is dedicated to project work and project-related activities.
-The remaining part (referred to as “general activities”) covers activities that benefit our ability to contribute to
-high-quality research, such as the professional development of RSEs through training, work meetings, conferences, etc,
-as well as the administrative coordination and project management within the eScience Center. It is up to the PMs and
-RSEs in consultation with the SHs to fairly distribute hours for general activities across all the projects they
-contribute to (cf. Section~\ref{sec:exec:budget}). The exact percentage set aside for general activities is defined in
-the call within which a project has been awarded.
-
-\subsubsection{External projects}
-Projects funded externally by e.g. NWO or the EU, or via private-public partnerships, are governed by external funding
-conditions specified in a contract or agreement that may supersede our own rules. %The budgets of these projects need to be approved by Finance and the DoO. 
-The LA is responsible for adherence to these rules and conditions, while the Lead RSE monitors this. 
-Again, the project team (mostly, Lead RSE, PM, TL) must consult the specific call
-text and other formal documents (Awarding letter, Terms and Conditions document, Consortium/Collaboration Agreements, contracts for the conditions
-and rules). Projects under external funding are covered partially by this protocol. The formalities around the acquisition process follow the workflow described in “External funding” (see Section
-\ref{sec:opportunities:external-funding} for more information).
-
-\subsubsection{Other projects}
-This document only briefly covers other types of projects such as those funded through Ambition 2~\cite{nlesc-strategy}, namely Dissemination
-\& Community (D\&C), Knowledge \& Development (KD) and Fellowship projects in 
-Section~\ref{sec:opportunities:fellowship} and Appendix~\ref{app:pm-role}.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-\subsection{Project life cycle overview}
+\subsection{Project lifecycle overview}
 \label{sec:scope:lifecycle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}[!h]
+\captionsetup[figure]{
+    labelfont={color=brown,bf},
+    textfont=bf,
+    justification=centering
+}
+
+\begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.5]{img/lifecycle-stages.png}
-    \caption{Project lifecycle stages}
+    \includegraphics[width=0.8\textwidth]{img/project-lifecycle.pdf}
+    \caption{Project Lifecycle Overview}
     \label{fig:project-lifecycle}
 \end{figure}
+At the eScience Center, a standard project lifecycle consists of three phases (see Figure~\ref{fig:project-lifecycle})
+initiated, followed by the execution phase, during which research software is developed and project activities are
+coordinated and monitored. Finally, the project is formally closed through a structured closing process.
 
-At the eScience Center, a standard project life cycle is a three-phase process (see Figure~\ref{fig:project-lifecycle}). First, project stakeholders initiate the
-project. Next, the project team executes the project and monitors its progress. Finally, once the project reaches its
-end, it is formally closed.
-
-These three phases are covered in detail in the next sections.
+The following sections describe each phase of the project lifecycle in detail.
