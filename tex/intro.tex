@@ -86,45 +86,90 @@ Other projects
 An eScience project is a project involving the eScience Center, where responsibility is shared between different
 stakeholders who each have their own roles and responsibilities during specific phases of the project.
 
-%\resizebox{\textwidth}{!}{%
-%\begin{tabular}{p{0.15\textwidth}p{0.15\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.1\textwidth}}
-\begin{tabularx}{\linewidth}{p{0.12\textwidth}|p{0.12\textwidth}|p{0.12\textwidth}|p{0.25\textwidth}|p{0.25\textwidth}}
-\toprule
-\textbf{Stakeholder} & \textbf{Abbreviation} & \textbf{Assignment}& \textbf{Role}& \textbf{More info}\\
-\midrule
-\endfirsthead
-\toprule
-\textbf{Stakeholder} & \textbf{Abbreviation} & \textbf{Assignment}& \textbf{Role}& \textbf{More info}\\
-\toprule
-\endhead
-\midrule
-\multicolumn{5}{r}{}
-\endfoot
-\bottomrule
-\endlastfoot  
-Lead Applicant & LA & main applicant and recipient of the grant & primary contact for the eScience Center project, accountable for the (quality of the) scientific contribution to the project & responsibilities defined in the call text, Terms and Conditions, and possibly a Consortium/Collaboration agreement.  \\\hline
-Programme Manager                                  & PM                    & assigned by the PM team~\footnote{All PMs, led by the Programme Director, constitute the PM team.}                                                                                          & accountable for the eScience contribution, delivering results within scope, time, and budget; project budget holder                                                              & Full text of responsibilities available in the PM job profile document and PM mandate (see~\cite{intranet})  \\\hline
-Lead Research Software Engineer                    & Lead RSE              & appointed by accountable PM                                                                                       & responsible for the timely execution of the project, main contact person for the project with other stakeholders                                                                                                                       & More details on responsibilities, see the formal role description of Lead RSE (Appendix~\ref{app:leadRSE}).                          \\\hline
-Research Software Engineer (assigned to a project) & RSE                   & assigned by the accountable PM                                                                                    & responsible for the timely completion of the project                                                                                                                                                                                   & Job, role descriptions given in~\cite{rse,rse-job}. All RSE activities coordinated by Lead RSE in agreement with PM.                                                                     \\\hline
-Consulting Research Software Engineer              & Consulting RSE        & involved at request of Lead RSE or accountable PM                                                                 & provides expertise to the project for a defined period; may also join key meetings in addition to an expertise contribution                                                        & All activities coordinated by Lead RSE in agreement with PM in case the project team needs additional expertise.                     \\\hline
-Technology Lead.                                    & TL                    & assigned by the TL team~\footnote{All TLs, led by Director of Technology, constitute the TL team.}                & acts as point of contact for Lead RSE to the TL team. Safeguards the technological aspects of a project; accountable for the quality, reuse and sustainability of the research software developed.                                     & The TLs team is responsible for internal training programme of RSEs.                                                                 \\\hline
-Section Head                                       & SH                    & assigned by the PM/SH team~\footnote{All SHs, led by Executive Director, constitute the SH team.}                 & line manager of RSEs, responsible for monitoring the overall effectiveness of RSEs in bringing projects to completion; maintain overview of a research domain.                                                                         & The SH team assigns one SH to each RSE team, and the SH ensures that team keeps its capacity and planning up to date.                \\\hline
-Communica-tions                                     &                       &                                                                                                                   & advise and support internal and external project communication, including showcasing through news, website, newsletters, social media, interviews, and videos.                                &                                                                                                                                      \\\hline
-Community Manager                                  & CM                    &                                                                                                                   & advise on developing outreach activities and promoting community engagement, responsible for external training programme                                                                                                               &                                                                                                                                      \\\hline
-Secretary                                          &                       &                                                                                                                   & organizes formal meetings, provide with agenda and slide template, invitation text, list of participants (with emails), and timeline.                                                                                                  &                                                            \\\hline
-Programme Director                                 & PD                    &                                                                                                                   & the escalation point for PMs and liaison to DT for project-related decisions; approves workshop plans (with Finance) and holds the Acquisition budget. &                                                                                                                                      \\\hline
-Director of Technology                             & DoT                   &                                                                                                                   & the escalation point for TLs, the contact point of TLs to DT, accountable (and responsible) for licences and Intellectual Property (IP), software sustainability budgets holder                                                        &                                                                                                                                      \\\hline
-Director of Operations                             & DoO                   &                                                                                                                   & handles legal questions (e.g., contracts, Collaborative Agreements and guest agreements)                                                                                               &                                                                                                                                      \\\hline
-Finance \& Control                                 & Finance               & part of Operations, includes Controller, and led by DoO                                                           & responsible for maintaining finances and project administration                                                                                                                                                                &                                                                   \\\hline
-Directors Team                                     & DT                    & comprised of DoT, DoO, General Director and PD                                                                    & approves formal decisions regarding projects (e.g., budget changes)                                                                                                                                                                    &                                                                                                                                      \\\hline
-GDPR contact person                                &                       & appointed by the DT, see the Intranet for contact information                                                     & consults on GDPR/AVG~\cite{GDPR,DCCPO_AVG_privacy,unl2025} or privacy-related issues in the project                                                                                                                                                                             & The eScience Center has not appointed a Data Protection Officer. GDPR aspects must be discussed with the contact person.             \\\hline
-eScience Center project team                       & eScience project team & comprises RSEs, PM and TL working on the project                                                                  & responsible for the timely completion of the project                                                                                                                                                                                   &                                                                                                                                      \\\hline
-Project team                                       &                       & comprises the eScience project team, LA and their team (including team members indicated in the project proposal) & responsible for the timely completion of the project                                                                                                                                                                                   &                                                                                                                                      \\\hline
-Editorial Team                                     &                       &                                                                                                                   & provides support with outreach                                                                                                                                                                                                         & The eScience Center maintains a blog, and has presence in major social networks                                                     
-%\end{tabular}%
-%}
-\end{tabularx}
-
+\renewcommand{\TblrNewPage}{\clearpage}
+\begin{longtblr}[
+   theme = fancy,
+   caption = {Project stakeholders and their roles},
+   label = {tab:scope:stakeholders},
+ ]{
+   width = \linewidth,
+   colspec = {
+     |Q[l,wd=0.20\textwidth]
+     |Q[l,wd=0.35\textwidth]
+     |Q[l,wd=0.35\textwidth]|
+   },
+   rowhead = 1,
+   row{1} = {font=\bfseries, bg=gray!20},
+   column{1} = {font=\bfseries},
+   row{2-Z} = {bg=white},
+ }
+ \toprule
+ Stakeholder & Role in the project & Further information \\
+ \midrule
+ Lead Applicant (LA) &
+ Represents the applicant organisation and is the primary external contact for
+ the project. Accountable for the scientific contribution and the participation
+ of the applicant project team. &
+ Responsibilities may also be defined by the call conditions, grant agreement,
+ or consortium agreement. \\
+ \midrule
+ Lead Research Software Engineer (Lead RSE) &
+ Coordinates the eScience Center’s project activities, supports the successful delivery of the agreed work, and serves
+  as the primary contact for the project. &
+ See the formal Lead RSE role description in Appendix~\ref{app:leadRSE}. \\
+ \midrule
+ Research Software Engineer, assigned to a project (RSE) &
+ Contributes research software engineering expertise and carries out agreed  project activities under the coordination 
+ of the Lead RSE. &
+ See the RSE role and job descriptions~\cite{rse,rse-job}. \\
+ \midrule
+ Consulting Research Software Engineer (Consulting RSE) &
+ Provides specific expertise to support concrete technical aspects of a project. &
+ Works under the coordination of the Lead RSE and is involved when additional expertise is required. \\
+ \midrule
+ Section Head (SH) &
+ Provides line management for the eScience Center project team, ensures appropriate staffing and capacity, and is 
+ accountable for the successful delivery of the eScience Center’s contribution to the project. &
+ Assigns the Lead RSE and project RSEs, and oversees team capacity and personnel matters. 
+ See Section~\ref{sec:init:staffing}. \\
+ \midrule
+ Programme Officer (PO) & 
+ Coordinates the call, review, and project selection process, and supports the administrative management of the 
+ programme throughout the project lifecycle. &
+ The funding decision communicated by the Programme Officer marks the starting point of this protocol. \\
+ \midrule
+ Secretary &
+ Provides administrative support for project coordination and formal meetings. &
+ Assists with meeting organisation, documentation, and project communications. \\
+ \midrule
+ Policy \& Compliance Officer (P\&CO) &
+ Provides guidance on legal, policy, and compliance matters related to the project, including agreements with external 
+ partners. &
+ Supports the preparation and review of collaboration agreements, NDAs, licences, and other legal documents where 
+ required. \\
+ \midrule
+ Community Manager (CM) &
+ Supports community building, engagement, and outreach activities related to the project. &
+ Provides advice on developing community engagement plans and connecting projects with relevant research communities. \\
+ \midrule
+ Communications &
+ Supports the communication and dissemination of project activities and outcomes. &
+ Advises on communication strategies and promotes project achievements through appropriate communication channels. \\
+ \midrule
+ Management Team (MT) &
+ Provides strategic oversight and approves project decisions that fall outside the delegated authority of the SH. &
+ Includes the General Director, Section Heads, Portfolio Manager, and Performance Manager. The General Director is the 
+ final decision-maker. \\
+ \midrule
+ eScience Center project team &
+ The team responsible for delivering the eScience Center's contribution to the project. &
+ Comprises the Lead RSE, RSEs, Section Head, and other contributors involved on behalf of the eScience Center. \\
+ \midrule
+ Project team &
+ The complete team responsible for delivering the project. &
+ Comprises the eScience Center project team together with the Lead Applicant and the collaborating project partners. \\
+ \bottomrule
+\end{longtblr}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
