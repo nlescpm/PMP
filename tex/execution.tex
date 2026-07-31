@@ -39,6 +39,8 @@ that the repositories are linked from the project's RSD page.  Whenever appropri
 based on, and build upon existing resources available in the 
 \href{https://github.com/nlesc}{⁠Netherlands eScience Center GitHub} organization. 
 
+\textbf{Responsible: Lead RSE.}
+
 \subsubsection{Data, infrastructure and computing resources}
 \label{sec:exec:resources}
 
@@ -56,10 +58,15 @@ Projects requiring new infrastructure or additional computing resources should c
 liaisons, who can advise on the most appropriate services and the current application procedures. Up-to-date
 instructions and contact information are maintained on the eScience Center Intranet~\cite{intranet}.
 
+\textbf{Responsible: Lead RSE (consults SURF liaisons where appropriate).}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Project meetings}
 \label{sec:exec:meetings}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Project meetings provide the primary forum for coordinating scientific and technical work, discussing progress, 
+resolving issues, and planning future activities. Different types of meetings serve different purposes throughout the 
+execution phase and should be adapted to the needs of the project.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Regular project team meetings}
@@ -71,11 +78,13 @@ project meeting. The frequency and format depend on the complexity of the projec
 \begin{table}[h!]
 \begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
     \toprule
-    Scheduled: &  Once every 2-6 weeks \\[1.5ex]
-    Stakeholders: & Lead RSE or LA (organizer), LA (chair), RSEs and other project team members from the LA side. \\[1.5ex]
-    Purpose: &  Progress update on the project by all team members. \\[1.5ex]
-    Duration: & 30 min –- 1 hour \\[1.5ex]
-    Location: & In-person meeting is default. \\[1.5ex]
+    Frequency: & Determined by the project team; commonly every two to four weeks.\\[1.2ex]
+    Participants: & Lead RSE (organizer), LA, RSEs, and relevant members of the LA team.\\[1.2ex]
+    Objective: & Coordinate work, assess progress, resolve issues, and update planning.\\[1.2ex] 
+    Output: & Agreed actions and relevant decisions recorded in the project log (see Section~\ref{sec:exec:log}). 
+    \\[1.2ex]
+    Duration: & Typically 30–60 minutes. \\[1.2ex]
+    Location: & In person or online, as agreed by the project team. \\[1.2ex]
     \bottomrule
 \end{booktabs}
 \end{table}
@@ -88,93 +97,80 @@ The agenda of this meeting should include:
 \item alignment of project progress with the project workplan, and adjustment of the latter, if necessary.
 \end{itemize}
 
+\textbf{Responsible: Lead RSE (co-organizer with the LA).}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Internal coordination and escalation}
 \label{sec:exec:internalcoord}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The PM stays informed about the status of the project and communicates with the Lead RSE on a regular basis.
+The Lead RSE and the responsible SH maintain regular communication throughout the project. Internal coordination may 
+take the form of scheduled meetings or ad hoc discussions, depending on the complexity and needs of the project. The 
+Lead RSE keeps the responsible SH informed of the project’s progress and of significant issues that may affect its 
+successful delivery.
 
-\begin{longtblr}[
-  label = none,
-  note{a} = {The TL participation is mandatory for the technology-oriented projects.}
-]{
-  colspec = {|Q[0.15\textwidth,font=\bfseries]|Q[0.8\textwidth]|},
-  row{even} = {gray!20},
-  rows = {ht=0.5em}, % Sets minimum height for all rows
-  rowhead = 1,
-  booktabs,
-  width = \linewidth
-}
-\toprule
-Scheduled: & Once every 4-6 weeks \\
-Stakeholders: & PM (organizer), Lead RSE, optionally: TL~\TblrNote{a} , other RSEs. \\
-Purpose: & Status update on the project and discussion around project management. \\
-Duration: & 30 min –- 1 hour \\
-Location: & In-person meeting is default. \\
-\bottomrule
-\end{longtblr}
-
-PM and Lead RSE discuss:
+Internal coordination may cover topics such as:
 \begin{itemize}
-\item project status (including any changes in a project workplan)
-\item technological issues, with due consultation of TL, respective SIG, or other RSEs, if necessary
-\item changes in technology plan, technological choices (Section~\ref{sec:init:techplan}), management plans (Section
-\ref{sec:exec:mp}). For any of these changes, TL presence is required
-\item synergies with other projects in the Center
-\item issues related to the budget, communication, staffing, etc.
-\item knowledge development and transfer, potential for software reuse, software sustainability.
+\item progress against the project workplan and agreed deliverables;
+\item significant changes to the Technology Plan (Section~\ref{sec:init:techplan});
+\item project risks, issues, and mitigation actions;
+\item staffing, resource allocation, and budget monitoring;
+\item workshops, community engagement, and communication activities;
+\item opportunities for collaboration with other projects or reuse of software; and
+\item other matters requiring organizational support or a management decision.
 \end{itemize}
 
-The frequency and duration of these meetings are at the discretion of the PM and depend on factors such as the
-experience of the Lead RSE and the size of the team and/or the project. 
+Issues that cannot be resolved within the project team, or that materially affect the project’s objectives, budget, 
+timeline, staffing, contractual obligations, or collaboration, should be escalated to the responsible SH. Where 
+appropriate, the SH may involve other stakeholders, such as Finance, Communications, CM, P\&CO, or the MT, 
+to support decision-making or resolve the issue.
 
-In projects that have a stronger focus on technology (such as the \href{https://doi.org/10.5281/zenodo.13829436}{eTEC}, \href{https://doi.org/10.5281/zenodo.6602816}{CIT}, \href{https://doi.org/10.5281/zenodo.10865584}{SS} projects), the TL is involved in these
-meetings more frequently. For some projects, update meetings can be combined (e.g., for projects within the same Call)
-or organized in the context of a larger meeting (such as a SIG on a relevant topic). Together with the Lead RSE, the PM
-decides on the format of the status update meeting.
-
+\textbf{Responsible: Lead RSE and SH.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Workshops and community events}
 \label{sec:exec:workshops}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Some call projects require the LA to organize workshops. These workshops aim at fostering research communities around
-the software developed in projects. Workshops may focus on early user feedback, new features, or connecting existing tools to broader communities. 
-%
-Based on the call text, the PM and Lead RSE determine whether one of more workshops must be organized. 
-Finance provides the project's workshop budget status. There are two types of workshops, namely, (a) organised by the LA, and (b) organized by the Lorentz Center.
-%
-\paragraph{For workshops organized by the LA:} the LA writes and submits the workshop plan(s) to Finance in a timely manner 
-(see~\cite{proj-portfolio} for templates). Finance approves the plans in consultation with the PD and PM. 
-The Lead RSE is expected to contribute to the workshop and its organization. A CM can advise the LA (through the Lead RSE) on
-fostering engagement and growth of relevant software communities; a CM is involved in the introductory
-part of the workshop, including addressing attendees. Finance handles the administrative and financial aspects of the 
-request and requests feedback on the scientific content from the PM team.
+Some projects include workshops or community events as part of their agreed project activities. Their purpose is to
+foster collaboration, engage research communities, disseminate project results, collect user feedback, or support the
+adoption and sustainability of research software. The organization, funding, and expected outcomes depend on the
+applicable funding programme and project agreement.
 
+When a workshop is funded through the project budget, the following process is followed:
 
-%Detailed procedure of workshops approval is described in Appendix~\ref{app:workshops}.
-%
-\paragraph{For workshops organised by the Lorentz Center:} the LA must apply through the Lorentz Center webpage.
-%\footnote{The procedure is described in the eScience - Lorentz Center Agreement and Annexes {\textcolor{red}(add the link when signed)}.}.
-%
-The LA has the leading role in the application. The Lead RSE takes an advisory role in the writing and design of the
-workshop proposal and is expected to actively participate during the workshop event. The PM must ensure enough hours
-are allocated for the Lead RSE (or RSE from the project team) to help the LA with the proposal and attend the workshop,
-if they want to take an active role.
+\begin{enumerate}
+\item The LA prepares a scientific agenda and a budget proposal using the project templates available in the 
+\textit{Templates projects} folder~\cite{proj-portfolio}. The Lead RSE supports the preparation of the workshop 
+and contributes to the scientific agenda.
+\item The responsible SH reviews the proposed workshop and approves the scientific programme.
+\item Finance reviews the proposed budget and confirms that the planned expenditure complies with the project conditions.
+\item Finance notifies the LA of the budget approval and initiates the corresponding financial process.
+\item After the workshop, the LA submits the final financial documentation, including the corresponding invoices, to Finance.
+\item Finance verifies the final expenses and processes the remaining payment.
+\end{enumerate}  
 
-These workshops differ from the eScience-Lorentz Center Competition workshops that are jointly funded by the eScience and
-the Lorentz Center. Besides co-funding expenses, the eScience Center provides an additional in-kind support. 
-The role of the eScience RSEs is described in the awarded proposals. The project
-initiation and the eScience team assignment follow the usual process. The team
-collaborates with the organizers on planning and outcome of the workshop (e.g. research paper, white paper, software
-release, or grant consortia). The Lead RSE plays a pivotal role in preparing and
-delivering the workshop, and, possibly, in publishing any outcome drafted during the event.
+The CM may support the project team in designing workshop agendas and engaging the target community to maximize the 
+long-term impact of the workshop outcomes.
+
+\paragraph{eScience Center--Lorentz Center Competition workshops}
+\mbox{}\\
+
+Projects awarded through the joint eScience Center--Lorentz Center Competition differ from regular project workshops.
+The workshop proposal is developed and submitted as part of the competition, and the role of the eScience Center project
+team is defined in the awarded proposal.
+
+The Lead RSE and the assigned RSEs support the scientific organizers throughout the preparation, delivery, and follow-up
+of the workshop in accordance with the agreed project plan. Typical contributions may include scientific and technical
+advice, workshop organization, development of research software or demonstrators, and the dissemination of workshop
+outcomes, such as publications, software releases, white papers, or follow-up funding proposals.
+
+\textbf{Responsible: Lead RSE and LA.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Project monitoring}
 \label{sec:exec:monitoring}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Responsible: Lead RSE.}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Project log}
 \label{sec:exec:log}
@@ -201,6 +197,8 @@ The following should be included in the project log:
 
 Links pointing to other documents (e.g., files in the Project portfolio, project output, repositories) should be used in
 the project log to improve readability of the log and avoid duplicate information.
+
+\textbf{Responsible: Lead RSE.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Progress monitoring}
@@ -310,6 +308,8 @@ committing to an event requiring travel and fill out a travel form. See the Intr
 For \textbf{external projects}, only the PM and RSEs formally working on the project may write hours. Some projects 
 (e.g., Horizon Europe) allow only direct project activities -- non-project activities like SIG involvement cannot be charged on the project. 
 The Lead RSE and PM must know these restrictions or consult Finance if unsure.
+
+\textbf{Responsible: Lead RSE, SH and Finance}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Risks, issues and project changes}
@@ -426,11 +426,12 @@ The PM may request project termination if the LA or project partners violate the
 The PM submits a letter with the explanation to the DT via the PD. If approved, the PM informs Finance, which finalizes the process (by making changes in Exact and preparing a termination letter).
 \end{itemize}
 
+\textbf{Responsible: Lead RSE and SH}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Project quality and outputs}
 \label{sec:exec:quality}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Software quality and sustainability}
@@ -463,6 +464,7 @@ The goal is to review software of the project for:
 Reviewers make written suggestions for improvements, and flag major issues encountered. These issues serve as input for
 the TL for the formal annual review meeting (see Section~\ref{sec:exec:annual}). These notes are stored in the project log.
 
+\textbf{Responsible: Lead RSE and project team.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Data and Software Management Plans}
@@ -474,6 +476,8 @@ Depending on the call, the LA must submit complete DMP and SMP documents within 
 may assist in drafting the DMP, which the LA submits to the PM, who asks a TL for review and approval. For call projects since 2021, SMPs are included in project proposals.
 
 The LA is responsible for keeping both plans up to date and must inform the PM and TL of changes via the Lead RSE. The PM may request updates as needed, with support from the Lead RSE.
+
+\textbf{Responsible: LA and Lead RSE.} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Project documentation}
@@ -605,6 +609,7 @@ The Lead RSE and PM consult Finance regarding payments for an open access public
 For \textbf{external projects} the expected deliverables are also part of the formal project documents (proposal,
 contract, etc. The Lead RSE is expected to keep the PM informed of the status of deliverables throughout the project.
 
+\textbf{Responsible: Project team.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Knowledge transfer and communication}
 \label{sec:exec:knowledge}
@@ -654,10 +659,15 @@ require a project-specific training workshop, the Lead RSE involves
 
 For \textbf{external projects}, consortium agreements (e.g., Non-Disclosure Agreement or NDA) may define result communication. The Lead RSE and PM review these at project start to clarify communication boundaries.
 
+\textbf{Responsible: Project team and Communications.} 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Project review}
 \label{sec:exec:review}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Project reviews follow an annual review cycle consisting of the following phases…
+
+%%%%% OLD
 % Applicability
 % Preparation
 % Review topics
@@ -875,6 +885,7 @@ Acquisition activities and the process. The relevant information is available vi
 To stimulate community engagement lasting longer than project lifetime, the eScience Center funds annual Fellowship
 Program~\cite{fellowship,fellowship-call}. The eScience project team is not eligible for this program, however, the LA and their team are.
 \end{itemize}
+\textbf{Responsible: Project team and Communications.} 
 
 % To an appendix
 %\subsection{Non-RSE Consultants}
