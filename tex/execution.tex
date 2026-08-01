@@ -70,23 +70,33 @@ execution phase and should be adapted to the needs of the project.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Regular project team meetings}
-\label{sec:exec:teammeetings}
+\label{sec:exec:team-meetings}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 To keep the entire project team informed on project progress, the Lead RSE together with the LA organizes a periodical
 project meeting. The frequency and format depend on the complexity of the project and size of the project team.
 
 \begin{table}[h!]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
-    \toprule
-    Frequency: & Determined by the project team; commonly every two to four weeks.\\[1.2ex]
-    Participants: & Lead RSE (organizer), LA, RSEs, and relevant members of the LA team.\\[1.2ex]
-    Objective: & Coordinate work, assess progress, resolve issues, and update planning.\\[1.2ex] 
-    Output: & Agreed actions and relevant decisions recorded in the project log (see Section~\ref{sec:exec:log}). 
-    \\[1.2ex]
-    Duration: & Typically 30–60 minutes. \\[1.2ex]
-    Location: & In person or online, as agreed by the project team. \\[1.2ex]
-    \bottomrule
-\end{booktabs}
+ \captionsetup{
+  labelformat=fancytable,
+  labelsep=space,
+  labelfont=bf,
+  textfont=bf,
+  justification=centering,
+  singlelinecheck=true
+  }
+ \caption{Project team meeting overview}
+ \label{tab:execution:team-meetings}
+ \begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
+     \toprule
+     Frequency: & Determined by the project team; commonly every two to four weeks.\\[1.2ex]
+     Participants: & Lead RSE (organizer), LA, RSEs, and relevant members of the LA team.\\[1.2ex]
+     Objective: & Coordinate work, assess progress, resolve issues, and update planning.\\[1.2ex] 
+     Output: & Agreed actions and relevant decisions recorded in the project log (see Section~\ref{sec:exec:log}). 
+     \\[1.2ex]
+     Duration: & Typically 30–60 minutes. \\[1.2ex]
+     Location: & In person or online, as agreed by the project team. \\[1.2ex]
+     \bottomrule
+ \end{booktabs}
 \end{table}
 
 The agenda of this meeting should include:
@@ -228,8 +238,22 @@ The Lead RSE routinely monitors:
 workshops or open-access publication costs, where applicable;
 \end{itemize}
 
+The information gathered through project monitoring provides the basis for the project review cycle
+(Section~\ref{sec:exec:reviewcycle}), during which project progress, resource utilisation, and future annual planning 
+are evaluated.
+
 \renewcommand{\arraystretch}{1.15}
 \begin{table}[t!]
+ \captionsetup{
+ labelformat=fancytable,
+ labelsep=space,
+ labelfont=bf,
+ textfont=bf,
+ justification=centering,
+ singlelinecheck=true
+ } 
+ \caption{Project monitoring responsibilities}
+ \label{tab:execution:monitoring}
  \begin{booktabs}{
   colspec={|>{\bfseries}m{0.18\textwidth}|m{0.52\textwidth}|m{0.22\textwidth}|},
   row{even}={gray!20}}
@@ -283,118 +307,51 @@ Section Heads and Performance Manager (PerfM) to support resource planning and a
 \subsubsection{Risks, issues and project changes}
 \label{sec:exec:risks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-During the project life cycle, the workplan may change substantially:
+Projects may encounter scientific, technical, organizational, or resource-related risks during their execution.
+The Lead RSE is responsible for identifying emerging risks and issues at an early stage and discussing them with the
+LA and project team whenever possible. Significant risks and unresolved issues should be communicated promptly to the 
+responsible SH through the internal coordination and escalation process (Section~\ref{sec:exec:internalcoord}) and are 
+reviewed as part of the project review cycle (Section~\ref{sec:exec:reviewcycle}). 
 
-\begin{itemize}\itemsep0em
-\item New deliverables because of additional funding
-\item New workplan because of changes in the research goal and/or in the technology used
-\item Timeline, leading to a different end date.
-\end{itemize}
-
-Any of these changes needs explicit approval from the PM team or the DT.
-
+Projects may require adjustments during their lifetime due to changes in scientific priorities, technology, staffing, 
+available resources, project planning, funding conditions, or other project circumstances. The Lead RSE discusses 
+proposed changes with the LA and the responsible SH. Changes are handled according to the governance process 
+summarized in Table~\ref{tab:execution:change-governance}.
 
 \begin{table}[h!]
-\begin{booktabs}{colspec={|m{0.65\textwidth}|m{0.3\textwidth}|},row{even}={gray!20}}
-    \toprule
-     \textbf{Type of request} &  \textbf{Decided by:} \\[1.5ex]
-    Budget requests within the PM mandate~\cite{intranet} & PM team \\[1.5ex]
-    All requests regarding budget changes outside the PM mandate &  DT (via PD) \\[1.5ex]
-    Early termination & DT (and DT informs the Board) \\[1.5ex]
-    \bottomrule
-\end{booktabs}
+ \captionsetup{
+  labelformat=fancytable,
+  labelsep=space,
+  labelfont=bf,
+  textfont=bf,
+  justification=centering,
+  singlelinecheck=true
+ }
+ \caption{Project change governance}
+ \label{tab:execution:change-governance}
+ \renewcommand{\arraystretch}{1.15}
+ \begin{booktabs}{
+  colspec={|m{0.55\textwidth}|m{0.35\textwidth}|},
+  row{even}={gray!20}}
+  \toprule
+  \textbf{Type of change} & \textbf{Decision by} \\
+  \toprule
+  Minor adjustments to project planning, milestones or day-to-day activities. & Lead RSE and LA \\
+  \midrule
+  Changes to project staffing and resource allocation within the approved project budget. & SH \\
+  \midrule
+  Significant changes affecting project objectives, project budget, continuation or termination. & MT \\
+  \midrule
+  Changes to externally funded projects. &
+  According to the applicable funding agreement (see Appendix~\ref{app:external-projects}).\\
+  \bottomrule
+ \end{booktabs}
 \end{table}
 
-
-For \textbf{external projects}, changes must follow the formal agreements (e.g., grant or consortium agreement). 
-The PM handles extensions within their mandate or escalates to the DT. The PM informs the external funder or consortium of the outcome.
-\begin{itemize}
-\item{Proposal changes request}
-The LA must submit a formal request to the PM team (by email via the PM, in PDF format, signed) containing:
-
-\begin{itemize}\itemsep0em
-\item project title and project number
-\item requested change (e.g., time/dates, RSE hours, scientific goal) and motivation for this change
-\item conditions such as deliverables: any new deliverables should have updated timeline. If none, state explicitly.
-\item any motivated budget change, such as 
-\begin{itemize}
-\item LA wants to increase their involvement 
-\item change in research personnel (if applicable in the case of older projects)
-\item transfer between hardware and PYR for RSE or LA personnel costs (if applicable, for older projects)
-\item any in-kind to cash change, or vice versa (including requests with the extra cash budget from the LA).
-\end{itemize}
-\item any prior or planned inactivity on the project, such as
-\begin{itemize}
-\item personnel shortage on the LA side due to maternity/sick leave or hiring delays (but there is a concise timeline on the hiring procedure)
-\item unavailability of RSEs 
-\item additional data that needs to be collected.
-\end{itemize}
-\item any delay with the start date.
-\end{itemize}
-
-
-\item{Processing the changes request and decision}
-Upon receipt of the request, the PM assesses if the request should be granted based on considerations such as 
-\begin{itemize}\itemsep0em
-\item whether the new objective is scientifically promising or technologically interesting? (if applicable)
-\item collaboration status with the LA;
-\item prior problems regarding the project;
-\item benefits for the eScience Center (e.g., smooth wrap-up, future funding opportunity); and/or
-\item availability of RSEs with relevant expertise to work on it.
-\end{itemize}
-
-The PM can consult with RSEs and the TL on whether the new planning is feasible, and with Finance for a budget remaining after necessary recalculation. In case of additional funding, the DT
-(via the PD) will decide, after a budget calculation by the Finance and approval by the DoO. Otherwise, the PM puts the
-request on the agenda for the next PM meeting, containing: 
-\begin{itemize}\itemsep0em
-\item the motivated request (uploaded to the project portfolio
-\item the recommended action
-\item the prepared decision on the PM meeting agenda.
-\end{itemize}
-
-The PM team may request more information from the LA via the PM (and thus postpone the decision on the request). The LA
-can provide the new information via an additional PDF signed letter or as amendment to the original letter.
-
-After the final decision, the PM notes the official decision in the decision document. If the request is not approved,
-the PM communicates this to the LA. If the request is approved, the PM
-\begin{itemize}\itemsep0em
-\item coordinates with Finance to finalize the extension (budget/Exact update, extension letter, LA communication);
-%\item double checks if budget and hours in Exact are still correct;
-\item communicates the extension to the Lead RSE.
-\end{itemize}  
-  The Lead RSE then 
-\begin{itemize}  
-\item communicates the extension to the project team;
-\item updates planning and adjusts staffing, if necessary;
-\item ensures website and RSD are updated (e.g., if dates or affiliation changed); and
-\end{itemize}
-
-If the request involves a DT decision, the PM submits a request formally through the PD.
-
-\item{Conflict resolution and complaint procedure}
-The eScience Center adheres to the Code of Conduct outlined in the Personnel Policy (cf.~\cite{cao}). 
-%
-Conflicts involving eScience and the LA team on the projects should be addressed using this four-step process:
-\begin{enumerate}\itemsep0em
-\item The Lead RSE first seeks resolution with the LA; the PM may be consulted or join in discussion if needed.
-\item If unresolved, the issue is escalated to the PM (via the Lead RSE), who organizes a meeting to mediate.
-\item Persistent issues can be escalated to the PD via a written summary submitted through the PM.
-\item The PD may escalate to the DT if necessary.
-\end{enumerate}
-
-If the issue concerns the PM, RSEs may escalate to their manager (SH). An external confidential advisor ('Vertrouwenspersoon') is also available for anonymous support~\cite{intranet}. 
-Conflict resolution may lead to project adjustments, such as staffing changes (cf. Section~\ref{sec:init:vacancy}).
-
-\item{Early project termination}
-Early project termination may occur by mutual agreement, or be initiated by the LA or the eScience Center. In the first two cases, 
-the LA submits a signed letter (via the PM) to the DT, requesting project termination, explaining the situation and proposing how to 
-handle remaining project resources (e.g., RSE hours, cash contribution, FTE commitment of the LA, workshops, sustainability budget).
-
-The PM may request project termination if the LA or project partners violate the terms of Awarding Letter or Special conditions ("Bijzondere Voorwaarden"). 
-The PM submits a letter with the explanation to the DT via the PD. If approved, the PM informs Finance, which finalizes the process (by making changes in Exact and preparing a termination letter).
-\end{itemize}
-
-\textbf{Responsible: Lead RSE and SH}
+Project-related disagreements should be addressed as early as possible by the project team. Where necessary, the 
+Lead RSE escalates the matter to the responsible SH. The SH may involve other stakeholders or bring the matter to the 
+MT when an organizational decision is required. Issues concerning employment conditions, personal conduct, or 
+workplace behaviour are handled according to the Personnel Handbook~\cite{intranet} and the Code of Conduct~\cite{cao}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Project quality and outputs}
@@ -634,7 +591,8 @@ For \textbf{external projects}, consortium agreements (e.g., Non-Disclosure Agre
 \label{sec:exec:review}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Project reviews follow an annual review cycle consisting of the following phases…
-
+\subsubsection{Review Cycle}
+\label{sec:exec:reviewcycle}
 %%%%% OLD
 % Applicability
 % Preparation

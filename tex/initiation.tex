@@ -335,6 +335,14 @@ project.
 \newlength{\myhcolw}
 \setlength{\myhcolw}{0.8\textwidth}
 \begin{table}[!ht]
+ \captionsetup{
+ labelformat=fancytable,
+ labelsep=space,
+ labelfont=bf,
+ textfont=bf,
+ justification=centering,
+ singlelinecheck=true
+ }
  \caption{Technology plan overview}
  \begin{booktabs}{colspec={|>{\bfseries}m{0.15\textwidth}|m{\myhcolw}|},row{even}={gray!20}}
     \toprule
