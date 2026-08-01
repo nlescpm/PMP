@@ -91,10 +91,10 @@ project meeting. The frequency and format depend on the complexity of the projec
 
 The agenda of this meeting should include:
 \begin{itemize}
-\item status update from all stakeholders
-\item discussion of scientific progress
-\item discussion of technological progress, issues and choices
-\item alignment of project progress with the project workplan, and adjustment of the latter, if necessary.
+\item Status update from all stakeholders
+\item Discussion of scientific progress
+\item Discussion of technological progress, issues and choices
+\item Alignment of project progress with the project workplan, and adjustment of the latter, if necessary.
 \end{itemize}
 
 \textbf{Responsible: Lead RSE (co-organizer with the LA).}
@@ -151,9 +151,9 @@ and contributes to the scientific agenda.
 The CM may support the project team in designing workshop agendas and engaging the target community to maximize the 
 long-term impact of the workshop outcomes.
 
-\paragraph{eScience Center--Lorentz Center Competition workshops}
-\mbox{}\\
-
+\medskip
+\noindent\textbf{eScience Center--Lorentz Center Competition workshops}\par
+\smallskip
 Projects awarded through the joint eScience Center--Lorentz Center Competition differ from regular project workshops.
 The workshop proposal is developed and submitted as part of the competition, and the role of the eScience Center project
 team is defined in the awarded proposal.
@@ -209,106 +209,73 @@ found.
 \subsubsection{Progress, hours and budget monitoring}
 \label{sec:exec:progress}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The PM and Lead RSE must have a firm grasp of the project budget and the project duration. This information is in the
-Awarding letter, the proposal and Exact.
 
-The project execution phase roughly consists of three parts: exploration, development, sustaining.
-In call projects, the budget is roughly split as follows: 25\% for 
-exploration (including learning), 50\% for development, and 25\% for sustaining (including research
-and dissemination activities). The Lead RSE must consult the PM if project execution deviates from this plan. 
-%
-The left plot of Figure~\ref{fig:project-budget} assumes a constant budget spending rate. If possible, RSEs are encouraged to complete the first two phases faster, 
-keeping the end date unchanged. This leaves more time for the sustaining phase (cf. Figure~\ref{fig:project-budget}), which benefits outputs like publications. 
-It also leads to more effective budget use under the current eScience Center financial system.
+The Lead RSE is responsible for monitoring the overall health of the project throughout its execution. This includes
+tracking progress against the agreed workplan, monitoring the use of project hours, budget, and other project-specific
+resources, identifying emerging risks, and informing the SH and LA when adjustments are required. Such discussions are
+normally conducted through the internal coordination and escalation process (Section~\ref{sec:exec:internalcoord}). To
+support these activities, the Lead RSE uses the eScience Center project management systems, including Ganttic for
+project planning, Metabase dashboards for project monitoring, and the financial information maintained by Finance.
 
+The Lead RSE routinely monitors:
 
-The LA and RSEs are free to spend the awarded hours ahead of the project end date. However, the Lead RSE is responsible 
-for results being delivered on time for the project and not exceeding the budget, and timely informing the PM and the LA 
-about any changes to the agreed planning. If a project budget is fully spent ahead of its schedule, the PM asks Finance to restrict writing on the
-project budget only to the PM.
+\begin{itemize}
+\item progress towards milestones and agreed deliverables;
+\item project risks, dependencies, and issues affecting delivery.
+\item expenditure of project hours against the remaining project allocation;
+\item staffing and resource availability; and
+\item assess requests for the use of project-specific in-cash resources available for project expenses, such as 
+workshops or open-access publication costs, where applicable;
+\end{itemize}
 
-\begin{figure*}[h!]
-    \centering
-    \begin{subfigure}[b]{0.49\textwidth}
-        \centering
-        \includegraphics[width=0.97\textwidth]{img/budget-stages.png}
-        \vspace{0.2cm}
-        %\caption{Standard}
-    \end{subfigure}%
-    \hfill
-    \begin{subfigure}[b]{0.49\textwidth}
-        \centering
-        \includegraphics[width=0.97\textwidth]{img/budget-faster.png}
-        \vspace{0.2cm}
-        %\caption{Fast}
-    \end{subfigure}
-    \caption{Project's budget breakdown: standard (left) and fast (right)}
-    \label{fig:project-budget}
-\end{figure*}
-
-The eScience project team (including PM and RSEs) must submit project hours in Exact by the end of each month. All entries must be completed within one working week after month-end. 
-%Hours must be submitted and approved on time, preferably on a weekly basis.
-%
-For regular call projects, RSEs can write hours once the project is active in Exact, typically within a month of grant approval. The PM records management hours on the project budget. 
-%
-Project hours are managed by different parties with different responsibilities:%, see Table~\ref{tab:budget}.
-\let\myhcolw\relax 
-\newlength{\myhcolw}
- \setlength{\myhcolw}{0.6\textwidth}
-\begin{table}[!htb]
-% \caption{Parties at the eScience Center and their responsibilities}
-\renewcommand{\arraystretch}{1.5}
-\begin{booktabs}{colspec={|p{0.1\textwidth}|p\myhcolw|p{0.2\textwidth}|},row{even}={gray!20}}
-    \toprule
-    \textbf{Stakeholder} &  \textbf{Responsibilities} & \textbf{More info} \\\toprule
-    PM & 
-    \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}[itemsep=-4pt,parsep=4pt,leftmargin=0.5cm]
-        \item reviews and approves project hours by the 5th workday of the following month.
-        \item shares monthly hour status with RSEs via Ganttic
-        \item flags issues (e.g., incorrect budgets) to Finance
-        \item notifies Finance of budget changes.
-    \end{itemize} 
-      \end{minipage}
-    & \\\midrule
-    Lead RSE &     
-    \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}[itemsep=-4pt,parsep=4pt,leftmargin=0.5cm]
-        \item monitors project hour expenditure 
-        \item signals deviation from the workplan to the PM
-    \end{itemize} 
-      \end{minipage}
-    &  %Asks PM for hours status in Exact or via Ganttic  
-    \\\midrule
-    Finance &
-    \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}[itemsep=-4pt,parsep=4pt,leftmargin=0.5cm]
-        \item maintains accurate budget information 
-        \item monitors and processes approved project hours
-        \item shares monthly financial info with budget holders (PMs). 
-        \item recalculates project budget if extended past year threshold.
-        \item sets project to read-only if hours are depleted/exceeded early.
-    \end{itemize} 
-      \end{minipage}  
-    & All budget changes require a formal decision (see~\ref{sec:exec:changes}). \\\midrule
-    DoT & 
-    \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}[itemsep=-4pt,parsep=4pt,leftmargin=0.5cm]
-        \item monitors and approves software sustainability hours 
-    \end{itemize} 
-      \end{minipage}
-    & See the SS protocol~\cite{intranet} \\
-    \bottomrule
-\end{booktabs}
-%\label{tab:budget}
+\renewcommand{\arraystretch}{1.15}
+\begin{table}[t!]
+ \begin{booktabs}{
+  colspec={|>{\bfseries}m{0.18\textwidth}|m{0.52\textwidth}|m{0.22\textwidth}|},
+  row{even}={gray!20}}
+  \toprule
+  \textbf{Stakeholder} &
+  \textbf{Responsibilities} &
+  \textbf{Supporting systems} \\
+  \toprule
+  Lead RSE &
+  \begin{itemize}[leftmargin=0.4cm,itemsep=-2pt,parsep=0pt,topsep=0pt,partopsep=0pt,before=\vspace{-0.8\baselineskip}]
+   \item Monitor project progress and deliverables
+   \item Monitor project hours and resource allocation
+   \item Monitor project-specific cash resources
+   \item Identify and communicate risks and deviations
+   \item Escalate issues to the SH when required
+  \end{itemize}
+  &
+  Ganttic, Metabase
+  \\
+  \midrule
+  SH &
+  \begin{itemize}[leftmargin=0.4cm,itemsep=-2pt,parsep=0pt,topsep=0pt,partopsep=0pt,before=\vspace{-0.8\baselineskip}] 
+   \item Oversee project health
+   \item Support corrective actions
+   \item Decide on organizational escalations
+  \end{itemize}
+  &
+  Ganttic, Metabase
+  \\
+  \midrule
+  Finance &
+  \begin{itemize}[leftmargin=0.4cm,itemsep=-2pt,parsep=0pt,topsep=0pt,partopsep=0pt,before=\vspace{-0.8\baselineskip}] 
+   \item Maintain financial information
+   \item Confirm the available in-cash balance and eligibility of proposed expenses
+   \item Process approved expenses and payments
+   \item Provide updated budget information to the Lead RSE and SH
+  \end{itemize}
+  &
+  AFAS, Metabase 
+  \\
+  \bottomrule
+ \end{booktabs}
 \end{table}
 
-It is possible to travel for a project, however RSEs must ask approval of their line managers (a respective SH) before
-committing to an event requiring travel and fill out a travel form. See the Intranet for more information.
-
-For \textbf{external projects}, only the PM and RSEs formally working on the project may write hours. Some projects 
-(e.g., Horizon Europe) allow only direct project activities -- non-project activities like SIG involvement cannot be charged on the project. 
-The Lead RSE and PM must know these restrictions or consult Finance if unsure.
+Project information collected during execution also contributes to the periodic portfolio reviews carried out by the 
+Section Heads and Performance Manager (PerfM) to support resource planning and annual allocations.
 
 \textbf{Responsible: Lead RSE, SH and Finance}
 

@@ -4,56 +4,93 @@ The following example illustrates one possible way of maintaining a project log.
 and may be adapted to the needs of the project, provided it offers a clear chronological record of significant project
 events, decisions, and references to supporting documentation.
 
-\medskip
-{\large\bfseries Running log for Project XXX}
-\medskip
-
+\bigskip
+{\Large\bfseries Running log for Project XXX}
+\setlength{\intextsep}{6pt}
 \begin{table}[h!]
-\begin{booktabs}{colspec={|m{0.32\textwidth}|m{0.13\textwidth}|m{0.25\textwidth}|m{0.22\textwidth}|},row{even}={}}
-    \toprule
-      \textbf{Event} & \textbf{Date} & \textbf{Reference} & \textbf{Notes} \\[1.5ex]\toprule
-      Administrative kick-off meeting & 2026-03-02 & Meeting notes & Project registration completed \\[1.5ex]\midrule
-      Project kick-off meeting & 2026-05-09 & Slides & Initial workplan agreed \\[1.5ex]\midrule
-      Technology Plan v1 & 2026-07-18 & TechnologyPlan--v1.pdf & Initial version approved \\[1.5ex]\midrule
-      DMP & 2026-09-18 & Data\_Management\_Plan.pdf & Initial version approved \\[1.5ex]\midrule
-      Project Review & 2026-12-10 & Review slides & Continue project \\[1.5ex]\midrule
-      Presentation & 2027-01-18 & Zenodo DOI & Added to RSD \\[1.5ex]\midrule
-      Software release v1.0 & 2027-02-05 & GitHub release & DOI registered on Zenodo \\[1.5ex]\midrule
-      Research article & 2027-03-12 & Journal DOI & Added to RSD \\[1.5ex]
-    \bottomrule
+\begin{booktabs}{
+  colspec={
+    |m{0.32\textwidth}
+    |m{0.13\textwidth}
+    |m{0.25\textwidth}
+    |m{0.22\textwidth}|
+  },
+  row{even}={}
+}
+\toprule
+\textbf{Event} & \textbf{Date} & \textbf{Reference} & \textbf{Notes} \\
+\toprule
+Administrative kick-off meeting & 2026-03-02 & Meeting notes & Project registration completed \\
+\midrule
+Project kick-off meeting & 2026-05-09 & Slides & Initial workplan agreed \\
+\midrule
+Technology Plan v1 & 2026-07-18 & TechnologyPlan--v1.pdf & Initial version approved \\
+\midrule
+DMP & 2026-09-18 & Data\_Management\_Plan.pdf & Initial version approved \\
+\midrule
+Project Review & 2026-12-10 & Review slides & Continue project \\
+\midrule
+Presentation & 2027-01-18 & Zenodo DOI & Added to RSD \\
+\midrule
+Software release v1.0 & 2027-02-05 & GitHub release & DOI registered on Zenodo \\
+\midrule
+Research article & 2027-03-12 & Journal DOI & Added to RSD \\
+\bottomrule
 \end{booktabs}
 \end{table}
 
+%\vspace{-0.1em}
 
-\begin{itemize}[leftmargin=*,label={}]
-    \item \textbf{2027-03-12 -- Research article accepted}
-    The publication was accepted for publication, registered in the RSD, and added to the Netherlands eScience Center
-    Zenodo community.
-    \item \textbf{2027-01-24 -- SURF infrastructure approved}
-    The SURF allocation was approved. The project will use Research Cloud for development and Snellius for
-    production-scale computations.
-    \item \textbf{2027-01-07 -- SURF infrastructure request submitted}
-    A request for SURF compute and storage resources was submitted based on the agreed Technology Plan.
-    \item \textbf{2026-11-28 -- Project meeting}
-    In preparation for the project review, the project team met to discuss progress and prepare the presentation slides.
-    \item \textbf{2026-10-25 -- Project meeting}
-    Meeting with external stakeholders to discuss the project progress and next steps. 
-    \textbf{Agreements:}
-    \begin{itemize}
-        \item merge project development branch to master after adding new testing.
-        \item prepare a joint presentation for the project review.
-    \end{itemize}
-    \item \textbf{2026-06-25 -- Project stalled, LA unavailable until 2026-09-01} 
-    \item \textbf{2026-05-09 -- Project kick-off meeting}
-    \textbf{Participants -- eScience Center:}
-    AB (SH), AA (Lead RSE), AC (RSE), AD (RSE)
-    \textbf{Participants -- Project team:}
-    FA (LA, TU Delft), PA (PhD candidate, TU Delft), RA (Postdoctoral researcher, TU Delft)
-    \textbf{Agreements:}
-    \begin{itemize}
-        \item Finalize the Technology Plan before 18 September 2026.
-        \item Submit the SURF infrastructure request before the end of September.
-        \item Schedule fortnightly project meetings with the project team.
-        \item Create the project page in the RSD and populate the initial metadata.
-    \end{itemize}
+\begin{itemize}[
+  leftmargin=*,
+  label={},
+  itemsep=2pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
+]
+
+\item \textbf{2027-03-12 -- Research article accepted}
+The publication was accepted, registered in the RSD, and added to the Netherlands eScience Center Zenodo community.
+\item \textbf{2027-01-24 -- SURF infrastructure approved}
+The SURF allocation was approved. The project will use Research Cloud for development and Snellius for production-scale computations.
+\item \textbf{2027-01-07 -- SURF infrastructure request submitted}
+A request for SURF compute and storage resources was submitted based on the agreed Technology Plan.
+\item \textbf{2026-11-28 -- Project meeting}
+In preparation for the project review, the project team met to discuss progress and prepare the presentation slides.
+\item \textbf{2026-10-25 -- Project meeting}
+Meeting with external stakeholders to discuss project progress and next steps. \\
+\textbf{Agreements:}
+\begin{itemize}[
+  leftmargin=1.5em,
+  itemsep=0pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
+]
+\item Merge the project development branch into the main branch after adding the new tests.
+\item Prepare a joint presentation for the project review.
+\end{itemize}
+\item \textbf{2026-06-25 -- Project paused}
+The LA was unavailable until 2026-09-01.
+\item \hspace{0.5em} : \hspace{0.5em} :
+\item \hspace{0.5em} : \hspace{0.5em} :
+\item \textbf{2026-05-09 -- Project kick-off meeting}\\
+Participants -- eScience Center:
+AB (SH), AA (Lead RSE), AC (RSE), AD (RSE).\\
+Participants -- Project team:
+FA (LA, TU Delft), PA (PhD candidate, TU Delft), RA (postdoctoral researcher, TU Delft).\\
+\textbf{Agreements:}
+\begin{itemize}[
+  leftmargin=1.5em,
+  itemsep=0pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
+]
+\item Finalize the Technology Plan before 18 September 2026.
+\item Submit the SURF infrastructure request before the end of September.
+\item Schedule fortnightly project meetings with the project team.
+\item Create the project page in the RSD and populate the initial metadata.
+\end{itemize}
 \end{itemize}
