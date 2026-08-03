@@ -183,7 +183,7 @@ process, repository workflow, and guidelines for preparing and reviewing changes
 
 ## License
 
-Copyright © 2025 The Netherlands eScience Center.
+Copyright © 2026 The Netherlands eScience Center.
 
 This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 You are free to share and adapt both the document content and LaTeX source code with appropriate attribution.
