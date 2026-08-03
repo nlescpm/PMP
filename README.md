@@ -1,9 +1,9 @@
-# Project Management Protocol 
+# Project Management Protocol
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17117785.svg)](https://doi.org/10.5281/zenodo.17117785)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Current version: 3.5**
+**Current version: 4.0**
 
 This document is the official project management protocol for the Netherlands eScience Center. It describes all phases
 of a project and the procedures required to successfully complete them.
@@ -12,17 +12,18 @@ The scope of this document is the execution of research projects awarded by the 
 proposals, though other types of projects are also briefly covered. This document gives a detailed description of all
 steps, both required and optional, that must or may be taken in the execution of projects, reflecting the so-called
 project life cycle. For each step, the document clarifies the responsibilities of the project team members (RSEs) and
-other eScience Center employees (e.g. Programme Managers, Finance, Directors Team) involved in the process.
+other eScience Center employees (e.g. Section Heads, Finance, Management Team) involved in the process.
 
 ## Table of Contents
 
 - [Overview](#overview)
+- [Repository Structure](#repository-structure)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Compiling the Document](#compiling-the-document)
-- [Project Structure](#project-structure)
-- [Customization](#customization)
-- [See Also](#see-also)
+- [Building the Document](#building-the-document)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgments)
 
 ## Overview
 
@@ -30,6 +31,27 @@ This document provides a structured approach to project management, covering:
 - Project lifecycle
 - Roles and responsibilities of the eScience staff
 - Workflow and communication around a project
+
+## Repository Structure
+
+```
+PMP/
+├── main.tex                 # Main document file
+├── macros.tex               # Macros file
+├── packages.tex             # Packages file
+├── references.bib           # Bibliography database
+├── tex/                     # Individual sections
+│   ├── intro.tex
+│   ├── execution.tex
+│   └── ...
+├── img/                    # Images and figures
+├── font/                   # Custom fonts (if any)
+├── CITATION.cff            # Citation metadata
+├── CONTRIBUTING.md         # Contributing guidelines
+├── LICENSE                 # CC BY 4.0 license text
+├── .gitattributes          # Git export settings
+└── README.md               # This file
+```
 
 ## Requirements
 
@@ -50,6 +72,8 @@ The following packages are required:
 % Graphics and images
 \usepackage[xetex]{graphicx}     % Required for inserting images
 \usepackage{eso-pic}             % For logos in the background
+\usepackage{caption}             % For figure and table captions
+\usepackage{cite}                % Citation
 \usepackage{tikz}                % Drawing and graphics
 \usepackage{subcaption}          % Subfigures and subcaptions
 
@@ -115,7 +139,7 @@ The following packages are required:
 
 3. **Compile the document** (see below)
 
-## Compiling the Document
+## Building the Document
 
 ### Standard Compilation
 
@@ -146,65 +170,28 @@ latexmk -c
 # or manually remove: *.aux *.log *.out *.toc *.bbl *.blg *.idx *.ind *.ilg
 ```
 
-## Project Structure
+## Contributing
 
-```
-PMP/
-├── main.tex                 # Main document file
-├── macros.tex               # Macros file
-├── packages.tex             # Packages file
-├── references.bib           # Bibliography database
-├── tex/                     # Individual sections
-│   ├── intro.tex
-│   ├── execution.tex
-│   └── ...
-├── img/                    # Images and figures
-├── font/                   # Custom fonts (if any)
-├── CITATION.cff            # Citation metadata
-├── CONTRIBUTING.md         # Contributing guidelines
-├── LICENSE                 # CC BY 4.0 license text
-├── .gitattributes          # Git export settings
-└── README.md               # This file
-```
+Contributions to the Project Management Protocol are welcome.
 
-## Customization
+The protocol is maintained by the Netherlands eScience Center and reflects its project management practices. While
+contributions from eScience Center staff form the primary development workflow, suggestions, corrections, and feedback
+from the wider community are also appreciated.
 
-### Adding Content
-
-- **New sections**: Add `.tex` files to the `tex/` directory and include them in `main.tex` with `\input`
-- **Images**: Place figures in the `img/` directory
-- **Bibliography**: Add references to `references.bib`
-
-### Styling
-
-- **Colors**: Modify color definitions in the preamble
-- **Fonts**: Update font specifications in the fontspec configuration
-- **Layout**: Adjust page geometry and spacing parameters
-
-### Role Highlighting
-
-The document includes automatic highlighting for key eScience project roles:
-
-- **Lead RSE** (Research Software Engineer)
-- **PM** (Programme Manager)
-- **TL** (Technical Lead)
-
-## See Also
-
-* [Advice for writing LaTeX documents](https://github.com/dspinellis/latex-advice)
-* [LaTeX Project Official Documentation](https://www.latex-project.org/help/documentation/)
-* [XeLaTeX Guide](https://www.overleaf.com/learn/latex/XeLaTeX)
-* [Bibliography management with biblatex](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
+Please read CONTRIBUTING.md⁠￼ before opening an issue or submitting a pull request. It describes the contribution
+process, repository workflow, and guidelines for preparing and reviewing changes.
 
 ## License
 
-Copyright © 2025 The Netherlands eScience Center.
+Copyright © 2026 The Netherlands eScience Center.
 
 This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 You are free to share and adapt both the document content and LaTeX source code with appropriate attribution.
 
-
 ## Acknowledgments
-Some LaTeX macros were adapted from examples in a respective LaTeX package documentation.
 
-The README and CONTRIBUTING markdowns have been partially generated using Claude Sonnet 4 (version claude-sonnet-4-20250514). All AI-output has been refined, verified for correctness, accuracy and completeness, adapted where needed, and approved by the contributors of this repository.
+Generative AI tools, including OpenAI's ChatGPT (GPT-5.5) and Anthropic's Claude Sonnet 4, were used during the 
+development and revision of this Project Management Protocol to assist with drafting, editing, language refinement, 
+restructuring, and improving the clarity and consistency of the document and its accompanying repository documentation.
+All AI-assisted content has been critically reviewed, verified for correctness and completeness, revised where 
+necessary, and approved by the contributors before publication.
