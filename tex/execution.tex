@@ -239,7 +239,7 @@ workshops or open-access publication costs, where applicable;
 \end{itemize}
 
 The information gathered through project monitoring provides the basis for the project review cycle
-(Section~\ref{sec:exec:reviewcycle}), during which project progress, resource utilisation, and future annual planning 
+(Section~\ref{sec:exec:review}), during which project progress, resource utilisation, and future annual planning 
 are evaluated.
 
 \renewcommand{\arraystretch}{1.15}
@@ -366,8 +366,6 @@ Ensuring software quality and sustainability is integral to the code development
 Center. All RSEs are expected to follow our software development guide and best practices~\cite{guide-nlesc} and the GenAI policy~\cite{nlesc2023genai}. Code should be 
 designed to be as generic and reusable as possible from the start.
 
-
-
 %\subsubsection{Code review}
 As part of the annual review (see Section~\ref{sec:exec:annual}), a code review is organized by the Lead RSE. Depending
 on the project it could take the form of a reusabilithon\footnote{Coined by the Software Sustainability SIG, the term refers to a 2-3 hour session where a group of RSEs evaluates a piece of software for usability, provides feedback to the developers, and formulates recommendations to improve its (re)usability.}, a review of code on GitHub, or
@@ -395,14 +393,25 @@ the TL for the formal annual review meeting (see Section~\ref{sec:exec:annual}).
 \subsubsection{Data and Software Management Plans}
 \label{sec:exec:dsmp}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-For some projects, Data and Software Management Plans (DMP~\cite{dmp-guide} and SMP~\cite{smp-guide}) outline how project data and software are maintained. 
-%
-Depending on the call, the LA must submit complete DMP and SMP documents within 6 months of the project. The Lead RSE 
-may assist in drafting the DMP, which the LA submits to the PM, who asks a TL for review and approval. For call projects since 2021, SMPs are included in project proposals.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The LA is responsible for keeping both plans up to date and must inform the PM and TL of changes via the Lead RSE. The PM may request updates as needed, with support from the Lead RSE.
+\subsubsection{Data and Software Management Plans}
 
-\textbf{Responsible: LA and Lead RSE.} 
+\label{sec:exec:dsmp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Projects awarded through eScience Center calls require a Data Management Plan (DMP~\cite{dmp-guide}) and a Software
+Management Plan (SMP~\cite{smp-guide}). These documents describe how project data and research software are managed
+throughout the project life cycle, including aspects such as documentation, accessibility, sustainability, and
+long-term preservation. Additional requirements may apply for externally funded projects, depending on the applicable
+funding programme.
+
+The LA is responsible for the drafting and submission of the DMP and SMP, while the Lead RSE supports their maintenance. 
+Both plans are living documents and should be reviewed and updated whenever significant changes affect the project or 
+its technical implementation. The status of the DMP and SMP is reviewed as part of the annual project review 
+(Section~\ref{sec:exec:review}).
+
+\textbf{Responsible: LA and Lead RSE.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Project documentation}
@@ -590,240 +599,204 @@ For \textbf{external projects}, consortium agreements (e.g., Non-Disclosure Agre
 \subsection{Project review}
 \label{sec:exec:review}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Project reviews follow an annual review cycle consisting of the following phases…
-\subsubsection{Review Cycle}
-\label{sec:exec:reviewcycle}
-%%%%% OLD
-% Applicability
-% Preparation
-% Review topics
-% Outcomes and follow-up
-\let\myhcolw\relax % let \myhcolw to \relax to be reused later
-\newlength{\myhcolw}
-\setlength{\myhcolw}{0.75\textwidth}
+The annual project review provides a structured process for evaluating project progress and determining the
+continuation of eScience Center support~\cite{nlesc-terms}. It aligns project evaluation, portfolio planning, and
+internal decision-making before the start of each calendar year. The review considers scientific progress,
+collaboration, project execution, resource utilisation, project risks, and future plans, using the information gathered
+throughout project monitoring (Section~\ref{sec:exec:progress}) as the basis for the evaluation.
 
-\iffalse
-\begin{table}[h!]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{\myhcolw}|},row{even}={gray!20}}
-    \toprule
-    Scheduled: &  Yearly \\[1.5ex]
-    Stakeholders: & PM (organizer, chair), Lead RSE, LA, TL, optional: other project team members, SH \\[1.5ex]
-    Purpose: &  %
-    \begin{minipage}[t]{\myhcolw}
-    \begin{itemize}[leftmargin=0.3cm]\itemsep0em
-        \item to ensure that the project is still on track
-        \item to discuss any persistent issues to ensure optimal collaboration between project team
-        \item to explore opportunities beyond the project  
-    \end{itemize} 
-      \end{minipage}
-    \\[1.5ex]
-    Outcomes/Actions: & List of agreed actions and PM/TL advice for next steps. \\[1.5ex]
-    Duration: &  Max 1.5 hours \\[1.5ex]
-    Location: &  At the eScience Center or the project location\ftnotelbl{ft:participants} \\[1.5ex]
-    \bottomrule
-\end{booktabs}
-\end{table}
-%\footnotetext[2]{Mandatory participants of a meeting be present in-person at the office, while all optional participants can also participate via video conferencing if they prefer.}
-\fi
+In addition to assessing the current status of the project, the annual review provides an opportunity to identify
+opportunities for increasing scientific impact, promoting software reuse and sustainability, strengthening community
+engagement, and exploring future collaborations or follow-up funding arising from the project.
 
-\begin{longtblr}[
-  label = none,
-  note{a} = {Mandatory participants must attend the meeting in person, while optional participants may join via video conference.}
-]{
-  colspec = {|Q[0.2\textwidth,font=\bfseries]|Q[0.75\textwidth]|},
-  row{even} = {gray!20},
-  rowhead = 1,
-  booktabs,
-  width = \linewidth
-}
-\toprule
-Scheduled: & Yearly \\
-Stakeholders: & PM (organizer, chair), Lead RSE, LA, TL, optional: other project team members, SH \\
-Purpose: & 
-\begin{minipage}[t]{0.75\textwidth}
-\begin{itemize}[leftmargin=0.3cm]\itemsep0em
-    \item to ensure that the project is still on track
-    \item to discuss any persistent issues to ensure optimal collaboration between project team
-    \item to explore opportunities beyond the project  
+At the conclusion of the annual project review, each project receives one of the following outcomes:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Continue:} Project support continues with the planned allocation of project hours. 
+\item \textbf{Adjust:} Project support continues with revised project planning and/or a revised allocation of project 
+hours. 
+\item \textbf{Stop:} eScience Center support is concluded.
+\end{itemize}
+
+The annual project review consists of five consecutive stages, from the preparation of the Project Status Report to the 
+communication and implementation of the final decision.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Phase 1 -- Initiating the review cycle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To initiate the annual review cycle, the responsible SH requests a Project Status Report for each active project. The 
+template can be found in the \textit{Templates projects} folder~\cite{proj-portfolio} and provides a concise overview
+of the project. It typically includes:
+\begin{itemize}
+ \item project information and RSD completeness;
+ \item progress against the agreed project workplan;
+ \item project risks, mitigation actions, and planned activities;
+ \item status of project management plans (e.g., Technology Plan, SMP and DMP);
+ \item software, data, publications, outreach activities, and project impact;
+ \item software quality, sustainability, and community engagement; and
+ \item collaboration within the project team and any relevant remarks for the review.
 \end{itemize} 
-\end{minipage}
-\\[1.5ex]
-Outcomes/Actions: & List of agreed actions and PM/TL advice for next steps. \\
-Duration: & Max 1.5 hours \\
-Location: & At the eScience Center or the project location\TblrNote{a} \\
-\bottomrule
-\end{longtblr}
+The Lead RSE coordinates the preparation of the report with the LA and schedules the review meeting.
 
-For call projects longer than one year, the PM organizes annual reviews. The details are described in the
-terms and conditions document~\cite{nlesc-terms}. For one-year projects, review meetings are optional and decided by the PM in consultation with the TL and Lead RSE.
-
-Each review includes discussion and actions on reusability and sustainability of project results (as described in the DMP and SMP), status of collaboration, and follow-up opportunities. 
-%
-\iffalse
-The goals of the meeting are to:
-\begin{itemize}
-\item review progress against the original workplan
-\item discuss research results, their novelty and current deliverables
-\item update management plans if needed
-\item plan strategies to share results with a wider community
-\item address software reuse and sustainability
-\item identify bottlenecks and improvements for team efficiency
-\item report project budget (RSE hours remaining)
-\item explore further collaboration, funding, and cross-project opportunities
-\end{itemize}
-\fi
-The agenda of this meeting is:
-\begin{itemize}\itemsep0em
-\item introduction and purpose of meeting
-%\item project overview and deliverables
-%\begin{itemize}
-\item scientific goals status (the LA and team)
-\item project output status (the project team)
-%\end{itemize}
-\item collaboration status (including hours admin and bottlenecks)
-\item use of digital infrastructure and SURF support (if applicable)
-\item next steps and future opportunities.
-\end{itemize}
-For \textbf{external projects}, review meetings are typically part of the project process. The PM, with the Lead RSE, decides if a (lightweight) internal review is needed.
-
-
-\subsubsection{Review meeting preparation}
 \begin{table}[h!]
-  \renewcommand{\arraystretch}{1.5}
-\begin{booktabs}{colspec={|>{\bfseries}m{0.3\textwidth}|m{0.6\textwidth}|},row{even}={gray!20}}
-    \toprule
-     &  \textbf{Stakeholder} \\[1.5ex]\toprule
-    Prepared by: & LA and Lead RSE, with optional input from other stakeholders. \\[1.5ex]
-    Reviewed by: &  PM accountable for project, TL accountable for technology. \\[1.5ex]
-    Target audience: & PMs, TLs, SHs and RSEs. \\[1.5ex]
-    \bottomrule
-\end{booktabs}
+ \captionsetup{
+  labelformat=fancytable,
+  labelsep=space,
+  labelfont=bf,
+  textfont=bf,
+  justification=centering,
+  singlelinecheck=true
+ }
+ \caption{Initiation of the annual project review}
+ \label{tab:review:initiating}
+ 
+ \begin{booktabs}{
+   colspec={|>{\bfseries}m{0.18\textwidth}|m{0.77\textwidth}|},
+   row{even}={gray!20}
+  }
+  \toprule
+  Timing: & Early to mid-September. \\[1.2ex]
+  Initiated by: & SH \\[1.2ex]
+  Coordinated by: & Lead RSE \\[1.2ex]
+  Objective: & Launch the annual project review and collect the information required to evaluate project progress and 
+  prepare the review meeting. \\[1.2ex]
+  Actions: & The Lead RSE sends the Project Status Report template to the LA, requests its submission by mid-October, 
+  and schedules the project review meeting in November. \\[1.2ex]
+  Output: & Project Status Report requested and review meeting preparation initiated. \\[1.2ex]
+  \bottomrule
+ \end{booktabs}
 \end{table}
 
-The Lead RSE coordinates preparations for the review meeting:
-\begin{itemize}\itemsep0em
-\item request the PM to share the standard review meeting slide template~\cite{proj-portfolio} with the LA team
-\item requests project team members to contribute to the review meeting slides, wherever appropriate,
-\item compiles technology status report (see Section~\ref{sec:exec:tech}).
-\end{itemize}
+The LA prepares the Project Status Report with support from the Lead RSE, who may assist in completing the report 
+where required. The Secretary may support the Lead RSE with the practical organization of the review meeting. 
 
+\textbf{Responsible: SH.} 
 
-LA and Lead RSE jointly prepare the slides:
-\begin{itemize}\itemsep0em
-\item 3-5 slides summarizing progress toward research goals. The LA is not expected to present published content or the
-original workplan or proposal. If applicable, the LA reports on workshops.
-\item 1-2 slides on the technology plan status, including reuse, adoption, and sustainability, supporting the technology status report.
-\item highlight any scientific or technical bottlenecks and assess if the project is on track or needs replanning;
-\item the PM reports on the RSE hour status (i.e. the number of hours already spent); and
-\item the project team provides a feedback on collaboration and suggest improvements if needed.
-\end{itemize}
- 
-Additionally, the Lead RSE:
-\begin{itemize}\itemsep0em
-\item together with the LA, ensures all output is properly registered (see Section~\ref{sec:exec:output}), and adds missing URLs/DOIs to the slides;
-\item coordinates with the team to finalize the presentation at least 2 working days before the review meeting;
-\item uploads the slides to the project portfolio; and
-\item informs PM and TL that slides are ready and are in the project portfolio.
-\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Phase 2 -- Internal project assesment} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Before the review meeting, the SH reviews the submitted reports and identifies projects requiring additional discussion. 
+Where appropriate, additional stakeholders (for example the PO, TO or CM) may be invited to participate in the review 
+meeting.
 
-\subsubsection{Technology status report}
-\label{sec:exec:tech}
-Prior to the annual review meeting, the PM asks Lead RSE to fill in the technology status report. This report 
-summarizes the technical progress of the project and includes RSD project page with its deliverables, URLs
-to project plans, software quality and community involvement. The Lead RSE prepares it in collaboration with the project team; it serves as input for the TL during the review. 
-%
-The Lead RSE:
-\begin{itemize}\itemsep0em
-\item collects output and relevant information from LA and team
-\item meets with CM (for the community outreach activities) to draft the technology status report  
-\item draft the rest of the report with the TL
-\end{itemize}
+\textbf{Responsible: SH.} 
 
-Two weeks prior to the review meeting, the Lead RSE submits the completed report to the TL. The TL conducts a code 
-review or software health check based on the report and shares the results with the eScience team. If needed, 
-the Lead RSE, TL, and PM may meet to discuss the findings before the annual review meeting.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Phase 3 -- Review meeting} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The report and the review(s) are archived by the TL in the project portfolio.
+The annual project review meeting provides a structured opportunity to evaluate the overall status of the project,
+discuss matters requiring attention, and prepare the continuation assessment for the next review period. The meeting is
+based on the submitted Project Status Report and should focus on clarification, discussion, and decisions rather than
+repeating information already recorded in the report.
 
-\subsubsection{At the review meeting}
-The time breakdown of the meeting agenda is follows:
-\begin{itemize}\itemsep0em
-\item presentation by the LA (max. 20 min)
-\item presentation by the Lead RSE (max. 20 min), including the RSE roles and deliverables
-\item discussion (max. 40 min)
-\item summary, action points and conclusions.
-\end{itemize}
+The review presentation is prepared jointly by the LA, Lead RSE, and SH using the project review template available in
+the \textit{Templates projects} folder~\cite{proj-portfolio}. The LA presents the scientific status of the project, the
+Lead RSE presents the research software and technical progress, and the SH summarizes the outcome of the discussion and
+prepares the preliminary continuation recommendation.
 
-The PM chairs the meeting and, with the TL, acts as reviewer. The TL highlights tech/software issues. Everyone contributes to the discussion. PM and TL assess deliverables, and comment on their status:
-\begin{itemize}\itemsep0em
-\item have the objectives outlined in the proposal been sufficiently addressed? (PM)
-\item does the project follow the workplan in terms of deliverables? (PM)
-\item has the output been registered according to the rules of output management (Section~\ref{sec:exec:output})? (PM, TL)
-\item does all project output have publications (including software and data papers)? (PM)
-\item are there any issues flagged during the code review that needs to be discussed with the project team? (TL)
-\item does the project team sufficiently engage and align with relevant communities (e.g., via the workshops)? (PM)
-\item does the project adhere to the technology plan, SMP and DMP? (TL)
-\end{itemize}
-
-The eScience project team comments on any further possibilities for reusability, adoptability and sustainability of the
-software, and the project team comments on possible collaborations beyond the project.
-
-The PM updates the slides with action points, agreements and plans (with the project partners agreement). The PM logs
-the meeting in the project log.
-
-\subsubsection{After the review meeting}
-PM shares the updated slide deck with the project team members to check the agreements written down. PM ensures that the
-final version of the presentation(s) uploaded to the project portfolio is correct.
-
-
-\subsubsection{Opportunities beyond the project}
-\label{sec:opportunities}
-% TO merge formally into the review meeting section. 
-A project team can explore different opportunities for ideas that stem from the project that go beyond its scope and/or
-budget. Appendix \ref{app:pm-role} summarizes the role of PM in such projects. The PM discusses these opportunities with the project
-team during the review meeting.
-
+The agenda of the review meeting should include:
 \begin{itemize}
-\item{Increasing reusability (in this document called software sustainability)}
-\label{sec:opportunities:ss}
-Some projects or calls have dedicated software sustainability budgets~\cite{nlesc2024software}. Until 2020, each project 
-received its own Generalization (“Generalisatie”) budget for reuse of project results.
-Since 2020, this budget is allocated at the programme or call level. The PM and Lead RSE must check the call text, awarding 
-letter to confirm its availability.
-
-The PM signals potential for reuse to the TL, who discusses it with the Lead RSE and, if needed, the TL team. 
-RSEs with ideas for sustainability projects can contact the TL or DoT. The process follows the SS protocol~\cite{intranet}.
-
-\item{Knowledge and Development}
-\label{sec:opportunities:kd}
-For the development of broad and deep knowledge on digital technologies and their application, RSEs can apply for
-so-called Knowledge and Development (KD) project. The process is described by the KD protocol~\cite{intranet}.
-
-\item{External funding}
-\label{sec:opportunities:external-funding}
-The project team may decide to pursue other funding opportunities. The eScience Center encourages RSEs to pursue
-external funding opportunities to promote the organization profile as research organization. PD oversees the
-external funding opportunities to promote the organization profile as research organization. PD oversees the
-Acquisition activities and the process. The relevant information is available via Intranet~\cite{intranet}.
-
-\item{Fellowship}
-\label{sec:opportunities:fellowship}
-To stimulate community engagement lasting longer than project lifetime, the eScience Center funds annual Fellowship
-Program~\cite{fellowship,fellowship-call}. The eScience project team is not eligible for this program, however, the LA and their team are.
+ \item an introduction outlining the purpose and expected outcomes of the meeting;
+ \item project status, including scientific progress, milestones, deliverables, upcoming activities, and scientific
+ risks or issues;
+ \item research software and technical progress, including technical outputs, project management plans, software
+ sustainability, infrastructure requirements, and technical risks;
+ \item a joint review and discussion of collaboration, project risks and bottlenecks, resource utilisation,
+ administrative or contractual matters, and future opportunities; and
+ \item a continuation assessment, including the key conclusions, agreed actions, and preliminary recommendation for
+ project continuation.
 \end{itemize}
-\textbf{Responsible: Project team and Communications.} 
 
-% To an appendix
-%\subsection{Non-RSE Consultants}
-%\label{sec:exec:consult}
-%Certain issues require consultation beyond the project team. Team members must inform the PM, who may delegate actions as needed:
-%
-%\begin{itemize}\itemsep0em
-%\item GDPR/personal data: consult the GDPR contact~\cite{intranet}. 
-%\item Software/data quality, access and sustainability: contact TL and CMs.
-%\item Scientific integrity: contact the integrity officer~\cite{intranet}.
-%\item SURF-related matters: contact SURF liaisons~\cite{intranet}.
-%\item IP/licensing: contact TLs and DoT. (cf. Section~\ref{sec:init:kickoff}).
-%\item Legal matters: contact the DoO (cf. Section~\ref{sec:init:legal}).
-%\item External funding/opportunities: contact the PD (cf. Section \ref{sec:opportunities:external-funding}).
-%\end{itemize}
+\begin{table}[h!]
+ \captionsetup{
+  labelformat=fancytable,
+  labelsep=space,
+  labelfont=bf,
+  textfont=bf,
+  justification=centering,
+  singlelinecheck=true
+ }
+ \caption{Annual project review meeting}
+ \label{tab:review:meeting}
+ \begin{booktabs}{
+   colspec={|>{\bfseries}m{0.18\textwidth}|m{0.77\textwidth}|},
+   row{even}={gray!20}
+  }
+  \toprule
+  Timing: & Throughout November. \\[1.2ex]
+  Organizer: & Lead RSE. \\[1.2ex]
+  Participants: & Lead RSE, LA, SH, and, where appropriate, additional stakeholders such as the PO, TO, or CM. \\[1.2ex]
+  Objective: & Evaluate project progress, discuss matters requiring attention, and gather the information needed for
+  the continuation assessment. \\[1.2ex]
+  Actions: & The LA presents the scientific project status, the Lead RSE presents the research software and technical
+  progress, all participants contribute to the review and discussion, and the SH summarizes the conclusions and agreed
+  actions. \\[1.2ex]
+  Output: & Agreed actions and a preliminary continuation recommendation recorded in the review materials. \\[1.2ex]
+  Duration: & Typically 90 minutes; simpler projects may require only 60 minutes. \\[1.2ex]
+  Location: & In person at the eScience Center or the project location. Online participation may be arranged where
+  appropriate. \\[1.2ex]
+  \bottomrule
+ \end{booktabs}
+\end{table}
+
+Following the review meeting, the SH completes the evaluation section of the Project Status Report, incorporating the
+agreed conclusions, action points, and preliminary continuation recommendation. The completed Project Status Report and
+the review presentation are then stored in the corresponding project folder within the Project Portfolio. The SH
+finalizes the project evaluation following the MT continuation decision, as described in Phase~4.
+
+\textbf{Responsible: Lead RSE.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Phase 4 -- Continuation decision}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Following the review meetings, the SH consolidates the evaluations for all projects within their section and prepares a 
+continuation recommendation for each project, incorporating any adjustments agreed during the review meetings.
+
+The project evaluations are submitted to the MT for confirmation. Projects progressing as expected are normally
+approved without further discussion. The MT focuses its deliberations on projects requiring significant changes, major
+budget reallocations, or where continuation of eScience Center support is uncertain.
+
+The continuation decision forms the basis for the financial processing and communication activities described in
+Phase~5.
+
+\textbf{Responsible: SH and MT.} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Phase 5 -- Financial processing and communication}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Following the MT continuation decision, the approved decisions are formally recorded and communicated to Finance.
+Finance completes the required administrative processing, updates the relevant project administration systems, and
+prepares any required continuation or termination letters. The confirmed project status is then communicated to the
+project team and the LA through the appropriate administrative channels.
+
+\begin{table}[h!]
+ \captionsetup{
+  labelformat=fancytable,
+  labelsep=space,
+  labelfont=bf,
+  textfont=bf,
+  justification=centering,
+  singlelinecheck=true
+ }
+ \caption{Administrative processing and communication}
+ \label{tab:review:processing}
+ \begin{booktabs}{
+   colspec={|>{\bfseries}m{0.18\textwidth}|m{0.77\textwidth}|},
+   row{even}={gray!20}
+  }
+  \toprule
+  Timing: & Early to mid-December. \\[1.2ex]
+  Responsible: & Finance. \\[1.2ex]
+  Objective: & Finalize the approved continuation decisions and update the project administration. \\[1.2ex]
+  Actions: & Process the MT decisions, update AFAS and other administrative systems, prepare any required continuation
+  or termination letters, and communicate the approved outcomes through the established administrative process. \\[1.2ex]
+  Output: & Updated project administration and communicated continuation decisions. \\[1.2ex]
+  \bottomrule
+ \end{booktabs}
+\end{table}
+
+\textbf{Responsible: Finance.} 
+
+The execution phase concludes with the annual project review and the corresponding continuation decision. Depending on 
+the outcome, the project either proceeds into a new execution period or enters the closing phase, where the project 
+deliverables, reporting obligations, and administrative activities are formally completed.
