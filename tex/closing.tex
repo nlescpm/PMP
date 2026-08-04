@@ -1,88 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Project closing}
 \label{sec:closing}
-Project closing is the final phase of a project. In this phase the Lead RSE requests and previews the end report, the PM (with the help of Finance) processes the end report
-and accepts the project deliverables. Once the project is formally closed, RSEs can no longer write hours or work on
-this project. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Project closing is the final phase of the project lifecycle. Its purpose is to formally conclude the collaboration, 
+verify the completion of the project objectives and deliverables, document the project outcomes and ensure that all 
+administrative outstanding tasks are completed. Project closing consists of two stages: the closing meeting and the end 
+report.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Closing meeting}
+\label{sec:closing:meeting}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The closing meeting marks the conclusion of the collaboration between the eScience Center and the Lead Applicant. It is 
+typically held as the last regular project meeting~\ref{sec:exec:team-meetings} during the last weeks of the project. 
+The meeting provides an opportunity to review the project outcomes, discuss any remaining activities, agree on 
+responsibilities after the project ends, and prepare the end report.
 
+Typical discussion topics include:
+\vspace{-0.2cm}
+\begin{itemize}
+ \item review of the project objectives and deliverables,
+ \item outstanding publications, software releases or other project outputs,
+ \item remaining knowledge transfer activities,
+ \item software sustainability and maintenance plans,
+ \item sharing the end report template, and
+ \item opportunities for future collaboration.
+\end{itemize}
+\vspace{-0.2cm}
 
-\subsection{Handling end report}
+The conclusions and action points are recorded in the project log.
+
+\textbf{Responsible: Lead RSE.} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{End report}
 \label{sec:closing:end}
-All completed call projects at the eScience Center must have an end project report.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The end report documents the outcomes of the project and provides the information required for the formal closure of 
+the project. For internal projects, the end report is written by the LA using the template available in the 
+\textit{Project templates} folder of the project portfolio and previously introduced by the Lead RSE at the closing 
+meeting. 
 
+\let\myhcolw\relax 
+\newlength{\myhcolw}
+\setlength{\myhcolw}{0.8\textwidth}
 \begin{table}[!h]
-\begin{booktabs}{colspec={|>{\bfseries}m{0.2\textwidth}|m{0.8\textwidth}|},row{even}={gray!20}}
-    \toprule
-    Written by: &  the LA, assisted by the Lead RSE. \\[1.5ex]
-    Target audience: & PMs, RSEs, Communications (layman summary), Finance (accountants), TLs \\[1.5ex]
-    Schedule: &  %
-    \begin{minipage}[t]{0.8\textwidth}
-    \begin{itemize}\itemsep0em
-        \item written in last months of the project,
-        \item submitted 3 months after the project end at latest, 
-        \item archived in the project portfolio. 
-    \end{itemize} 
-      \end{minipage}
-    \\[1.5ex]
-    Approved by: & The PM team and Finance. \\[1.5ex]
-    \bottomrule
-\end{booktabs}
+ \captionsetup{
+   labelformat=fancytable,
+   labelsep=space,
+   labelfont=bf,
+   textfont=bf,
+   justification=centering,
+   singlelinecheck=true
+ }
+ \caption{End report process overview}
+ \begin{booktabs}{
+    colspec={|>{\bfseries}m{0.17\textwidth}|m{\myhcolw}|},
+    row{even}={gray!20}
+  }
+  \toprule
+  Preparation: &
+  The LA completes the end report using the template available in the \textit{Project templates} folder and submits it within three months after project completion.
+  \\[1.5ex]
+  Scientific review: &
+  The Lead RSE reviews the scientific content, verifies that all project outputs have been registered in the appropriate systems, and requests revisions from the LA if needed.
+  \\[1.5ex]
+  Approval: &
+  The responsible SH reviews and approves the end report before it is submitted to Finance for administrative processing.
+  \\[1.5ex]
+  Financial review: &
+  Finance reviews the financial information, where applicable, and requests corrections if needed.
+  \\[1.5ex]
+  Formal closure: &
+  Once all reviews have been completed, Finance archives the required documentation and issues the formal project closing letter to the LA, thereby formally concluding the project.
+  \\[1.5ex]
+  \bottomrule
+ \end{booktabs}
 \end{table}
 
-For call projects, one month before the project end, the Lead RSE requests the LA to submit the scientific and financial end report ('Financieel en wetenschappelijk eindverslag'), providing the eScience Center template~\cite{proj-portfolio}.
+For external projects, the reporting requirements of the funding organisation take precedence 
+(see Appendix~\ref{app:external-projects}). Whenever possible, the report submitted to the funding organisation is 
+also archived in the project portfolio.
 
-RSEs provide the LA with all necessary information for the end report.% (deliverables via the RSD project page, project follow-up details, and lessons learned)
-A complete end report includes:
-\begin{itemize}
-\item Public summary (in English) with objectives and results,
-\item Challenges (the team encountered during the project),
-\item Opportunities (the work of the project led to),
-\item Remarks on sustainability and latest management plans,
-\item Outcomes missing from the RSD (e.g., software, papers, presentations, workshops, testimonials),
-\item Information on the project workshops,
-\item Financial overview (if applicable),
-\item LA's signature and date (or financial/project manager's if LA unavailable).
-\end{itemize}
-For collaborative calls, the LA and Lead RSE's report to other funders (e.g., NWO) suffices if it covers the above points.
+The end report typically includes a public summary, project outcomes, challenges, opportunities, sustainability plans, 
+project deliverables, workshops, and, where applicable, a financial overview. The completed report must be submitted 
+within three months after the end of the project. 
 
-Before the formal closing of the project, the Lead RSE:
-\begin{itemize}
-   \item receives the signed end report from the LA (preferrably, in PDF format)
-   \item verifies the scientific part of the end report against the end report checklist. If needed, the Lead RSE asks the LA for additional information or corrections to the end report, before submitting it to the PM. 
-   \item ensures all missing project output is registered in the appropriate systems (see Section \ref{sec:exec:output}) 
-   \item archives the end report, the lastest DMP and SMP, checklist in the respective project portfolio.
-\end{itemize}
-If the end report is satisfactory and all the aforementioned steps are completed, the Lead RSE submits it to the PM to get the project formally closed. The PM requests Finance to review the financial 
-part of the report and either approve it or request corrections to it. 
+After receiving the completed end report, the Lead RSE reviews the scientific content and ensures that all project 
+deliverables and outputs have been registered in the appropriate systems. This includes updating the RSD project page, 
+including the public summary and any missing project metadata, archiving the latest project documentation (e.g., the 
+end report, Technology Plan, DMP and SMP, where applicable) in the project portfolio, and requesting revisions from the 
+LA if necessary. Once the scientific review has been completed, the responsible SH approves the report and forwards it 
+to Finance for review of the financial information. Communications may use the public summary and project outcomes for 
+dissemination activities.
 
-Projects that are funded by software sustainability budgets have their own procedure for end reports (see Appendix
-\ref{app:pm-role}). The end report of these projects consists of output registered on the RSD project page and
-updated summary of the project.
-
-For \textbf{external projects} the way a project is formally closed depends on the formal documentation for a project and requirements from the external funding organization. 
-If an end report is required, the Lead RSE contributes to it (PMs can assist when needed), and care should be taken to reserve some time (and budget) during the project for this effort. 
-Finance prepares the financial part of the report.   %The necessity of a (lightweight version of an) internal end report is determined by the PM and Finance.
-The Lead RSE shares the final version of the end report written for the external party or funding organization (e.g., EU, NWO) with the PM and Finance, and archives it in the project portfolio.
-In any case, the Lead RSE ensures that the RSD project page is up-to-date (with complete deliverables and layman summary of the completed project).
-
-Finance periodically sends a list of missing end reports to the PM team. If the end report is not submitted yet, the PM sends a
-reminder to the LA.
-
-\subsection{Formally closing the project}
-If both scientific and financial part of the end report is satisfactory, the PM puts decision to formally close project on the PM meeting agenda. After the formal decision\footnote{Formally
-recorded by the PM team, and thereafter ratified by the DT team (see more in~\cite{intranet}).}, the PM
-notifies the TLs, Finance and Communications (with the links to the documents). Finance handles the approved reports and
-formalities related to closing the project. This includes getting the final signature by DoO or Executive Director on
-the official letter for the LA about the project closing ('Afsluitingsbrief'), communicating it to the LA, and archiving 
-the letter in the project portfolio.
-
-
-The PM ensures that the project is marked as complete on the 
-\begin{itemize}
-\item RSD: The Lead RSE updates the project page with the lay summary (from the end report), any missing meta-data (e-Infra use, keywords, deliverables, etc.) and sets the project status to 'Closed'. See also Appendix~\ref{app:rsd-page}.
-\item Corporate page: Communications may also request more information to promote the completion of the project through
-various channels, including but not limited to a news item, social media post, video and interview.
-\item Exact/Project portfolio: Finance closes the Exact project budget, uploads the official closing letter to the LA, as well as
-all appropriated documents.
-\item Ganttic: The PM ensures that no one is assigned to the project in the future.
-\end{itemize}
+If the report is approved, Finance completes the administrative closure of the project, archives the required 
+documentation in the project portfolio, and issues the formal project closing letter to the LA, thereby formally 
+closing the project and ending the project lifecycle.
