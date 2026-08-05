@@ -74,6 +74,7 @@ The following packages are required:
 \usepackage{eso-pic}             % For logos in the background
 \usepackage{caption}             % For figure and table captions
 \usepackage{cite}                % Citation
+\usepackage{amssymb}             % Mathematical symbols
 \usepackage{tikz}                % Drawing and graphics
 \usepackage{subcaption}          % Subfigures and subcaptions
 
